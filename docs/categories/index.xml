@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Categories on Presence on internet</title>
+    <link>https://rahulmysore23.github.io/categories/</link>
+    <description>Recent content in Categories on Presence on internet</description>
+    <image>
+      <title>Presence on internet</title>
+      <url>https://rahulmysore23.github.io/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</url>
+      <link>https://rahulmysore23.github.io/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</link>
+    </image>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Sun, 13 Aug 2023 11:28:33 +0530</lastBuildDate><atom:link href="https://rahulmysore23.github.io/categories/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>AboutMe</title>
+      <link>https://rahulmysore23.github.io/categories/aboutme/</link>
+      <pubDate>Sun, 13 Aug 2023 11:28:33 +0530</pubDate>
+      
+      <guid>https://rahulmysore23.github.io/categories/aboutme/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>
