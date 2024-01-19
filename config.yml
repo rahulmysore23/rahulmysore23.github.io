@@ -62,7 +62,7 @@ params:
     enabled: true # needs to be explicitly set
     title: Rahul Mysore
     subtitle: "Software Engineer with 5 years of experience building backends. Currently pursuing a masters degree."
-    imageUrl: "https://media.licdn.com/dms/image/C4D03AQH027bk-fywpw/profile-displayphoto-shrink_800_800/0/1599805940423?e=1697673600&v=beta&t=BUSo384ZY2M_LcARSyU2IqYa7kGsQywpeolQXk4yoYs"
+    imageUrl: "https://media.licdn.com/dms/image/D5635AQGPHGG_bAMbHA/profile-framedphoto-shrink_400_400/0/1694380778835?e=1706299200&v=beta&t=u5Gvz6r0QcD3QbwGBh6wei8gGQC0T6JeWaC7SufNNyU"
     imageWidth: 120
     imageHeight: 120
     imageTitle: my image
