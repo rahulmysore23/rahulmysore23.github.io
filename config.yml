@@ -65,7 +65,7 @@ params:
     imageUrl: "https://media.licdn.com/dms/image/D5635AQGPHGG_bAMbHA/profile-framedphoto-shrink_400_400/0/1694380778835?e=1718683200&v=beta&t=2MXPAHkYp0BO2aGI6-puiLRDEDaPUEsYYqZu-Nmvq-o"
     imageWidth: 120
     imageHeight: 120
-    imageTitle: my image
+    imageTitle: image
     buttons:
       - name: Posts
         url: posts
