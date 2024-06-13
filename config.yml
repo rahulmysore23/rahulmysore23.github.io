@@ -9,14 +9,19 @@ buildDrafts: false
 buildFuture: false
 buildExpired: false
 
-googleAnalytics: UA-123-45
-
 minify:
   disableXML: true
   minifyOutput: true
 
+module:
+  mounts:
+    - source: "static"
+      target: "static"
+    - source: "images"
+      target: "static/images"
+
 params:
-  env: production # to enable google analytics, opengraph, twitter-cards and schema.
+  env: production 
   title: Rahul Mysore
   description: "Software Engineer with 5 years of experience building backends. Currently pursuing a masters degree."
   keywords: [ Blog, Portfolio, PaperMod ]
@@ -62,15 +67,15 @@ params:
     enabled: true # needs to be explicitly set
     title: Rahul Mysore
     subtitle: "Software Engineer with 5 years of experience building backends. Currently pursuing a masters degree."
-    imageUrl: "https://media.licdn.com/dms/image/D5635AQGPHGG_bAMbHA/profile-framedphoto-shrink_400_400/0/1694380778835?e=1718683200&v=beta&t=2MXPAHkYp0BO2aGI6-puiLRDEDaPUEsYYqZu-Nmvq-o"
+    imageUrl: "/images/mine.jpg"
     imageWidth: 120
     imageHeight: 120
     imageTitle: image
     buttons:
       - name: Posts
         url: posts
-      - name: Tags
-        url: tags
+      - name: About
+        url: about
 
   # home-info mode
   homeInfoParams:
@@ -114,16 +119,15 @@ menu:
       name: tags
       url: /tags/
       weight: 30
+    - identifier: about
+      name: about
+      url: /about/
+      weight: 40
 # Read: https://github.com/adityatelange/hugo-PaperMod/wiki/FAQs#using-hugos-syntax-highlighter-chroma
 pygmentsUseClasses: true
 markup:
   highlight:
     noClasses: false
-    # anchorLineNos: true
-    # codeFences: true
-    # guessSyntax: true
-    # lineNos: true
-    # style: monokai
 taxonomies:
   category: categories
   tag: tags
