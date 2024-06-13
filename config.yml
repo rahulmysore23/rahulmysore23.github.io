@@ -62,7 +62,7 @@ params:
     enabled: true # needs to be explicitly set
     title: Rahul Mysore
     subtitle: "Software Engineer with 5 years of experience building backends. Currently pursuing a masters degree."
-    imageUrl: "https://media.licdn.com/dms/image/D5635AQGPHGG_bAMbHA/profile-framedphoto-shrink_400_400/0/1694380778835?e=1706299200&v=beta&t=u5Gvz6r0QcD3QbwGBh6wei8gGQC0T6JeWaC7SufNNyU"
+    imageUrl: "https://media.licdn.com/dms/image/D5635AQGPHGG_bAMbHA/profile-framedphoto-shrink_400_400/0/1694380778835?e=1718683200&v=beta&t=2MXPAHkYp0BO2aGI6-puiLRDEDaPUEsYYqZu-Nmvq-o"
     imageWidth: 120
     imageHeight: 120
     imageTitle: my image
@@ -85,23 +85,10 @@ params:
     - name: youtube
       url: "https://www.youtube.com/@rahulmysore23"
 
-  analytics:
-    google:
-      SiteVerificationTag: "XYZabc"
-    bing:
-      SiteVerificationTag: "XYZabc"
-    yandex:
-      SiteVerificationTag: "XYZabc"
-
   cover:
     hidden: true # hide everywhere but not in structured data
     hiddenInList: true # hide on list pages and home
     hiddenInSingle: true # hide on single page
-
-  editPost:
-    URL: "https://github.com/<path_to_repo>/content"
-    Text: "Suggest Changes" # edit text
-    appendFilePath: true # to append file path to Edit link
 
   # for search
   # https://fusejs.io/api/options.html
