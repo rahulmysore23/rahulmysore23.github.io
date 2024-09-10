@@ -1,0 +1,470 @@
+baseURL: "https://hugo-profile.netlify.app"
+languageCode: "en-us"
+title: "Rahul's Presence On Internet"
+theme: hugo-profile
+
+outputs:
+  home:
+    - "HTML"
+    - "RSS"
+    - "JSON"
+  page:
+    - "HTML"
+    - "RSS"
+
+Paginate: 3
+enableRobotsTXT: true
+# disqusShortname: your-disqus-shortname
+# googleAnalytics: G-MEASUREMENT_ID
+
+markup:
+  goldmark:
+    renderer:
+      unsafe: true
+
+Menus:
+  main:
+    - identifier: blog
+      name: Blog
+      title: Blog posts
+      url: /blogs
+      weight: 1
+    - identifier: music
+      name: Music
+      title: Music
+      url: /music
+      weight: 2
+    #Dropdown menu
+    # - identifier: dropdown
+    #   title: Example dropdown menu
+    #   name: Dropdown
+    #   weight: 3
+    # - identifier: dropdown1
+    #   title: example dropdown 1
+    #   name: example 1
+    #   url: /#
+    #   parent: dropdown
+    #   weight: 1
+    # - identifier: dropdown2
+    #   title: example dropdown 2
+    #   name: example 2
+    #   url: /#
+    #   parent: dropdown
+    #   weight: 2
+
+params:
+  title: "Rahul's Presence on the Internet"
+  description: Presence on the Internet
+  # staticPath: ""  # The path to serve the static files from
+  favicon: "/fav.png"
+
+  # Whether to serve bootstrap css and js files from CDN or not. Can be set to true, "css" or "js" to choose between
+  # serving both, only the css, or only the js files through the CDN. Any other value will make so that CDN is not used.
+  # Note the lack of "" in true, it should be of boolean type.
+  useBootstrapCDN: false
+
+  # If you want to load dynamically responsive images from Cloudinary
+  # This requires your images to be uploaded + hosted on Cloudinary
+  # Uncomment and change YOUR_CLOUD_NAME to the Cloud Name in your Cloudinary console
+  # cloudinary_cloud_name: "YOUR_CLOUD_NAME"
+
+  # Whether to add mathjax support on all pages. Alternatively, you can opt-in per page by adding `mathjax: true` in the frontmatter.
+  mathjax: false
+
+  # Whether the fade animations on the home page will be enabled
+  animate: true
+
+  theme:
+    # disableThemeToggle: true
+    defaultTheme: "light" # dark
+
+  font:
+    fontSize: 1rem # default: 1rem
+    fontWeight: 400 # default: 400
+    lineHeight: 1.5 # default: 1.5
+    textAlign: left # default: left
+
+  # color preference
+  # When using hex codes for colors, quotations must be used along with the # sign
+  # color:
+  #   textColor: "#343a40"
+  #   secondaryTextColor: "#6c757d"
+  #   textLinkColor: "#007bff"
+  #   backgroundColor: "#eaedf0"
+  #   secondaryBackgroundColor: "#64ffda1a"
+  #   primaryColor: "#007bff"
+  #   secondaryColor: "#f8f9fa"
+
+  #   darkmode:
+  #     textColor: "#e4e6eb"
+  #     secondaryTextColor: "#b0b3b8"
+  #     textLinkColor: "#ffffff"
+  #     backgroundColor: "#18191a"
+  #     secondaryBackgroundColor: "#212529"
+  #     primaryColor: "#ffffff"
+  #     secondaryColor: "#212529"
+
+  # If you want to customize the menu, you can change it here
+  navbar:
+    align: ms-auto # Left: ms-auto | center: mx-auto | right: me-auto | Default: ms-auto
+    # brandLogo: "/logo.png" # Logo for the brand | default is the favicon variable
+    # showBrandLogo: false # Show brand logo in nav bar | default is true
+    brandName: "Rahul's Presence" # Brand name for the brand | default is the title variable
+    disableSearch: true
+    # searchPlaceholder: "Search"
+    stickyNavBar:
+      enable : true
+      showOnScrollUp : true
+    enableSeparator: false
+    menus:
+      disableAbout: false
+      disableExperience: false
+      disableEducation: false
+      disableProjects: false
+      disableAchievements: true
+      disableContact: false
+
+  # Hero
+  hero:
+    enable: true
+    intro: "Hi, my name is"
+    title: "Rahul Mysore"
+    subtitle: "I create solutions that scale and perform"
+    content: "I'm driven by the challenge of building efficient, scalable platforms and systems. I focus on developing solutions that are both powerful and user-friendly, blending creativity with technical expertise to create apps and services that make a real-world impact. Always learning, always evolving."
+    image: /images/hero.jpg
+    bottomImage:
+      enable: true
+    # roundImage: true # Make hero image circular | default false
+    button:
+      enable: true
+      name: "Contact for Resume"
+      url: "#contact"
+      download: true
+      newPage: false
+    socialLinks:
+      fontAwesomeIcons:
+        - icon: fab fa-github
+          url: https://github.com/rahulmysore23
+        - icon: fab fa-linkedin 
+          url: https://linkedin.com/in/rahulmysore23
+
+  # About
+  about:
+    enable: true
+    title: "About Me"
+    image: "/images/me.jpg"
+    content: |
+        I’m a software engineer with 5 years of experience, having worked in fast-paced startup environments where I built scalable platforms and innovative tools. My passion lies in solving complex problems and driving impactful solutions, whether it's backend systems or full-stack development. Currently, I’m pursuing a Master’s in Computer Science and working as a Graduate Research Assistant, collaborating on cutting-edge technology and systems research.
+
+        With a strong background in computer science, I thrive on using modern tech to create seamless, high-performance applications. From enhancing security standards to optimizing processes, my experience spans across a variety of industries and projects, always with a focus on efficiency and scalability.
+    skills:
+      enable: true
+      title: "I've worked with a plethora of cool tech. Here are a few technologies I love working with:"
+      items:
+        - "Golang"
+        - "Docker"
+        - "Kubernetes"
+        - "React"
+        - "Python"
+        - "Linux"
+        - "PostgreSQL"
+        - "LLM"
+
+  # Experience
+  experience:
+    enable: true
+    # title: "Custom Name"
+    items:
+      - job: "Graduate Research Assistant"
+        company: "UMKC"
+        companyUrl: "https://dsaic.umkc.edu/"
+        date: "Oct 2023 - present"
+        featuredLink:
+          enable: false
+          name: "About the group"
+          url: "https://dsaic.umkc.edu/"
+        info:
+          enable: true
+        content: |
+            Collaborating with professors at UMKC, I'm developing secure applications for violence prevention programs and researching innovative AI solutions. My work spans building systems for large-scale data analysis and improving LLM performance, driving meaningful academic impact.
+            
+            - Tech - Python, LLM, RAG, React, PostgreSQL, DBMS, Linux, Nginx, Shell scripts, Java, JSP, Tomcat.
+
+      - job: "Software Engineering Intern"
+        company: "Solarwinds"
+        companyUrl: "https://www.solarwinds.com/"
+        date: "Jun 2024 - Aug 2024"
+        featuredLink:
+          enable: false
+          url: "https://example.com"
+        info:
+          enable: true
+        content: |
+            As a summer intern at SolarWinds, I spearheaded the development of an LLM-based automation tool, transforming team communication. By refactoring legacy code and integrating concurrency, I pushed software performance to new heights.
+            
+            - Tech - Python, LLM, RAG, AWS Bedrock, AWS S3, .Net, C#, Concurrency using Async and Await
+
+      - job: "Platform Engineer"
+        company: "Acceldata"
+        companyUrl: "https://www.acceldata.io/"
+        date: "Jun 2022 - Aug 2023"
+        info:
+          enable: false
+        featuredLink:
+          enable: false
+          url: "https://example.com"
+        content: |
+          I engineered high-impact solutions like Wizard and Kryptr, which revolutionized security standards and streamlined license management. I also optimized CI/CD pipelines, saving development hours and enhancing overall efficiency.
+
+          - Lead and maintained 5 products.
+          - Migrated and Maintained all the CI/CD pipelines. 
+          - Tech - Go, Docker, Kubernetes, Linux, Shell scripts, Postgres, MongoDB, CLI, AWS, System programming, Ansible, NATS, Jenkins, Bitbucket, Concurrency
+
+      - job: "R & D Engineer II"
+        company: "Jukshio"
+        companyUrl: "https://www.jukshio.com/"
+        date: "Jul 2020 - May 2022"
+        featuredLink:
+          enable: false
+          url: "https://example.com"
+        content: |
+          I led the migration from monolithic to microservices architecture, reducing system latency and enabling better scalability. My backend architecture work handles over a million API hits daily, ensuring reliability and speed.
+
+          - Lead backend developer for 2 products.
+          - Tech - Go, Docker, Kubernetes, Linux, Postgres, Web, CLI, REST API, gRPC, Azure, Concurrency, Distributed tracing and logging
+
+      - job: "Software Engineer"
+        company: "Freelance"
+        companyUrl: "https://example.com"
+        date: "Nov 2019 - Jun 2020"
+        content: |
+          I worked with clients to create custom applications and backend solutions. My projects ranged from full-stack web apps to optimized API integrations, delivering impactful solutions that met client needs. 
+          - Worked on a startup idea with friends for a couple of months (Didn't turn out well)
+          - Tech - Go, Python, Django, PostgreSQL, Angular, MSSQL, .Net, C#, Web and Mobile, Azure
+      
+      - job: "Software Engineer"
+        company: "Opentext"
+        companyUrl: "https://www.opentext.com/"
+        date: "Sep 2018 - Nov 2019"
+        content: |
+          I enhanced test automation coverage and developed a diagnostics tool that improved system performance. My contributions identified critical bugs and boosted overall product quality, driving the software toward greater reliability.
+          - Tech - .Net, C#, Selenium, CLI, REST API
+
+  # Education
+  education:
+    enable: true
+    # title: "Custom Name"
+    index: false
+    items:
+      - title: "Masters in Computer Science"
+        school:
+          name: "University of Missouri, Kansas City"
+          url: "https://www.umkc.edu/"
+        date: "2023 - 2024"
+        GPA: "3.95 out of 4.0"
+        content: |-
+          Coursework
+            - Advanced Software Engineering
+            - Distributed Computing Systems
+            - Big Data Management
+            - Cloud Computing
+            - Advanced Operating Systems
+            - Blockchain
+            - Information Security Assurance
+
+          Extracurricular Activities
+            - Graduate Advisor for the Computer Science Club
+
+      - title: "Bachelor of Technology in Computer Science"
+        school:
+          name: "BVRIT"
+          url: "https://bvrit.ac.in/"
+        date: "2015 - 2019"
+        GPA: "8.95 out of 10"
+        content: |-
+          Coursework
+            - Theory Of Computing
+            - Compiler Design
+            - Web Development
+            - Design And Analysis Of Algorithms
+          
+          Extracurricular Activities
+            - Organised a workshop for building terminal games using C++ in a national level technical fest. 
+            - Active member of the computer science club
+            - Was part of [Mission R & D](https://svecw.edu.in/mission-rd/), select individuals from universities were trained on programming by microsoft professionals.
+        featuredLink:
+          enable: false
+          name: "My academic record"
+          url: "https://example.com"
+
+  # Achievements
+  achievements:
+    enable: true
+    # title: "Custom Name"
+    items:
+      - title: KodeKloud - Docker - level 1
+        content: Completed tasks for Docker level 1 (There's no level 2 or higher for now)
+        url: https://engineer.kodekloud.com/certificate-verification/7a2423eb-45af-4784-ba2b-a31f7c065346
+      - title: KodeKloud - Git - level 1
+        content: Completed tasks for Git level 1 (There's no level 2 or higher for now)
+        url: https://engineer.kodekloud.com/certificate-verification/a5e613d0-3350-4940-b71f-049bc008b575
+      - title: Hackerrank - Go
+        content: Hackeerrank certificate for Go (basic)
+        url: https://www.hackerrank.com/certificates/9994fb1d7349
+      - title: Hackerrank - Problem solving
+        content: Hackeerrank certificate for problem solving (intermediate)
+        url: https://www.hackerrank.com/certificates/5875b5a7d120
+      - title: Hackerrank - SQL
+        content: Hackeerrank certificate for SQL (intermediate)
+        url: https://www.hackerrank.com/certificates/496226a04d46
+      - title: Hackerrank - Java
+        content: Hackeerrank certificate for Java (intermediate)
+        url: https://www.hackerrank.com/certificates/444f9863ad27
+
+  # projects
+  projects:
+    enable: true
+    # title: "Custom Name"
+    items:
+      - title: Wizard
+        content: Developed Wizard a minimal Ansible clone, Acceldata's automation engine that utilizes JSON as a Domain Specific Language (DSL) to automate ad-hoc tasks.
+        image: /images/projects/wizard_json.png
+        badges:
+          - "Go"
+          - "Linux"
+          - "Ansible"
+          - "JSON"
+          - "CLI"
+        links:
+          - icon: fab fa-github
+            url: https://github.com/acceldata-io/wizard
+
+      - title: KC Justice Initiative
+        content: Architected and Developed - frontend, backend, DB and deployment. Done as part of my Gradudate Research.
+        image: /images/projects/kcri_website.png
+        featured:
+          name: Demo
+          link: https://kcjusticeinitiative.org/
+        badges:
+          - "Python"
+          - "PostgreSQL"
+          - "React"
+          - "Nginx"
+          - "Docker"
+          - "Linux"
+
+      - title: 9 men morris Game
+        content: The game includes features such as Human vs Human, Human vs Computer, Record and Replay functionalities, and a 6 Men Morris variant, providing a versatile and engaging user experience.
+        image: /images/projects/9men_full.png
+        badges:
+          - "Python"
+          - "Design Patterns"
+          - "GUI"
+          - "Game Logic"
+        links:
+          - icon: fab fa-github
+            url: https://github.com/rahulmysore23/cs-5551/tree/main/teamProject
+
+      - title: Github Repo Data Analysis
+        content: Analyze GitHub repository data, tracking the evolution of programming language usage trends over different years.
+        image: /images/projects/ELT.png
+        badges:
+          - "Python"
+          - "GCP"
+          - "Hadoop"
+          - "Hive"
+          - "Spark"
+          - "MySQL"
+          - "Docker"
+        links:
+          - icon: fab fa-github
+            url: https://github.com/rahulmysore23/cs-5540/tree/main/team-project
+
+      - title: Twitter Bot
+        content: A customisable CLI twitter bot for likes, reposts using selenium.
+        image: /images/projects/twitter_bot.png
+        badges:
+          - "C#"
+          - "Selenium"
+          - "Automation"
+          - "CLI"
+        links:
+          - icon: fab fa-github
+            url: https://github.com/rahulmysore23/Twitter-Bot
+
+      - title: Flappy Bird
+        content: A simple CLI flappy bird game written in C#.
+        image: /images/projects/flappy_bird.png
+        badges:
+          - "C#"
+          - "CLI"
+        links:
+          - icon: fab fa-github
+            url: https://github.com/rahulmysore23/Flappy-Bird
+
+      - title: Job Quip (In progress)
+        content: An application to read emails, track and follow on job applications with AI.
+        image: /images/projects/job_quip.png
+        badges:
+          - "Python"
+          - "LLM"
+          - "Go"
+        links:
+          - icon: fab fa-github
+            url: https://github.com/rahulmysore23/job-quip
+
+  #Contact
+  contact:
+    enable: true
+    # title: "Custom Name"
+    content: I'm always open to new opportunities, collaborations, and mentorship—reach out and let's make something amazing happen!
+    btnName: Mail me
+    btnLink: mailto:rahulmysore23@gmail.com
+    # formspree:
+    #   enable: true # `contact.email` value will be ignored
+    #   formId: abcdefgh # Take it from your form's endpoint, like 'https://formspree.io/f/abcdefgh'
+    #   emailCaption: "Enter your email address"
+    #   messageCaption: "Enter your message here"
+    #   messageRows: 5
+
+  footer:
+    recentPosts:
+      path: "blogs"
+      count: 3
+      title: Recent Posts
+      enable: false
+      disableFeaturedImage: false
+    socialNetworks:
+      github: https://github.com/rahulmysore23
+      linkedin: https://linkedin.com/in/rahulmysore23
+
+  # List pages like blogs and posts
+  listPages:
+    disableFeaturedImage: false
+
+  # Single pages like blog and post
+  singlePages:
+    socialShare: true
+    readTime:
+      enable: true
+      content: "min read"
+    scrollprogress:
+      enable: true
+    tags:
+      openInNewTab: true
+
+  # For translations
+  terms:
+    read: "Read"
+    toc: "Table Of Contents"
+    copyright: "All rights reserved"
+    pageNotFound: "Page not found"
+    emailText: "Check out this site"
+
+  datesFormat:
+    article: "Jan 2, 2006"
+    articleList: "Jan 2, 2006"
+    articleRecent: "Jan 2, 2006"
+
+  #customScripts: -| # You can add custom scripts which will be added before </body> tag
+  #  <script type="text/javascript"><!-- any script here --></script>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>My Presence on the Internet on Rahul&#39;s Presence On Internet</title>
+    <link>https://hugo-profile.netlify.app/blogs/first_post/</link>
+    <description>Recent content in My Presence on the Internet on Rahul&#39;s Presence On Internet</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sun, 13 Aug 2023 11:28:33 +0530</lastBuildDate>
+    
+	<atom:link href="https://hugo-profile.netlify.app/blogs/first_post/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+  </channel>
+</rss>
