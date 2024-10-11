@@ -131,7 +131,7 @@ params:
     title: "Rahul Mysore"
     subtitle: "I create solutions that scale and perform"
     content: "I'm driven by the challenge of building efficient, scalable platforms and systems. I focus on developing solutions that are both powerful and user-friendly, blending creativity with technical expertise to create apps and services that make a real-world impact. Always learning, always evolving."
-    image: /images/hero.jpg
+    image: /images/rahul.jpg
     bottomImage:
       enable: true
     # roundImage: true # Make hero image circular | default false
@@ -154,7 +154,7 @@ params:
     title: "About Me"
     image: "/images/me.jpg"
     content: |
-        I’m a software engineer with 5 years of experience, having worked in fast-paced startup environments where I built scalable platforms and innovative tools. My passion lies in solving complex problems and driving impactful solutions, whether it's backend systems or full-stack development. Currently, I’m pursuing a Master’s in Computer Science and working as a Graduate Research Assistant, collaborating on cutting-edge technology and systems research.
+        I'm a software engineer with 5 years of experience, having worked in fast-paced startup environments where I built scalable platforms and innovative tools. My passion lies in solving complex problems and driving impactful solutions, whether it's backend systems or full-stack development. Currently, I’m pursuing a Master’s in Computer Science and working as a Graduate Research Assistant, collaborating on cutting-edge technology and systems research.
 
         With a strong background in computer science, I thrive on using modern tech to create seamless, high-performance applications. From enhancing security standards to optimizing processes, my experience spans across a variety of industries and projects, always with a focus on efficiency and scalability.
     skills:
@@ -302,6 +302,9 @@ params:
     enable: true
     # title: "Custom Name"
     items:
+      - title: HackMidwest 2024 - USDA Challenge Winners 
+        content: Won USDA AI Driven challenge
+        url: https://www.linkedin.com/posts/rahulmysore23_hackmidwest2024-usdachallenge-agriculturaltech-activity-7248075478459113472-f4G7?utm_source=share&utm_medium=member_desktop
       - title: KodeKloud - Docker - level 1
         content: Completed tasks for Docker level 1 (There's no level 2 or higher for now)
         url: https://engineer.kodekloud.com/certificate-verification/7a2423eb-45af-4784-ba2b-a31f7c065346
@@ -352,7 +355,24 @@ params:
           - "Nginx"
           - "Docker"
           - "Linux"
-
+      
+      - title: D-Chat
+        content: D-chat is a cutting-edge decentralized chat application that combines the power of AWS cloud services with decentralized technologies to provide a secure, scalable, and intelligent communication platform.
+        image: /images/projects/d-chat.jpeg
+        badges:
+          - "Python"
+          - "LLM"
+          - "RAG"
+          - "Prompts"
+          - "IPFS"
+          - "AWS"
+          - "React"
+          - "Nginx"
+          - "Docker"
+        links:
+          - icon: fab fa-github
+            url: https://github.com/rahulmysore23/D-Chat
+      
       - title: 9 men morris Game
         content: The game includes features such as Human vs Human, Human vs Computer, Record and Replay functionalities, and a 6 Men Morris variant, providing a versatile and engaging user experience.
         image: /images/projects/9men_full.png
@@ -401,6 +421,18 @@ params:
         links:
           - icon: fab fa-github
             url: https://github.com/rahulmysore23/Flappy-Bird
+
+      - title: No Game No Scrape
+        content: This is a flexible, general-purpose web scraper built with Python and Selenium. It can be used to crawl and extract information from any website, with options to restrict crawling to specific domains.
+        image: /images/projects/no_scrape.png
+        badges:
+          - "Python"
+          - "Selenium"
+          - "Automation"
+          - "CLI"
+        links:
+          - icon: fab fa-github
+            url: https://github.com/rahulmysore23/No-Game-No-Scrape
 
       - title: Job Quip (In progress)
         content: An application to read emails, track and follow on job applications with AI.

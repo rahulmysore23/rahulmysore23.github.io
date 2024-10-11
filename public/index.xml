@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Rahul&#39;s Presence On Internet</title>
+    <link>https://hugo-profile.netlify.app/</link>
+    <description>Recent content on Rahul&#39;s Presence On Internet</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Tue, 10 Sep 2024 00:15:46 +0530</lastBuildDate>
+    
+	<atom:link href="https://hugo-profile.netlify.app/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Rahul and Music</title>
+      <link>https://hugo-profile.netlify.app/music/</link>
+      <pubDate>Tue, 10 Sep 2024 00:15:46 +0530</pubDate>
+      
+      <guid>https://hugo-profile.netlify.app/music/</guid>
+      <description>Coming soon</description>
+    </item>
+    
+    <item>
+      <title>My Presence on the Internet</title>
+      <link>https://hugo-profile.netlify.app/blogs/first_post/</link>
+      <pubDate>Sun, 13 Aug 2023 11:28:33 +0530</pubDate>
+      
+      <guid>https://hugo-profile.netlify.app/blogs/first_post/</guid>
+      <description>The past In the early years of my bachelor&amp;rsquo;s degree, a friend of mine started a technical blog called the code note. It was cool as I wanted to have one of my own. I got motivated and started one of mine. Nvm what it was called (Though I spent days thinking about a name) because it was just another typical how to solve a leetcode problem. Yeah, I get it!</description>
+    </item>
+    
+  </channel>
+</rss>
