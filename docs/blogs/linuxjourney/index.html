@@ -1,0 +1,737 @@
+<!DOCTYPE html>
+<html>
+
+<head><meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<meta http-equiv="Accept-CH" content="DPR, Viewport-Width, Width">
+<link rel="icon" href=/fav.png type="image/gif">
+
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="preload"
+      as="style"
+      href="https://fonts.googleapis.com/css2?family=Alata&family=Lora:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+>
+<link rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Alata&family=Lora:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      media="print" onload="this.media='all'" />
+<noscript>
+  <link
+          href="https://fonts.googleapis.com/css2?family=Alata&family=Lora:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+          rel="stylesheet">
+</noscript>
+
+
+<link rel="stylesheet" href="/css/font.css" media="all">
+
+
+
+<meta property="og:url" content="https://rahulmysore23.github.io/blogs/linuxjourney/">
+  <meta property="og:site_name" content="Rahul&#39;s Presence On Internet">
+  <meta property="og:title" content="My Linux Journey: From Ubuntu to Hyprland, Vim to Tiling Window Managers, and Everything In Between">
+  <meta property="og:description" content="If you’ve ever fallen down the rabbit hole of Linux, you know how addictive it can be. For me, it all started back in 2016. I was a curious kid with a laptop that barely ran Windows, and I stumbled upon Ubuntu. Little did I know, that first installation would spark a lifelong passion for tinkering, customizing, and optimizing my workflow.
+The Beginning: Ubuntu and the Linux Curiosity I started with Ubuntu—like most people do. It was simple, user-friendly, and felt like a breath of fresh air compared to Windows. But soon, I wanted more. I tried Pop!_OS for its sleek design and gaming optimizations, Linux Mint for its familiarity, Fedora for its cutting-edge features, and even Garuda Linux because, let’s be honest, it looked cool.">
+  <meta property="og:locale" content="en_us">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="blogs">
+    <meta property="article:published_time" content="2025-01-30T16:12:25-06:00">
+    <meta property="article:modified_time" content="2025-01-30T16:12:25-06:00">
+    <meta property="article:tag" content="Tech">
+    <meta property="article:tag" content="Linux">
+    <meta property="article:tag" content="Window-Managers">
+    <meta property="article:tag" content="I3">
+    <meta property="article:tag" content="Hyprland">
+    <meta property="article:tag" content="Vim">
+
+
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="My Linux Journey: From Ubuntu to Hyprland, Vim to Tiling Window Managers, and Everything In Between">
+  <meta name="twitter:description" content="If you’ve ever fallen down the rabbit hole of Linux, you know how addictive it can be. For me, it all started back in 2016. I was a curious kid with a laptop that barely ran Windows, and I stumbled upon Ubuntu. Little did I know, that first installation would spark a lifelong passion for tinkering, customizing, and optimizing my workflow.
+The Beginning: Ubuntu and the Linux Curiosity I started with Ubuntu—like most people do. It was simple, user-friendly, and felt like a breath of fresh air compared to Windows. But soon, I wanted more. I tried Pop!_OS for its sleek design and gaming optimizations, Linux Mint for its familiarity, Fedora for its cutting-edge features, and even Garuda Linux because, let’s be honest, it looked cool.">
+
+
+<link rel="stylesheet" href="/bootstrap-5/css/bootstrap.min.css" media="all"><link rel="stylesheet" href="/css/header.css" media="all">
+<link rel="stylesheet" href="/css/footer.css" media="all">
+
+
+<link rel="stylesheet" href="/css/theme.css" media="all">
+
+<style>
+    :root {
+        --text-color: #343a40;
+        --text-secondary-color: #6c757d;
+        --text-link-color: #007bff;
+        --background-color: #eaedf0;
+        --secondary-background-color: #64ffda1a;
+        --primary-color: #007bff;
+        --secondary-color: #f8f9fa;
+
+         
+        --text-color-dark: #e4e6eb;
+        --text-secondary-color-dark: #b0b3b8;
+        --text-link-color-dark: #ffffff;
+        --background-color-dark: #18191a;
+        --secondary-background-color-dark: #212529;
+        --primary-color-dark: #ffffff;
+        --secondary-color-dark: #212529;
+    }
+    body {
+        font-size: 1rem;
+        font-weight: 400;
+        line-height: 1.5;
+        text-align: left;
+    }
+
+    html {
+        background-color: var(--background-color) !important;
+    }
+
+    body::-webkit-scrollbar {
+        height: 0px;
+        width: 8px;
+        background-color: var(--background-color);
+    }
+
+    ::-webkit-scrollbar-track {
+        border-radius: 1rem;
+    }
+
+    ::-webkit-scrollbar-thumb {
+        border-radius: 1rem;
+        background: #b0b0b0;
+        outline: 1px solid var(--background-color);
+    }
+
+    #search-content::-webkit-scrollbar {
+        width: .5em;
+        height: .1em;
+        background-color: var(--background-color);
+    }
+</style>
+
+
+
+<meta name="description" content="">
+<link rel="stylesheet" href="/css/single.css">
+
+
+<script defer src="/fontawesome-6/all-6.4.2.js"></script>
+
+
+  
+  
+
+  <title>
+My Linux Journey: From Ubuntu to Hyprland, Vim to Tiling Window Managers, and Everything In Between | Rahul&#39;s Presence On Internet
+
+  </title>
+</head>
+
+<body class="light">
+  
+  
+<script>
+    let localStorageValue = localStorage.getItem("pref-theme");
+    let mediaQuery = window.matchMedia('(prefers-color-scheme: dark)').matches;
+
+    switch (localStorageValue) {
+        case "dark":
+            document.body.classList.add('dark');
+            break;
+        case "light":
+            document.body.classList.remove('dark');
+            break;
+        default:
+            if (mediaQuery) {
+                document.body.classList.add('dark');
+            }
+            break;
+    }
+</script>
+
+
+
+
+<script>
+    var prevScrollPos = window.pageYOffset;
+    window.addEventListener("scroll", function showHeaderOnScroll() {
+        let profileHeaderElem = document.getElementById("profileHeader");
+        let currentScrollPos = window.pageYOffset;
+        let resetHeaderStyle = false;
+        let showNavBarOnScrollUp =  true ;
+        let showNavBar = showNavBarOnScrollUp ? prevScrollPos > currentScrollPos : currentScrollPos > 0;
+        if (showNavBar) {
+            profileHeaderElem.classList.add("showHeaderOnTop");
+        } else {
+            resetHeaderStyle = true;
+        }
+        if(currentScrollPos === 0) {
+            resetHeaderStyle = true;
+        }
+        if(resetHeaderStyle) {
+            profileHeaderElem.classList.remove("showHeaderOnTop");
+        }
+        prevScrollPos = currentScrollPos;
+    });
+</script>
+
+
+
+<header id="profileHeader">
+    <nav class="pt-3 navbar navbar-expand-lg animate">
+        <div class="container-fluid mx-xs-2 mx-sm-5 mx-md-5 mx-lg-5">
+            
+            <a class="navbar-brand primary-font text-wrap" href="/">
+                
+                <img src="/fav.png" width="30" height="30"
+                    class="d-inline-block align-top">
+                Rahul&#39;s Presence
+                
+            </a>
+
+            
+
+            
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarContent"
+                aria-controls="navbarContent" aria-expanded="false" aria-label="Toggle navigation">
+                <svg aria-hidden="true" height="24" viewBox="0 0 16 16" version="1.1" width="24" data-view-component="true">
+                    <path fill-rule="evenodd" d="M1 2.75A.75.75 0 011.75 2h12.5a.75.75 0 110 1.5H1.75A.75.75 0 011 2.75zm0 5A.75.75 0 011.75 7h12.5a.75.75 0 110 1.5H1.75A.75.75 0 011 7.75zM1.75 12a.75.75 0 100 1.5h12.5a.75.75 0 100-1.5H1.75z"></path>
+                </svg>
+            </button>
+
+            
+            <div class="collapse navbar-collapse text-wrap primary-font" id="navbarContent">
+                <ul class="navbar-nav ms-auto text-center">
+                    
+
+                    
+                    <li class="nav-item navbar-text">
+                        <a class="nav-link" href="/#about" aria-label="about">
+                            About Me
+                        </a>
+                    </li>
+                    
+
+                    
+                    <li class="nav-item navbar-text">
+                        <a class="nav-link" href="/#experience"
+                            aria-label="experience">
+                            Experience
+                        </a>
+                    </li>
+                    
+
+                    
+                    <li class="nav-item navbar-text">
+                        <a class="nav-link" href="/#education"
+                            aria-label="education">
+                            Education
+                        </a>
+                    </li>
+                    
+
+                    
+                    <li class="nav-item navbar-text">
+                        <a class="nav-link" href="/#projects"
+                            aria-label="projects">
+                            Projects
+                        </a>
+                    </li>
+                    
+
+                    
+                    <li class="nav-item navbar-text">
+                        <a class="nav-link" href="/#achievements"
+                            aria-label="achievements">
+                            Achievements
+                        </a>
+                    </li>
+                    
+
+                    
+                    <li class="nav-item navbar-text">
+                        <a class="nav-link" href="/#contact"
+                            aria-label="contact">
+                            Contact
+                        </a>
+                    </li>
+                    
+
+                    
+
+                    
+                    
+                    
+                    
+                    <li class="nav-item navbar-text">
+                        <a class="nav-link" href="/blogs" title="Blog posts">
+                            
+                            Blog
+                        </a>
+                    </li>
+                    
+                    
+                    
+                    
+                    <li class="nav-item navbar-text">
+                        <a class="nav-link" href="/music" title="Music">
+                            
+                            Music
+                        </a>
+                    </li>
+                    
+                    
+
+                    
+                    <li class="nav-item navbar-text">
+                        
+                        <div class="text-center">
+                            <button id="theme-toggle">
+                                <svg id="moon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                    <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+                                </svg>
+                                <svg id="sun" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                    <circle cx="12" cy="12" r="5"></circle>
+                                    <line x1="12" y1="1" x2="12" y2="3"></line>
+                                    <line x1="12" y1="21" x2="12" y2="23"></line>
+                                    <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+                                    <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+                                    <line x1="1" y1="12" x2="3" y2="12"></line>
+                                    <line x1="21" y1="12" x2="23" y2="12"></line>
+                                    <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+                                    <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+                                </svg>
+                            </button>
+                        </div>
+                    </li>
+                    
+
+                </ul>
+
+            </div>
+        </div>
+    </nav>
+</header>
+<div id="content">
+<section id="single">
+  <div class="container">
+    <div class="row justify-content-center">
+      <div class="col-sm-12 col-md-12 col-lg-9">
+        <div class="pr-lg-4">
+          <div class="title mb-5">
+            <h1 class="text-center mb-4">My Linux Journey: From Ubuntu to Hyprland, Vim to Tiling Window Managers, and Everything In Between</h1>
+            <div class="text-center">
+              
+              Jan 30, 2025
+
+              
+              <span id="readingTime">
+                min read
+              </span>
+              
+            </div>
+          </div>
+          
+          <article class="page-content  p-2">
+          <p>If you’ve ever fallen down the rabbit hole of Linux, you know how addictive it can be. For me, it all started back in 2016. I was a curious kid with a laptop that barely ran Windows, and I stumbled upon Ubuntu. Little did I know, that first installation would spark a lifelong passion for tinkering, customizing, and optimizing my workflow.</p>
+<h2 id="the-beginning-ubuntu-and-the-linux-curiosity">The Beginning: Ubuntu and the Linux Curiosity</h2>
+<p>I started with Ubuntu—like most people do. It was simple, user-friendly, and felt like a breath of fresh air compared to Windows. But soon, I wanted more. I tried Pop!_OS for its sleek design and gaming optimizations, Linux Mint for its familiarity, Fedora for its cutting-edge features, and even Garuda Linux because, let’s be honest, it looked <em>cool</em>.</p>
+<p>Back then, I was dual-booting with Windows, always keeping one foot in the familiar while dipping my toes into the Linux world. But as I spent more time in Linux, I realized how much more control and freedom it gave me. I was hooked.</p>
+<h2 id="the-vim-obsession">The Vim Obsession</h2>
+<p>Around the same time, I started hearing about Vim. One of my professors from 12th grade (back in 2014) had mentioned how his cousin was a Vim user and an incredible coder. He spoke about Vim like it was some kind of superpower. Naturally, I was intrigued.</p>
+<p>I decided to give Vim a shot. At first, it was frustrating. The modal editing, the commands, the steep learning curve—it felt like I was learning a new language. But once I got the hang of it, there was no going back. Vim became my go-to editor, and I started customizing it to fit my workflow.</p>
+<h2 id="the-tiling-window-manager-revelation">The Tiling Window Manager Revelation</h2>
+<p>One fine day, while browsing Twitch, I stumbled upon Linux streamers. These folks weren’t just coding or gaming—they were showcasing their setups. And boy, were they impressive. They were using something called <em>tiling window managers</em>.</p>
+<p>I had no idea what that meant, but it looked magical. No wasted screen space, no dragging windows around—just pure efficiency. I was determined to try it out.</p>
+<h3 id="my-first-attempt-bspwm">My First Attempt: BSPWM</h3>
+<p>I decided to start with BSPWM. I installed it, fired it up, and… I had no idea what I was doing. The screen was blank, and I couldn’t even open a terminal. I didn’t read the documentation (rookie mistake), and I quickly gave up, thinking I had messed up my system.</p>
+<h2 id="back-to-vim">Back to Vim</h2>
+<p>After the BSPWM disaster, I decided to stick with Vim for a while. I set up Neovim, which felt like a modern upgrade to Vim, and started configuring it for my Go development environment. It was amazing. I felt like a productivity wizard, zipping through code with my custom keybindings and plugins.</p>
+<p>But the allure of tiling window managers never left me. I kept watching those Twitch streamers, marveling at their setups, and dreaming of the day I could replicate it.</p>
+<h2 id="the-i3-era">The i3 Era</h2>
+<p>A few months later, I decided to give tiling window managers another shot. This time, I went with i3. Unlike BSPWM, i3 came with default configurations, which made it much easier to get started. I could open a terminal, resize windows, and even switch workspaces without pulling my hair out.</p>
+<p>I spent hours customizing my i3 setup, tweaking the config file, and adding keybindings. It felt like I was building my own operating system. I was in love.</p>
+<h2 id="regolith-linux-the-game-changer">Regolith Linux: The Game-Changer</h2>
+<p>But as much as I enjoyed i3, I got tired of constantly tweaking and configuring. That’s when I discovered Regolith Linux—a pre-configured Ubuntu distro with i3 as the default window manager. It was perfect.</p>
+<p>I stuck with Regolith for <em>three years</em>. During that time, I became proficient with i3 and Vim. My workflow was smooth, and my setup was a thing of beauty. People would watch me code or work, amazed at how fast I could navigate through windows and edit files.</p>
+<h2 id="the-suckless-philosophy-dwm-and-st">The Suckless Philosophy: DWM and ST</h2>
+<p>While I was happy with i3, I couldn’t resist exploring other options. That’s when I came across DWM (Dynamic Window Manager) and the <em>suckless philosophy</em>.</p>
+<p>For those unfamiliar, suckless is all about simplicity, minimalism, and efficiency. Their software is lightweight, fast, and highly customizable—but only if you’re willing to dive into the source code.</p>
+<p>I decided to give DWM a try, along with ST (Simple Terminal). It was a steep learning curve, especially since I had to edit the config.h file and recompile everything. But it was worth it. DWM felt like i3 on steroids, and ST was the perfect companion.</p>
+<p>What really drew me to the suckless philosophy were these three hilarious and eye-opening websites:</p>
+<ul>
+<li><a href="https://motherfuckingwebsite.com/">Motherfucking Website</a></li>
+<li><a href="http://bettermotherfuckingwebsite.com/">Better Motherfucking Website</a></li>
+<li><a href="http://bettermotherfuckingwebsite.com/">Even Better Motherfucking Website</a></li>
+</ul>
+<p>These websites made me laugh out loud while also making me think about how bloated and overcomplicated modern web design can be. They perfectly encapsulate the suckless philosophy: keep it simple, stupid. Reading these sites inspired me to explore DWM and embrace minimalism in my own setup.</p>
+<h2 id="the-hyprland-experiment">The Hyprland Experiment</h2>
+<p>As much as I loved i3 and DWM, they lacked one thing: eye candy. Don’t get me wrong, they were incredibly efficient, but they felt like old tech. That’s when I discovered Wayland and Hyprland.</p>
+<h3 id="what-is-wayland-and-hyprland">What is Wayland and Hyprland?</h3>
+<p>Wayland is a modern display server protocol designed to replace the aging X11 system. It offers better performance, security, and simplicity. Hyprland, on the other hand, is a dynamic tiling window manager built for Wayland. It combines the efficiency of tiling window managers with modern aesthetics like smooth animations, rounded corners, and transparency.</p>
+<p>Hyprland is highly customizable and designed for users who want both functionality and beauty. It’s perfect for developers, designers, or anyone who spends a lot of time in their desktop environment.</p>
+<p>I tried Hyprland on Fedora during its early days, but it was still in development and didn’t work well for me. Frustrated, I switched back to i3.</p>
+<h2 id="the-present-hyprland-and-fedora">The Present: Hyprland and Fedora</h2>
+<p>Fast forward to today. After a six-month break from Linux (life happens), I’m back—and this time, I’m all in on Hyprland.</p>
+<p>I installed Fedora and used the <a href="https://github.com/mylinuxforwork/dotfiles">my-linux-for-work dotfiles</a> to set up Hyprland. The setup process was seamless, thanks to a simple installation script provided by the creator. I was stunned by how polished and functional everything was.</p>
+<p>Hyprland is everything I’ve ever wanted in a window manager. It’s fast, efficient, and visually stunning. The animations are smooth, the customization options are endless, and it just <em>feels</em> right.</p>
+<p>I’ve made a few tweaks to the dotfiles to suit my preferences, but overall, it’s been a fantastic experience.</p>
+<p><img src="/images/hyprland_terminals.jpg" alt="Hyprland terminal">
+<strong>Hyperland terminals with htop, cmatrix</strong></p>
+<hr>
+<p><img src="/images/hyprland_vim_browser.jpg" alt="Hyprland">
+<strong>Hyperland with browser, neovim</strong></p>
+<hr>
+<h2 id="whats-next">What’s Next?</h2>
+<p>This is just the beginning. I’ve got a whole list of terminal tools and setups that I use to speed up my development workflow. I’ll be sharing those in another blog post soon.</p>
+<p>For now, I’m just enjoying the perfect blend of efficiency and aesthetics that Hyprland provides. If you’re curious, check out <a href="https://hyprland.org/">Hyprland</a>, <a href="https://regolith-desktop.com/">Regolith Linux</a> and <a href="https://neovim.io/">Neovim</a> to see what all the fuss is about.</p>
+<p>And if you’re just starting your Linux journey, don’t be afraid to experiment. It’s a wild ride, but it’s worth it.</p>
+<p>Until next time, happy tinkering!</p>
+<hr>
+
+          </article>
+        </div>
+      </div>
+      <div class="col-sm-12 col-md-12 col-lg-3">
+        <div id="stickySideBar" class="sticky-sidebar">
+          
+          <aside class="toc">
+              <h5>
+                Table Of Contents
+              </h5>
+              <div class="toc-content">
+                <nav id="TableOfContents">
+  <ul>
+    <li><a href="#the-beginning-ubuntu-and-the-linux-curiosity">The Beginning: Ubuntu and the Linux Curiosity</a></li>
+    <li><a href="#the-vim-obsession">The Vim Obsession</a></li>
+    <li><a href="#the-tiling-window-manager-revelation">The Tiling Window Manager Revelation</a>
+      <ul>
+        <li><a href="#my-first-attempt-bspwm">My First Attempt: BSPWM</a></li>
+      </ul>
+    </li>
+    <li><a href="#back-to-vim">Back to Vim</a></li>
+    <li><a href="#the-i3-era">The i3 Era</a></li>
+    <li><a href="#regolith-linux-the-game-changer">Regolith Linux: The Game-Changer</a></li>
+    <li><a href="#the-suckless-philosophy-dwm-and-st">The Suckless Philosophy: DWM and ST</a></li>
+    <li><a href="#the-hyprland-experiment">The Hyprland Experiment</a>
+      <ul>
+        <li><a href="#what-is-wayland-and-hyprland">What is Wayland and Hyprland?</a></li>
+      </ul>
+    </li>
+    <li><a href="#the-present-hyprland-and-fedora">The Present: Hyprland and Fedora</a></li>
+    <li><a href="#whats-next">What’s Next?</a></li>
+  </ul>
+</nav>
+              </div>
+          </aside>
+          
+
+          
+          <aside class="tags">
+            <h5>Tags</h5>
+            <ul class="tags-ul list-unstyled list-inline">
+              
+              <li class="list-inline-item"><a href="https://rahulmysore23.github.io/tags/tech"
+                target="_blank"
+              >tech</a></li>
+              
+              <li class="list-inline-item"><a href="https://rahulmysore23.github.io/tags/linux"
+                target="_blank"
+              >linux</a></li>
+              
+              <li class="list-inline-item"><a href="https://rahulmysore23.github.io/tags/window-managers"
+                target="_blank"
+              >window-managers</a></li>
+              
+              <li class="list-inline-item"><a href="https://rahulmysore23.github.io/tags/i3"
+                target="_blank"
+              >i3</a></li>
+              
+              <li class="list-inline-item"><a href="https://rahulmysore23.github.io/tags/hyprland"
+                target="_blank"
+              >hyprland</a></li>
+              
+              <li class="list-inline-item"><a href="https://rahulmysore23.github.io/tags/vim"
+                target="_blank"
+              >vim</a></li>
+              
+              <li class="list-inline-item"><a href="https://rahulmysore23.github.io/tags/neovim"
+                target="_blank"
+              >neovim</a></li>
+              
+            </ul>
+          </aside>
+          
+
+          
+          <aside class="social">
+            <h5>Social</h5>
+            <div class="social-content">
+              <ul class="list-inline">
+                <li class="list-inline-item text-center">
+                  <a target="_blank" href="https://www.linkedin.com/shareArticle?mini=true&url=https%3a%2f%2frahulmysore23.github.io%2fblogs%2flinuxjourney%2f">
+                    <i class="fab fa-linkedin"></i>
+                  </a>
+                </li>
+                <li class="list-inline-item text-center">
+                  <a target="_blank" href="https://twitter.com/share?text=My%20Linux%20Journey%3a%20From%20Ubuntu%20to%20Hyprland%2c%20Vim%20to%20Tiling%20Window%20Managers%2c%20and%20Everything%20In%20Between&url=https%3a%2f%2frahulmysore23.github.io%2fblogs%2flinuxjourney%2f">
+                    <i class="fab fa-twitter"></i>
+                  </a>
+                </li>
+                <li class="list-inline-item text-center">
+                  <a target="_blank" href="https://api.whatsapp.com/send?text=My%20Linux%20Journey%3a%20From%20Ubuntu%20to%20Hyprland%2c%20Vim%20to%20Tiling%20Window%20Managers%2c%20and%20Everything%20In%20Between: https%3a%2f%2frahulmysore23.github.io%2fblogs%2flinuxjourney%2f">
+                    <i class="fab fa-whatsapp"></i>
+                  </a>
+                </li>
+                <li class="list-inline-item text-center">
+                  <a target="_blank" href='mailto:?subject=My%20Linux%20Journey%3a%20From%20Ubuntu%20to%20Hyprland%2c%20Vim%20to%20Tiling%20Window%20Managers%2c%20and%20Everything%20In%20Between&amp;body=Check%20out%20this%20site https%3a%2f%2frahulmysore23.github.io%2fblogs%2flinuxjourney%2f'>
+                    <i class="fa fa-envelope"></i>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </aside>
+          
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-sm-12 col-md-12 col-lg-9 p-4">
+        
+      </div>
+    </div>
+  </div>
+  <button class="p-2 px-3" onclick="topFunction()" id="topScroll">
+    <i class="fas fa-angle-up"></i>
+  </button>
+</section>
+
+
+<div class="progress">
+  <div id="scroll-progress-bar" class="progress-bar" role="progressbar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100"></div>
+</div>
+<Script src="/js/scrollProgressBar.js"></script>
+
+
+<script>
+  var topScroll = document.getElementById("topScroll");
+  window.onscroll = function() {scrollFunction()};
+
+  function scrollFunction() {
+    if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+      topScroll.style.display = "block";
+    } else {
+      topScroll.style.display = "none";
+    }
+  }
+
+  function topFunction() {
+    document.body.scrollTop = 0;
+    document.documentElement.scrollTop = 0;
+  }
+
+  
+  let stickySideBarElem = document.getElementById("stickySideBar");
+  let stickyNavBar =  true ;
+  if(stickyNavBar) {
+    let headerElem = document.getElementById("profileHeader");
+    let headerHeight = headerElem.offsetHeight + 15;
+    stickySideBarElem.style.top = headerHeight + "px";
+  } else {
+    stickySideBarElem.style.top = "50px";
+  }
+</script>
+
+
+<script src="/js/readingTime.js"></script>
+
+
+
+  </div><footer>
+    
+ 
+ 
+<div class="container py-3" id="recent-posts">
+    
+    
+    <div class="h3 text-center text-secondary py-3">
+        Recent Posts
+    </div>
+    <div class="row justify-content-center">
+        
+        <div class="col-lg-4 col-md-6 pt-2">
+            <div class="card h-100">
+                
+                <div class="card-body bg-transparent p-3 shadow-sm">
+                    <a href="/blogs/sysdmon/" class="primary-font card-title">
+                        <h5 class="card-title bg-transparent" title="Building a TUI for Managing Systemd Services: A Fun Side Project">Building a TUI for …</h5>
+                    </a>
+                    <div class="card-text secondary-font">
+                        <p><p>A few months ago, I found myself constantly juggling multiple custom services at work. These services were binaries written in Go, designed for data observability purposes. While they were efficient at their job, managing them was a bit of a hassle. I often had to check their status, restart them, …</p></p>
+                    </div>
+                </div>
+                <div class="mt-auto card-footer">
+                    <span class="float-start">Feb 4, 2025</span>
+                    <a href="/blogs/sysdmon/" class="float-end btn btn-outline-info btn-sm">Read</a>
+                </div>
+            </div>
+        </div>
+        
+        <div class="col-lg-4 col-md-6 pt-2">
+            <div class="card h-100">
+                
+                <div class="card-body bg-transparent p-3 shadow-sm">
+                    <a href="/blogs/linuxjourney/" class="primary-font card-title">
+                        <h5 class="card-title bg-transparent" title="My Linux Journey: From Ubuntu to Hyprland, Vim to Tiling Window Managers, and Everything In Between">My Linux Journey: From …</h5>
+                    </a>
+                    <div class="card-text secondary-font">
+                        <p><p>If you’ve ever fallen down the rabbit hole of Linux, you know how addictive it can be. For me, it all started back in 2016. I was a curious kid with a laptop that barely ran Windows, and I stumbled upon Ubuntu. Little did I know, that first installation would spark a lifelong passion for tinkering, …</p></p>
+                    </div>
+                </div>
+                <div class="mt-auto card-footer">
+                    <span class="float-start">Jan 30, 2025</span>
+                    <a href="/blogs/linuxjourney/" class="float-end btn btn-outline-info btn-sm">Read</a>
+                </div>
+            </div>
+        </div>
+        
+        <div class="col-lg-4 col-md-6 pt-2">
+            <div class="card h-100">
+                
+                <div class="card-body bg-transparent p-3 shadow-sm">
+                    <a href="/blogs/hackmidwest/" class="primary-font card-title">
+                        <h5 class="card-title bg-transparent" title="HackMidwest 2024: How We Built a USDA Chatbot in 24 Hours (and Won!)">HackMidwest 2024: How We …</h5>
+                    </a>
+                    <div class="card-text secondary-font">
+                        <p><p>When my friend and I signed up for <strong>HackMidwest 2024</strong>, we had no idea what we were going to build. Zero. Zilch. Nada. We showed up with our laptops, a vague sense of excitement, and a whole lot of caffeine. The hackathon kicked off with some awesome workshops—Red Hat OpenShift, AWS, Pinata, and more. …</p></p>
+                    </div>
+                </div>
+                <div class="mt-auto card-footer">
+                    <span class="float-start">Nov 4, 2024</span>
+                    <a href="/blogs/hackmidwest/" class="float-end btn btn-outline-info btn-sm">Read</a>
+                </div>
+            </div>
+        </div>
+        
+    </div>
+</div>
+
+<div class="text-center pt-2">
+    
+    <span class="px-1">
+        <a href="https://github.com/rahulmysore23" aria-label="github">
+            <svg xmlns="http://www.w3.org/2000/svg" width="2.7em" height="2.7em" viewBox="0 0 1792 1792">
+                <path id="footer-socialNetworks-github-svg-path"
+                    d="M522 1352q-8 9-20-3-13-11-4-19 8-9 20 3 12 11 4 19zm-42-61q9 12 0 19-8 6-17-7t0-18q9-7 17 6zm-61-60q-5 7-13 2-10-5-7-12 3-5 13-2 10 5 7 12zm31 34q-6 7-16-3-9-11-2-16 6-6 16 3 9 11 2 16zm129 112q-4 12-19 6-17-4-13-15t19-7q16 5 13 16zm63 5q0 11-16 11-17 2-17-11 0-11 16-11 17-2 17 11zm58-10q2 10-14 14t-18-8 14-15q16-2 18 9zm964-956v960q0 119-84.5 203.5t-203.5 84.5h-224q-16 0-24.5-1t-19.5-5-16-14.5-5-27.5v-239q0-97-52-142 57-6 102.5-18t94-39 81-66.5 53-105 20.5-150.5q0-121-79-206 37-91-8-204-28-9-81 11t-92 44l-38 24q-93-26-192-26t-192 26q-16-11-42.5-27t-83.5-38.5-86-13.5q-44 113-7 204-79 85-79 206 0 85 20.5 150t52.5 105 80.5 67 94 39 102.5 18q-40 36-49 103-21 10-45 15t-57 5-65.5-21.5-55.5-62.5q-19-32-48.5-52t-49.5-24l-20-3q-21 0-29 4.5t-5 11.5 9 14 13 12l7 5q22 10 43.5 38t31.5 51l10 23q13 38 44 61.5t67 30 69.5 7 55.5-3.5l23-4q0 38 .5 103t.5 68q0 22-11 33.5t-22 13-33 1.5h-224q-119 0-203.5-84.5t-84.5-203.5v-960q0-119 84.5-203.5t203.5-84.5h960q119 0 203.5 84.5t84.5 203.5z" />
+
+                <metadata>
+                    <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+                        xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xmlns:dc="http://purl.org/dc/elements/1.1/">
+                        <rdf:Description about="https://iconscout.com/legal#licenses"
+                            dc:title="Github, Online, Project, Hosting, Square"
+                            dc:description="Github, Online, Project, Hosting, Square" dc:publisher="Iconscout"
+                            dc:date="2016-12-14" dc:format="image/svg+xml" dc:language="en">
+                            <dc:creator>
+                                <rdf:Bag>
+                                    <rdf:li>Font Awesome</rdf:li>
+                                </rdf:Bag>
+                            </dc:creator>
+                        </rdf:Description>
+                    </rdf:RDF>
+                </metadata>
+            </svg>
+        </a>
+    </span>
+    
+
+    
+    <span class="px-1">
+        <a href="https://linkedin.com/in/rahulmysore23" aria-label="linkedin">
+            <svg xmlns="http://www.w3.org/2000/svg" width='2.4em' height='2.4em' fill="#fff" aria-label="LinkedIn"
+                viewBox="0 0 512 512">
+                <rect width="512" height="512" fill="#0077b5" rx="15%" />
+                <circle cx="142" cy="138" r="37" />
+                <path stroke="#fff" stroke-width="66" d="M244 194v198M142 194v198" />
+                <path d="M276 282c0-20 13-40 36-40 24 0 33 18 33 45v105h66V279c0-61-32-89-76-89-34 0-51 19-59 32" />
+            </svg>
+        </a>
+    </span>
+    
+
+    
+
+    
+
+    
+</div><div class="container py-4">
+    <div class="row justify-content-center">
+        <div class="col-md-4 text-center">
+            
+                <div class="pb-2">
+                    <a href="https://rahulmysore23.github.io/" title="Rahul&#39;s Presence On Internet">
+                        <img alt="Footer logo" src="/fav.png"
+                            height="40px" width="40px">
+                    </a>
+                </div>
+            
+            &copy; 2025  All rights reserved
+            <div class="text-secondary">
+                Made with
+                <span class="text-danger">
+                    &#10084;
+                </span>
+                and
+                <a href="https://github.com/gurusabarish/hugo-profile" target="_blank"
+                    title="Designed and developed by gurusabarish">
+                    Hugo Profile
+                </a>
+            </div>
+        </div>
+    </div>
+</div>
+</footer><script src="/bootstrap-5/js/bootstrap.bundle.min.js"></script>
+<script>
+    if (document.body.className.includes("dark")) {
+        document.body.classList.remove('dark');
+        localStorage.setItem("pref-theme", 'light');
+    }
+</script>
+
+
+<script>
+    document.getElementById("theme-toggle").addEventListener("click", () => {
+        if (document.body.className.includes("dark")) {
+            document.body.classList.remove('dark');
+            localStorage.setItem("pref-theme", 'light');
+        } else {
+            document.body.classList.add('dark');
+            localStorage.setItem("pref-theme", 'dark');
+        }
+    })
+
+    var tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'))
+    var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
+        return new bootstrap.Tooltip(tooltipTriggerEl)
+    })
+
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+  <section id="search-content" class="py-2">
+    <div class="container" id="search-results"></div>
+  </section>
+</body>
+
+</html>
