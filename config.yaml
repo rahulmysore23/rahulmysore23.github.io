@@ -121,7 +121,7 @@ params:
       disableExperience: false
       disableEducation: false
       disableProjects: false
-      disableAchievements: true
+      disableAchievements: false
       disableContact: false
 
   # Hero
@@ -155,7 +155,7 @@ params:
     title: "About Me"
     image: "/images/me.jpg"
     content: |
-        I'm a software engineer with 5 years of experience, having worked in fast-paced startup environments where I built scalable platforms and innovative tools. My passion lies in solving complex problems and driving impactful solutions, whether it's backend systems or full-stack development. Currently, I’m pursuing a Master’s in Computer Science and working as a Graduate Research Assistant, collaborating on cutting-edge technology and systems research.
+        I'm a software engineer with over 5 years of experience, having worked in fast-paced startup environments where I built scalable platforms and innovative tools. My passion lies in solving complex problems and driving impactful solutions, whether it's backend systems or full-stack development. Currently, I’m pursuing a Master’s in Computer Science and working as a Graduate Research Assistant, collaborating on cutting-edge technology and systems research.
 
         With a strong background in computer science, I thrive on using modern tech to create seamless, high-performance applications. From enhancing security standards to optimizing processes, my experience spans across a variety of industries and projects, always with a focus on efficiency and scalability.
     skills:
@@ -481,7 +481,7 @@ params:
       path: "blogs"
       count: 3
       title: Recent Posts
-      enable: false
+      enable: true
       disableFeaturedImage: false
     socialNetworks:
       github: https://github.com/rahulmysore23

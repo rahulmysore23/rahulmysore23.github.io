@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Prompting on Rahul&#39;s Presence On Internet</title>
+    <link>https://rahulmysore23.github.io/tags/prompting/</link>
+    <description>Recent content in Prompting on Rahul&#39;s Presence On Internet</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <lastBuildDate>Mon, 04 Nov 2024 13:42:32 -0600</lastBuildDate>
+    <atom:link href="https://rahulmysore23.github.io/tags/prompting/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>HackMidwest 2024: How We Built a USDA Chatbot in 24 Hours (and Won!)</title>
+      <link>https://rahulmysore23.github.io/blogs/hackmidwest/</link>
+      <pubDate>Mon, 04 Nov 2024 13:42:32 -0600</pubDate>
+      <guid>https://rahulmysore23.github.io/blogs/hackmidwest/</guid>
+      <description>&lt;p&gt;When my friend and I signed up for &lt;strong&gt;HackMidwest 2024&lt;/strong&gt;, we had no idea what we were going to build. Zero. Zilch. Nada. We showed up with our laptops, a vague sense of excitement, and a whole lot of caffeine. The hackathon kicked off with some awesome workshops—Red Hat OpenShift, AWS, Pinata, and more. We attended as many as we could, soaking up knowledge and trying to figure out what we could possibly create in 24 hours.&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

@@ -16,6 +16,13 @@
       <description>&lt;p&gt;A few months ago, I found myself constantly juggling multiple custom services at work. These services were binaries written in Go, designed for data observability purposes. While they were efficient at their job, managing them was a bit of a hassle. I often had to check their status, restart them, or stop them entirely using the &lt;code&gt;systemctl&lt;/code&gt; command. Typing &lt;code&gt;systemctl status &amp;lt;service&amp;gt;&lt;/code&gt; over and over again started to feel tedious. Sure, I could have created aliases, but I wanted something more interactive—a &lt;strong&gt;TUI (Terminal User Interface)&lt;/strong&gt; that would make the process smoother and more enjoyable.&lt;/p&gt;</description>
     </item>
     <item>
+      <title>HackMidwest 2024: How We Built a USDA Chatbot in 24 Hours (and Won!)</title>
+      <link>https://rahulmysore23.github.io/blogs/hackmidwest/</link>
+      <pubDate>Mon, 04 Nov 2024 13:42:32 -0600</pubDate>
+      <guid>https://rahulmysore23.github.io/blogs/hackmidwest/</guid>
+      <description>&lt;p&gt;When my friend and I signed up for &lt;strong&gt;HackMidwest 2024&lt;/strong&gt;, we had no idea what we were going to build. Zero. Zilch. Nada. We showed up with our laptops, a vague sense of excitement, and a whole lot of caffeine. The hackathon kicked off with some awesome workshops—Red Hat OpenShift, AWS, Pinata, and more. We attended as many as we could, soaking up knowledge and trying to figure out what we could possibly create in 24 hours.&lt;/p&gt;</description>
+    </item>
+    <item>
       <title>My Presence on the Internet</title>
       <link>https://rahulmysore23.github.io/blogs/first_post/</link>
       <pubDate>Sun, 13 Aug 2023 11:28:33 +0530</pubDate>
