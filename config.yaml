@@ -1,4 +1,4 @@
-baseURL: "https://hugo-profile.netlify.app"
+baseURL: "https://rahulmysore23.github.io"
 languageCode: "en-us"
 title: "Rahul's Presence On Internet"
 theme: hugo-profile
@@ -138,7 +138,8 @@ params:
     button:
       enable: true
       name: "Contact for Resume"
-      url: "#contact"
+      url: mailto:rahulmysore23@gmail.com
+      # url: "https://rahulmysore23.github.io/#contact"
       download: true
       newPage: false
     socialLinks:
@@ -217,7 +218,8 @@ params:
           I engineered high-impact solutions like Wizard and Kryptr, which revolutionized security standards and streamlined license management. I also optimized CI/CD pipelines, saving development hours and enhancing overall efficiency.
 
           - Lead and maintained 5 products.
-          - Migrated and Maintained all the CI/CD pipelines. 
+          - Migrated and Maintained all the CI/CD pipelines.
+          - Configured Telegraf, Prometheus and other data exporters
           - Tech - Go, Docker, Kubernetes, Linux, Shell scripts, Postgres, MongoDB, CLI, AWS, System programming, Ansible, NATS, Jenkins, Bitbucket, Concurrency
 
       - job: "R & D Engineer II"
@@ -372,7 +374,22 @@ params:
         links:
           - icon: fab fa-github
             url: https://github.com/rahulmysore23/D-Chat
-      
+ 
+      - title: Systemd Manager
+        content: sysdmon is a lightweight, TUI-based tool for managing systemd services. It’s written in Go and uses the tview library for the terminal interface.
+        image: /images/sysdmon.jpg
+        featured:
+          name: Blog
+          link: https://rahulmysore23.github.io/blogs/sysdmon
+        badges:
+          - "Go"
+          - "Linux"
+          - "TUI"
+          - "Systemd"
+        links:
+          - icon: fab fa-github
+            url: https://github.com/rahulmysore23/sysdmon
+
       - title: 9 men morris Game
         content: The game includes features such as Human vs Human, Human vs Computer, Record and Replay functionalities, and a 6 Men Morris variant, providing a versatile and engaging user experience.
         image: /images/projects/9men_full.png

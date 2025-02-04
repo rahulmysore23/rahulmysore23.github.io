@@ -1,45 +1,50 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
-  
   <url>
-    <loc>https://hugo-profile.netlify.app/music/</loc>
+    <loc>https://rahulmysore23.github.io/blogs/</loc>
+    <lastmod>2025-02-04T01:06:28-06:00</lastmod>
+  </url><url>
+    <loc>https://rahulmysore23.github.io/blogs/sysdmon/</loc>
+    <lastmod>2025-02-04T01:06:28-06:00</lastmod>
+  </url><url>
+    <loc>https://rahulmysore23.github.io/categories/</loc>
+    <lastmod>2025-02-04T01:06:28-06:00</lastmod>
+  </url><url>
+    <loc>https://rahulmysore23.github.io/tags/go/</loc>
+    <lastmod>2025-02-04T01:06:28-06:00</lastmod>
+  </url><url>
+    <loc>https://rahulmysore23.github.io/tags/linux/</loc>
+    <lastmod>2025-02-04T01:06:28-06:00</lastmod>
+  </url><url>
+    <loc>https://rahulmysore23.github.io/</loc>
+    <lastmod>2025-02-04T01:06:28-06:00</lastmod>
+  </url><url>
+    <loc>https://rahulmysore23.github.io/categories/side-project/</loc>
+    <lastmod>2025-02-04T01:06:28-06:00</lastmod>
+  </url><url>
+    <loc>https://rahulmysore23.github.io/tags/systemd/</loc>
+    <lastmod>2025-02-04T01:06:28-06:00</lastmod>
+  </url><url>
+    <loc>https://rahulmysore23.github.io/tags/</loc>
+    <lastmod>2025-02-04T01:06:28-06:00</lastmod>
+  </url><url>
+    <loc>https://rahulmysore23.github.io/tags/tech/</loc>
+    <lastmod>2025-02-04T01:06:28-06:00</lastmod>
+  </url><url>
+    <loc>https://rahulmysore23.github.io/tags/tui/</loc>
+    <lastmod>2025-02-04T01:06:28-06:00</lastmod>
+  </url><url>
+    <loc>https://rahulmysore23.github.io/music/</loc>
     <lastmod>2024-09-10T00:15:46+05:30</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://hugo-profile.netlify.app/</loc>
-    <lastmod>2024-09-10T00:15:46+05:30</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://hugo-profile.netlify.app/categories/aboutme/</loc>
+  </url><url>
+    <loc>https://rahulmysore23.github.io/categories/aboutme/</loc>
+    <lastmod>2023-08-13T11:28:33+05:30</lastmod>
+  </url><url>
+    <loc>https://rahulmysore23.github.io/blogs/first_post/</loc>
+    <lastmod>2023-08-13T11:28:33+05:30</lastmod>
+  </url><url>
+    <loc>https://rahulmysore23.github.io/tags/non-tech/</loc>
     <lastmod>2023-08-13T11:28:33+05:30</lastmod>
   </url>
-  
-  <url>
-    <loc>https://hugo-profile.netlify.app/blogs/</loc>
-    <lastmod>2023-08-13T11:28:33+05:30</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://hugo-profile.netlify.app/categories/</loc>
-    <lastmod>2023-08-13T11:28:33+05:30</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://hugo-profile.netlify.app/blogs/first_post/</loc>
-    <lastmod>2023-08-13T11:28:33+05:30</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://hugo-profile.netlify.app/tags/non-tech/</loc>
-    <lastmod>2023-08-13T11:28:33+05:30</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://hugo-profile.netlify.app/tags/</loc>
-    <lastmod>2023-08-13T11:28:33+05:30</lastmod>
-  </url>
-  
 </urlset>
