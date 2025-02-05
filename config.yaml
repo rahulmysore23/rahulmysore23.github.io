@@ -185,7 +185,7 @@ params:
       - job: "Graduate Research Assistant"
         company: "UMKC"
         companyUrl: "https://dsaic.umkc.edu/"
-        date: "Oct 2023 - present"
+        date: "Oct 2023 - Dec 2024"
         featuredLink:
           enable: false
           name: "About the group"
