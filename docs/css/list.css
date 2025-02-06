@@ -1,73 +1,60 @@
-#list-page .card {
-    background-color: var(--secondary-color) !important;
-    box-shadow: 0px 8px 56px rgba(15, 80, 100, 0.16);
-    border-radius: .75rem;
-    cursor: context-menu;
-    overflow: hidden;
-    border: none;
+/* List Page */
+#list-page .post-list-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid rgba(15, 80, 100, 0.16);
+    padding: 1rem 0;
+    transition: background-color 0.3s ease; /* Smooth hover effect */
 }
 
-#list-page .card a {
-    text-decoration: none;
+#list-page .post-list-item:hover {
+    background-color: rgba(15, 80, 100, 0.05); /* Subtle hover effect */
 }
 
-#list-page .card a h5 {
-    color: var(--text-color) !important;
+#list-page .post-list-item:last-child {
+    border-bottom: none;
 }
 
-#list-page .card:hover {
-    transition: all 0.3s ease-out;
-    transform: translateY(-7px);
+#list-page .post-title {
+    flex: 1;
+    margin: 0;
+    text-decoration: none; /* Remove underline */
 }
 
-#list-page .card-text * {
-    background-color: var(--secondary-color) !important;
+#list-page .post-title h3 {
+    color: var(--text-color); /* Use primary text color */
+    margin: 0;
+    font-size: 1.25rem;
+    font-weight: 600; /* Slightly bolder title */
+    transition: color 0.3s ease; /* Smooth color transition */
 }
 
-#list-page .post-footer {
-    padding: .5rem 1rem;
-    background-color: var(--secondary-color) !important;
-    color: var(--text-color) !important;
-    border-top: 1px solid rgba(15, 80, 100, 0.16);
-    opacity: 0.9;
+#list-page .post-title:hover h3 {
+    color: var(--primary-color); /* Change color on hover */
 }
 
-#list-page .post-footer a {
-    background-color: var(--secondary-color) !important;
-    color: var(--text-secondary-color) !important;
-    border-color: var(--primary-color) !important;
-    transition: none;
+#list-page .post-date {
+    color: var(--text-secondary-color);
+    opacity: 0.8;
+    font-size: 0.9rem;
+    margin-left: 1rem;
+    white-space: nowrap; /* Prevent date from wrapping */
 }
 
-#list-page .post-footer a:focus {
-    box-shadow: none !important;
+/* Pagination */
+#list-page ul.pagination {
+    margin-top: 2rem;
 }
 
-#list-page .post-footer a:hover {
-    color: var(--primary-color) !important;
-}
-
-#list-page .card > .card-header {
-    padding: 0 !important;
-    border: none !important;
-    background-color: var(--secondary-color) !important;
-}
-
-#list-page .card > .card-header .card-img-top {
-    width: 100%;
-    height: 250px !important;
-    background-color: transparent !important;
-}
-
-/* pagination */
-#list-page ul li a {
-    transition: none;
+#list-page ul.pagination li a {
     border-color: var(--secondary-color);
     background-color: var(--secondary-color) !important;
     color: var(--text-color) !important;
+    transition: none;
 }
 
-#list-page ul li a:focus {
+#list-page ul.pagination li a:focus {
     box-shadow: none;
 }
 

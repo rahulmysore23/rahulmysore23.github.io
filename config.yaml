@@ -12,7 +12,7 @@ outputs:
     - "HTML"
     - "RSS"
 
-Paginate: 3
+Paginate: 10
 enableRobotsTXT: true
 # disqusShortname: your-disqus-shortname
 # googleAnalytics: G-MEASUREMENT_ID
@@ -137,9 +137,8 @@ params:
     # roundImage: true # Make hero image circular | default false
     button:
       enable: true
-      name: "Contact for Resume"
-      url: mailto:rahulmysore23@gmail.com
-      # url: "https://rahulmysore23.github.io/#contact"
+      name: "Schelude a meeting with me"
+      url: https://calendly.com/rahulmysore23/15min
       download: true
       newPage: false
     socialLinks:
