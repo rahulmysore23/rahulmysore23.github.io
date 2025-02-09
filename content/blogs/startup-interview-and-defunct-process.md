@@ -6,8 +6,6 @@ categories: ["interview"]
 tags: ["tech", "linux", "Go", "CLI", "defunct", "concurrency"]
 ---
 
-# A Tale of Forever Programs, Zombie Processes, and the Art of Not Panicking
-
 Alright, folks, gather 'round. Let me tell you the story of my first interview with a blockchain company (which shall remain nameless, because, well, NDAs are a thing). It was Round 1, and the focus was on OS/System Programming. The interview was scheduled for 1 hour and 30 minutes, and I was told to have a Linux environment ready. Sounds simple enough, right? Wrong. This is where the adventure begins.
 
 ---
