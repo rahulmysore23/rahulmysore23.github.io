@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Concurrency on Rahul&#39;s Presence On Internet</title>
+    <link>https://rahulmysore23.github.io/tags/concurrency/</link>
+    <description>Recent content in Concurrency on Rahul&#39;s Presence On Internet</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <lastBuildDate>Fri, 07 Feb 2025 01:23:26 -0600</lastBuildDate>
+    <atom:link href="https://rahulmysore23.github.io/tags/concurrency/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Startup Interview and Defunct Process</title>
+      <link>https://rahulmysore23.github.io/blogs/startup-interview-and-defunct-process/</link>
+      <pubDate>Fri, 07 Feb 2025 01:23:26 -0600</pubDate>
+      <guid>https://rahulmysore23.github.io/blogs/startup-interview-and-defunct-process/</guid>
+      <description>&lt;h1 id=&#34;a-tale-of-forever-programs-zombie-processes-and-the-art-of-not-panicking&#34;&gt;A Tale of Forever Programs, Zombie Processes, and the Art of Not Panicking&lt;/h1&gt;&#xA;&lt;p&gt;Alright, folks, gather &amp;lsquo;round. Let me tell you the story of my first interview with a blockchain company (which shall remain nameless, because, well, NDAs are a thing). It was Round 1, and the focus was on OS/System Programming. The interview was scheduled for 1 hour and 30 minutes, and I was told to have a Linux environment ready. Sounds simple enough, right? Wrong. This is where the adventure begins.&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

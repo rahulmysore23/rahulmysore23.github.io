@@ -6,20 +6,48 @@
     <description>Recent content in Tags on Rahul&#39;s Presence On Internet</description>
     <generator>Hugo</generator>
     <language>en-us</language>
-    <lastBuildDate>Tue, 04 Feb 2025 01:06:28 -0600</lastBuildDate>
+    <lastBuildDate>Fri, 07 Feb 2025 01:23:26 -0600</lastBuildDate>
     <atom:link href="https://rahulmysore23.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>CLI</title>
+      <link>https://rahulmysore23.github.io/tags/cli/</link>
+      <pubDate>Fri, 07 Feb 2025 01:23:26 -0600</pubDate>
+      <guid>https://rahulmysore23.github.io/tags/cli/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Concurrency</title>
+      <link>https://rahulmysore23.github.io/tags/concurrency/</link>
+      <pubDate>Fri, 07 Feb 2025 01:23:26 -0600</pubDate>
+      <guid>https://rahulmysore23.github.io/tags/concurrency/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Defunct</title>
+      <link>https://rahulmysore23.github.io/tags/defunct/</link>
+      <pubDate>Fri, 07 Feb 2025 01:23:26 -0600</pubDate>
+      <guid>https://rahulmysore23.github.io/tags/defunct/</guid>
+      <description></description>
+    </item>
     <item>
       <title>Go</title>
       <link>https://rahulmysore23.github.io/tags/go/</link>
-      <pubDate>Tue, 04 Feb 2025 01:06:28 -0600</pubDate>
+      <pubDate>Fri, 07 Feb 2025 01:23:26 -0600</pubDate>
       <guid>https://rahulmysore23.github.io/tags/go/</guid>
       <description></description>
     </item>
     <item>
       <title>Linux</title>
       <link>https://rahulmysore23.github.io/tags/linux/</link>
-      <pubDate>Tue, 04 Feb 2025 01:06:28 -0600</pubDate>
+      <pubDate>Fri, 07 Feb 2025 01:23:26 -0600</pubDate>
       <guid>https://rahulmysore23.github.io/tags/linux/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Tech</title>
+      <link>https://rahulmysore23.github.io/tags/tech/</link>
+      <pubDate>Fri, 07 Feb 2025 01:23:26 -0600</pubDate>
+      <guid>https://rahulmysore23.github.io/tags/tech/</guid>
       <description></description>
     </item>
     <item>
@@ -27,13 +55,6 @@
       <link>https://rahulmysore23.github.io/tags/systemd/</link>
       <pubDate>Tue, 04 Feb 2025 01:06:28 -0600</pubDate>
       <guid>https://rahulmysore23.github.io/tags/systemd/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Tech</title>
-      <link>https://rahulmysore23.github.io/tags/tech/</link>
-      <pubDate>Tue, 04 Feb 2025 01:06:28 -0600</pubDate>
-      <guid>https://rahulmysore23.github.io/tags/tech/</guid>
       <description></description>
     </item>
     <item>

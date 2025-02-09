@@ -1,7 +1,9 @@
 ---
 title: "Startup Interview and Defunct Process"
 date: 2025-02-07T01:23:26-06:00
-draft: true
+draft: false 
+categories: ["interview"]
+tags: ["tech", "linux", "Go", "CLI", "defunct", "concurrency"]
 ---
 
 # A Tale of Forever Programs, Zombie Processes, and the Art of Not Panicking

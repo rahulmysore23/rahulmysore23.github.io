@@ -1,0 +1,791 @@
+<!DOCTYPE html>
+<html>
+
+<head><meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<meta http-equiv="Accept-CH" content="DPR, Viewport-Width, Width">
+<link rel="icon" href=/fav.png type="image/gif">
+
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="preload"
+      as="style"
+      href="https://fonts.googleapis.com/css2?family=Alata&family=Lora:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+>
+<link rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Alata&family=Lora:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      media="print" onload="this.media='all'" />
+<noscript>
+  <link
+          href="https://fonts.googleapis.com/css2?family=Alata&family=Lora:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+          rel="stylesheet">
+</noscript>
+
+
+<link rel="stylesheet" href="/css/font.css" media="all">
+
+
+
+<meta property="og:url" content="https://rahulmysore23.github.io/blogs/startup-interview-and-defunct-process/">
+  <meta property="og:site_name" content="Rahul&#39;s Presence On Internet">
+  <meta property="og:title" content="Startup Interview and Defunct Process">
+  <meta property="og:description" content="A Tale of Forever Programs, Zombie Processes, and the Art of Not Panicking Alright, folks, gather ‘round. Let me tell you the story of my first interview with a blockchain company (which shall remain nameless, because, well, NDAs are a thing). It was Round 1, and the focus was on OS/System Programming. The interview was scheduled for 1 hour and 30 minutes, and I was told to have a Linux environment ready. Sounds simple enough, right? Wrong. This is where the adventure begins.">
+  <meta property="og:locale" content="en_us">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="blogs">
+    <meta property="article:published_time" content="2025-02-07T01:23:26-06:00">
+    <meta property="article:modified_time" content="2025-02-07T01:23:26-06:00">
+    <meta property="article:tag" content="Tech">
+    <meta property="article:tag" content="Linux">
+    <meta property="article:tag" content="Go">
+    <meta property="article:tag" content="CLI">
+    <meta property="article:tag" content="Defunct">
+    <meta property="article:tag" content="Concurrency">
+
+
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="Startup Interview and Defunct Process">
+  <meta name="twitter:description" content="A Tale of Forever Programs, Zombie Processes, and the Art of Not Panicking Alright, folks, gather ‘round. Let me tell you the story of my first interview with a blockchain company (which shall remain nameless, because, well, NDAs are a thing). It was Round 1, and the focus was on OS/System Programming. The interview was scheduled for 1 hour and 30 minutes, and I was told to have a Linux environment ready. Sounds simple enough, right? Wrong. This is where the adventure begins.">
+
+
+<link rel="stylesheet" href="/bootstrap-5/css/bootstrap.min.css" media="all"><link rel="stylesheet" href="/css/header.css" media="all">
+<link rel="stylesheet" href="/css/footer.css" media="all">
+<link rel="stylesheet" href="/css/music.css" media="all">
+
+
+<link rel="stylesheet" href="/css/theme.css" media="all">
+
+<style>
+    :root {
+        --text-color: #343a40;
+        --text-secondary-color: #6c757d;
+        --text-link-color: #007bff;
+        --background-color: #eaedf0;
+        --secondary-background-color: #64ffda1a;
+        --primary-color: #007bff;
+        --secondary-color: #f8f9fa;
+
+         
+        --text-color-dark: #e4e6eb;
+        --text-secondary-color-dark: #b0b3b8;
+        --text-link-color-dark: #ffffff;
+        --background-color-dark: #18191a;
+        --secondary-background-color-dark: #212529;
+        --primary-color-dark: #ffffff;
+        --secondary-color-dark: #212529;
+    }
+    body {
+        font-size: 1rem;
+        font-weight: 400;
+        line-height: 1.5;
+        text-align: left;
+    }
+
+    html {
+        background-color: var(--background-color) !important;
+    }
+
+    body::-webkit-scrollbar {
+        height: 0px;
+        width: 8px;
+        background-color: var(--background-color);
+    }
+
+    ::-webkit-scrollbar-track {
+        border-radius: 1rem;
+    }
+
+    ::-webkit-scrollbar-thumb {
+        border-radius: 1rem;
+        background: #b0b0b0;
+        outline: 1px solid var(--background-color);
+    }
+
+    #search-content::-webkit-scrollbar {
+        width: .5em;
+        height: .1em;
+        background-color: var(--background-color);
+    }
+</style>
+
+
+
+<meta name="description" content="">
+<link rel="stylesheet" href="/css/single.css">
+
+
+<script defer src="/fontawesome-6/all-6.4.2.js"></script>
+
+
+  
+  
+
+  <title>
+Startup Interview and Defunct Process | Rahul&#39;s Presence On Internet
+
+  </title>
+</head>
+
+<body class="light">
+  
+  
+<script>
+    let localStorageValue = localStorage.getItem("pref-theme");
+    let mediaQuery = window.matchMedia('(prefers-color-scheme: dark)').matches;
+
+    switch (localStorageValue) {
+        case "dark":
+            document.body.classList.add('dark');
+            break;
+        case "light":
+            document.body.classList.remove('dark');
+            break;
+        default:
+            if (mediaQuery) {
+                document.body.classList.add('dark');
+            }
+            break;
+    }
+</script>
+
+
+
+
+<script>
+    var prevScrollPos = window.pageYOffset;
+    window.addEventListener("scroll", function showHeaderOnScroll() {
+        let profileHeaderElem = document.getElementById("profileHeader");
+        let currentScrollPos = window.pageYOffset;
+        let resetHeaderStyle = false;
+        let showNavBarOnScrollUp =  true ;
+        let showNavBar = showNavBarOnScrollUp ? prevScrollPos > currentScrollPos : currentScrollPos > 0;
+        if (showNavBar) {
+            profileHeaderElem.classList.add("showHeaderOnTop");
+        } else {
+            resetHeaderStyle = true;
+        }
+        if(currentScrollPos === 0) {
+            resetHeaderStyle = true;
+        }
+        if(resetHeaderStyle) {
+            profileHeaderElem.classList.remove("showHeaderOnTop");
+        }
+        prevScrollPos = currentScrollPos;
+    });
+</script>
+
+
+
+<header id="profileHeader">
+    <nav class="pt-3 navbar navbar-expand-lg animate">
+        <div class="container-fluid mx-xs-2 mx-sm-5 mx-md-5 mx-lg-5">
+            
+            <a class="navbar-brand primary-font text-wrap" href="/">
+                
+                <img src="/fav.png" width="30" height="30"
+                    class="d-inline-block align-top">
+                Rahul&#39;s Presence
+                
+            </a>
+
+            
+
+            
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarContent"
+                aria-controls="navbarContent" aria-expanded="false" aria-label="Toggle navigation">
+                <svg aria-hidden="true" height="24" viewBox="0 0 16 16" version="1.1" width="24" data-view-component="true">
+                    <path fill-rule="evenodd" d="M1 2.75A.75.75 0 011.75 2h12.5a.75.75 0 110 1.5H1.75A.75.75 0 011 2.75zm0 5A.75.75 0 011.75 7h12.5a.75.75 0 110 1.5H1.75A.75.75 0 011 7.75zM1.75 12a.75.75 0 100 1.5h12.5a.75.75 0 100-1.5H1.75z"></path>
+                </svg>
+            </button>
+
+            
+            <div class="collapse navbar-collapse text-wrap primary-font" id="navbarContent">
+                <ul class="navbar-nav ms-auto text-center">
+                    
+
+                    
+                    <li class="nav-item navbar-text">
+                        <a class="nav-link" href="/#about" aria-label="about">
+                            About Me
+                        </a>
+                    </li>
+                    
+
+                    
+                    <li class="nav-item navbar-text">
+                        <a class="nav-link" href="/#experience"
+                            aria-label="experience">
+                            Experience
+                        </a>
+                    </li>
+                    
+
+                    
+                    <li class="nav-item navbar-text">
+                        <a class="nav-link" href="/#education"
+                            aria-label="education">
+                            Education
+                        </a>
+                    </li>
+                    
+
+                    
+                    <li class="nav-item navbar-text">
+                        <a class="nav-link" href="/#projects"
+                            aria-label="projects">
+                            Projects
+                        </a>
+                    </li>
+                    
+
+                    
+                    <li class="nav-item navbar-text">
+                        <a class="nav-link" href="/#achievements"
+                            aria-label="achievements">
+                            Achievements
+                        </a>
+                    </li>
+                    
+
+                    
+                    <li class="nav-item navbar-text">
+                        <a class="nav-link" href="/#contact"
+                            aria-label="contact">
+                            Contact
+                        </a>
+                    </li>
+                    
+
+                    
+
+                    
+                    
+                    
+                    
+                    <li class="nav-item navbar-text">
+                        <a class="nav-link" href="/blogs" title="Blog posts">
+                            
+                            Blog
+                        </a>
+                    </li>
+                    
+                    
+                    
+                    
+                    <li class="nav-item navbar-text">
+                        <a class="nav-link" href="/music" title="Music">
+                            
+                            Music
+                        </a>
+                    </li>
+                    
+                    
+
+                    
+                    <li class="nav-item navbar-text">
+                        
+                        <div class="text-center">
+                            <button id="theme-toggle">
+                                <svg id="moon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                    <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+                                </svg>
+                                <svg id="sun" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                    <circle cx="12" cy="12" r="5"></circle>
+                                    <line x1="12" y1="1" x2="12" y2="3"></line>
+                                    <line x1="12" y1="21" x2="12" y2="23"></line>
+                                    <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+                                    <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+                                    <line x1="1" y1="12" x2="3" y2="12"></line>
+                                    <line x1="21" y1="12" x2="23" y2="12"></line>
+                                    <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+                                    <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+                                </svg>
+                            </button>
+                        </div>
+                    </li>
+                    
+
+                </ul>
+
+            </div>
+        </div>
+    </nav>
+</header>
+<div id="content">
+<section id="single">
+  <div class="container">
+    <div class="row justify-content-center">
+      <div class="col-sm-12 col-md-12 col-lg-9">
+        <div class="pr-lg-4">
+          <div class="title mb-5">
+            <h1 class="text-center mb-4">Startup Interview and Defunct Process</h1>
+            <div class="text-center">
+              
+              Feb 7, 2025
+
+              
+              <span id="readingTime">
+                min read
+              </span>
+              
+            </div>
+          </div>
+          
+          <article class="page-content  p-2">
+          <h1 id="a-tale-of-forever-programs-zombie-processes-and-the-art-of-not-panicking">A Tale of Forever Programs, Zombie Processes, and the Art of Not Panicking</h1>
+<p>Alright, folks, gather &lsquo;round. Let me tell you the story of my first interview with a blockchain company (which shall remain nameless, because, well, NDAs are a thing). It was Round 1, and the focus was on OS/System Programming. The interview was scheduled for 1 hour and 30 minutes, and I was told to have a Linux environment ready. Sounds simple enough, right? Wrong. This is where the adventure begins.</p>
+<hr>
+<h2 id="the-setup-windows-wsl2-and-a-dash-of-desperation">The Setup: Windows, WSL2, and a Dash of Desperation</h2>
+<p>So, here’s the thing: I was using Windows at the time. <em>Gasp!</em> I know, I know. But hear me out—I was in the process of switching to <strong>Hyprland</strong> (a fancy tiling window manager for Linux), and I didn’t want to risk breaking my system right before an interview. So, I did what any sane person would do: I fired up <strong>WSL2</strong> (Windows Subsystem for Linux). It’s like having a Linux terminal inside Windows, which is great until you realize you’re essentially living in two operating systems at once. Schrödinger’s developer, if you will.</p>
+<hr>
+<h2 id="the-task-forever-programs-and-the-watchful-monitor">The Task: Forever Programs and the Watchful Monitor</h2>
+<p>The interview began, and I was given a task to write two programs:</p>
+<ol>
+<li><strong>Forever Program</strong>: A program that takes an argument and runs forever. Simple, right?</li>
+<li><strong>Monitor Program</strong>: A program that monitors the Forever Program and spawns a new instance if it gets killed. Think of it as a helicopter parent for processes.</li>
+</ol>
+<p>I decided to use <strong>Go</strong> for this task. Why? Because Go is my comfort language. It’s like that one hoodie you always reach for when you’re feeling lazy. Plus, Go has excellent concurrency support and built-in packages for OS-related stuff, which made it perfect for this task.</p>
+<hr>
+<h2 id="the-forever-program-a-love-story">The Forever Program: A Love Story</h2>
+<p>Let’s start with the Forever Program. Here’s the code:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-go" data-lang="go"><span style="display:flex;"><span><span style="color:#f92672">package</span> <span style="color:#a6e22e">main</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">import</span> (
+</span></span><span style="display:flex;"><span> <span style="color:#e6db74">&#34;flag&#34;</span>
+</span></span><span style="display:flex;"><span> <span style="color:#e6db74">&#34;fmt&#34;</span>
+</span></span><span style="display:flex;"><span> <span style="color:#e6db74">&#34;os&#34;</span>
+</span></span><span style="display:flex;"><span> <span style="color:#e6db74">&#34;os/signal&#34;</span>
+</span></span><span style="display:flex;"><span> <span style="color:#e6db74">&#34;syscall&#34;</span>
+</span></span><span style="display:flex;"><span>)
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">func</span> <span style="color:#a6e22e">main</span>() {
+</span></span><span style="display:flex;"><span> <span style="color:#a6e22e">fmt</span>.<span style="color:#a6e22e">Println</span>(<span style="color:#e6db74">&#34;InfStones, interview 1 - Forever&#34;</span>)
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span> <span style="color:#75715e">// Parse command line arg</span>
+</span></span><span style="display:flex;"><span> <span style="color:#a6e22e">numbPtr</span> <span style="color:#f92672">:=</span> <span style="color:#a6e22e">flag</span>.<span style="color:#a6e22e">Int</span>(<span style="color:#e6db74">&#34;numb&#34;</span>, <span style="color:#ae81ff">42</span>, <span style="color:#e6db74">&#34;an int&#34;</span>)
+</span></span><span style="display:flex;"><span> <span style="color:#a6e22e">flag</span>.<span style="color:#a6e22e">Parse</span>()
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span> <span style="color:#a6e22e">fmt</span>.<span style="color:#a6e22e">Println</span>(<span style="color:#e6db74">&#34;Number entered is:&#34;</span>, <span style="color:#f92672">*</span><span style="color:#a6e22e">numbPtr</span>)
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span> <span style="color:#75715e">// Wait till kill signal is passed</span>
+</span></span><span style="display:flex;"><span> <span style="color:#a6e22e">c</span> <span style="color:#f92672">:=</span> make(<span style="color:#66d9ef">chan</span> <span style="color:#a6e22e">os</span>.<span style="color:#a6e22e">Signal</span>, <span style="color:#ae81ff">1</span>) <span style="color:#75715e">// we need to reserve to buffer size 1, so the notifier are not blocked</span>
+</span></span><span style="display:flex;"><span> <span style="color:#a6e22e">signal</span>.<span style="color:#a6e22e">Notify</span>(<span style="color:#a6e22e">c</span>, <span style="color:#a6e22e">os</span>.<span style="color:#a6e22e">Interrupt</span>, <span style="color:#a6e22e">syscall</span>.<span style="color:#a6e22e">SIGTERM</span>)
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span> <span style="color:#66d9ef">for</span> {
+</span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">select</span> {
+</span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">case</span> <span style="color:#f92672">&lt;-</span><span style="color:#a6e22e">c</span>:
+</span></span><span style="display:flex;"><span>   <span style="color:#a6e22e">fmt</span>.<span style="color:#a6e22e">Println</span>(<span style="color:#e6db74">&#34;Process Killed&#34;</span>)
+</span></span><span style="display:flex;"><span>   <span style="color:#66d9ef">return</span>
+</span></span><span style="display:flex;"><span>  }
+</span></span><span style="display:flex;"><span> }
+</span></span><span style="display:flex;"><span>}
+</span></span></code></pre></div><p>This program is pretty straightforward. It takes an integer argument, prints it, and then waits for a kill signal. When it receives the signal, it prints &ldquo;Process Killed&rdquo; and exits. It’s like that friend who says, “I’ll stay as long as you want me to,” but leaves the moment you hint at it.</p>
+<hr>
+<h2 id="the-monitor-program-helicopter-parent-mode-activated">The Monitor Program: Helicopter Parent Mode Activated</h2>
+<p>Now, onto the <strong>Monitor Program</strong>. This one was a bit more involved. The goal was to keep an eye on the Forever Program and restart it if it got killed. Here’s the code:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-go" data-lang="go"><span style="display:flex;"><span><span style="color:#f92672">package</span> <span style="color:#a6e22e">main</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">import</span> (
+</span></span><span style="display:flex;"><span> <span style="color:#e6db74">&#34;fmt&#34;</span>
+</span></span><span style="display:flex;"><span> <span style="color:#e6db74">&#34;log&#34;</span>
+</span></span><span style="display:flex;"><span> <span style="color:#e6db74">&#34;os&#34;</span>
+</span></span><span style="display:flex;"><span> <span style="color:#e6db74">&#34;os/exec&#34;</span>
+</span></span><span style="display:flex;"><span> <span style="color:#e6db74">&#34;os/signal&#34;</span>
+</span></span><span style="display:flex;"><span> <span style="color:#e6db74">&#34;reflect&#34;</span>
+</span></span><span style="display:flex;"><span> <span style="color:#e6db74">&#34;strings&#34;</span>
+</span></span><span style="display:flex;"><span> <span style="color:#e6db74">&#34;syscall&#34;</span>
+</span></span><span style="display:flex;"><span> <span style="color:#e6db74">&#34;time&#34;</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span> <span style="color:#e6db74">&#34;github.com/shirou/gopsutil/process&#34;</span>
+</span></span><span style="display:flex;"><span>)
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">const</span> <span style="color:#a6e22e">FOREVER_PROGRAM</span> = <span style="color:#e6db74">&#34;forever&#34;</span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">const</span> <span style="color:#a6e22e">FOREVER_PROGRAM_PATH</span> = <span style="color:#e6db74">&#34;/home/rmysore/interviews/infstones/forever/&#34;</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">func</span> <span style="color:#a6e22e">main</span>() {
+</span></span><span style="display:flex;"><span> <span style="color:#a6e22e">fmt</span>.<span style="color:#a6e22e">Println</span>(<span style="color:#e6db74">&#34;InfStones, interview 1 - Monitor&#34;</span>)
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span> <span style="color:#a6e22e">initMap</span> <span style="color:#f92672">:=</span> make(<span style="color:#66d9ef">map</span>[<span style="color:#66d9ef">int</span>]<span style="color:#66d9ef">string</span>)
+</span></span><span style="display:flex;"><span> <span style="color:#a6e22e">init</span> <span style="color:#f92672">:=</span> <span style="color:#66d9ef">false</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span> <span style="color:#75715e">// Poll and Check for forever processes and store them - Poll and events?</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span> <span style="color:#75715e">// User ticker (Optional - and kill event?)</span>
+</span></span><span style="display:flex;"><span> <span style="color:#a6e22e">ticker</span> <span style="color:#f92672">:=</span> <span style="color:#a6e22e">time</span>.<span style="color:#a6e22e">NewTicker</span>(<span style="color:#ae81ff">1</span> <span style="color:#f92672">*</span> <span style="color:#a6e22e">time</span>.<span style="color:#a6e22e">Second</span>)
+</span></span><span style="display:flex;"><span> <span style="color:#a6e22e">done</span> <span style="color:#f92672">:=</span> make(<span style="color:#66d9ef">chan</span> <span style="color:#66d9ef">bool</span>)
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span> <span style="color:#a6e22e">c</span> <span style="color:#f92672">:=</span> make(<span style="color:#66d9ef">chan</span> <span style="color:#a6e22e">os</span>.<span style="color:#a6e22e">Signal</span>, <span style="color:#ae81ff">1</span>) <span style="color:#75715e">// we need to reserve to buffer size 1, so the notifier are not blocked</span>
+</span></span><span style="display:flex;"><span> <span style="color:#a6e22e">signal</span>.<span style="color:#a6e22e">Notify</span>(<span style="color:#a6e22e">c</span>, <span style="color:#a6e22e">os</span>.<span style="color:#a6e22e">Interrupt</span>, <span style="color:#a6e22e">syscall</span>.<span style="color:#a6e22e">SIGTERM</span>)
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span> <span style="color:#66d9ef">go</span> <span style="color:#66d9ef">func</span>() {
+</span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">for</span> {
+</span></span><span style="display:flex;"><span>   <span style="color:#66d9ef">select</span> {
+</span></span><span style="display:flex;"><span>   <span style="color:#66d9ef">case</span> <span style="color:#f92672">&lt;-</span><span style="color:#a6e22e">done</span>:
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">return</span>
+</span></span><span style="display:flex;"><span>   <span style="color:#66d9ef">case</span> <span style="color:#a6e22e">t</span> <span style="color:#f92672">:=</span> <span style="color:#f92672">&lt;-</span><span style="color:#a6e22e">ticker</span>.<span style="color:#a6e22e">C</span>:
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">fmt</span>.<span style="color:#a6e22e">Println</span>(<span style="color:#e6db74">&#34;Tick at&#34;</span>, <span style="color:#a6e22e">t</span>)
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    <span style="color:#75715e">// If the last poll and new poll has changes, Find the killed process and start it again</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">compareMap</span> <span style="color:#f92672">:=</span> make(<span style="color:#66d9ef">map</span>[<span style="color:#66d9ef">int</span>]<span style="color:#66d9ef">string</span>)
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">processes</span>, <span style="color:#a6e22e">_</span> <span style="color:#f92672">:=</span> <span style="color:#a6e22e">process</span>.<span style="color:#a6e22e">Processes</span>()
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">for</span> <span style="color:#a6e22e">_</span>, <span style="color:#a6e22e">process</span> <span style="color:#f92672">:=</span> <span style="color:#66d9ef">range</span> <span style="color:#a6e22e">processes</span> {
+</span></span><span style="display:flex;"><span>     <span style="color:#a6e22e">name</span>, <span style="color:#a6e22e">_</span> <span style="color:#f92672">:=</span> <span style="color:#a6e22e">process</span>.<span style="color:#a6e22e">Name</span>()
+</span></span><span style="display:flex;"><span>     <span style="color:#66d9ef">if</span> <span style="color:#a6e22e">strings</span>.<span style="color:#a6e22e">Compare</span>(<span style="color:#a6e22e">name</span>, <span style="color:#a6e22e">FOREVER_PROGRAM</span>) <span style="color:#f92672">==</span> <span style="color:#ae81ff">0</span> {
+</span></span><span style="display:flex;"><span>      <span style="color:#a6e22e">cmdL</span>, <span style="color:#a6e22e">_</span> <span style="color:#f92672">:=</span> <span style="color:#a6e22e">process</span>.<span style="color:#a6e22e">Cmdline</span>()
+</span></span><span style="display:flex;"><span>      <span style="color:#66d9ef">if</span> !<span style="color:#a6e22e">init</span> {
+</span></span><span style="display:flex;"><span>       <span style="color:#a6e22e">initMap</span>[int(<span style="color:#a6e22e">process</span>.<span style="color:#a6e22e">Pid</span>)] = <span style="color:#a6e22e">cmdL</span>
+</span></span><span style="display:flex;"><span>      } <span style="color:#66d9ef">else</span> {
+</span></span><span style="display:flex;"><span>       <span style="color:#a6e22e">compareMap</span>[int(<span style="color:#a6e22e">process</span>.<span style="color:#a6e22e">Pid</span>)] = <span style="color:#a6e22e">cmdL</span>
+</span></span><span style="display:flex;"><span>      }
+</span></span><span style="display:flex;"><span>     }
+</span></span><span style="display:flex;"><span>    }
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    <span style="color:#75715e">// compare maps</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">if</span> !<span style="color:#a6e22e">reflect</span>.<span style="color:#a6e22e">DeepEqual</span>(<span style="color:#a6e22e">initMap</span>, <span style="color:#a6e22e">compareMap</span>) <span style="color:#f92672">&amp;&amp;</span> <span style="color:#a6e22e">init</span> {
+</span></span><span style="display:flex;"><span>     <span style="color:#66d9ef">for</span> <span style="color:#a6e22e">k</span>, <span style="color:#a6e22e">v</span> <span style="color:#f92672">:=</span> <span style="color:#66d9ef">range</span> <span style="color:#a6e22e">initMap</span> {
+</span></span><span style="display:flex;"><span>      <span style="color:#66d9ef">if</span> <span style="color:#a6e22e">_</span>, <span style="color:#a6e22e">ok</span> <span style="color:#f92672">:=</span> <span style="color:#a6e22e">compareMap</span>[<span style="color:#a6e22e">k</span>]; !<span style="color:#a6e22e">ok</span> {
+</span></span><span style="display:flex;"><span>       <span style="color:#75715e">// Start process again</span>
+</span></span><span style="display:flex;"><span>       <span style="color:#a6e22e">args</span> <span style="color:#f92672">:=</span> <span style="color:#a6e22e">strings</span>.<span style="color:#a6e22e">Split</span>(<span style="color:#a6e22e">v</span>, <span style="color:#e6db74">&#34; &#34;</span>)
+</span></span><span style="display:flex;"><span>       <span style="color:#66d9ef">if</span> <span style="color:#a6e22e">args</span>[len(<span style="color:#a6e22e">args</span>)<span style="color:#f92672">-</span><span style="color:#ae81ff">1</span>] <span style="color:#f92672">!=</span> <span style="color:#e6db74">&#34;&amp;&#34;</span> {
+</span></span><span style="display:flex;"><span>        <span style="color:#a6e22e">args</span> = append(<span style="color:#a6e22e">args</span>, <span style="color:#e6db74">&#34;&amp;&#34;</span>)
+</span></span><span style="display:flex;"><span>       }
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>       <span style="color:#a6e22e">fmt</span>.<span style="color:#a6e22e">Println</span>(<span style="color:#e6db74">&#34;Starting process:&#34;</span>, <span style="color:#a6e22e">args</span>)
+</span></span><span style="display:flex;"><span>       <span style="color:#a6e22e">cmd</span> <span style="color:#f92672">:=</span> <span style="color:#a6e22e">exec</span>.<span style="color:#a6e22e">Command</span>(<span style="color:#e6db74">&#34;nohup&#34;</span>, <span style="color:#a6e22e">args</span><span style="color:#f92672">...</span>)
+</span></span><span style="display:flex;"><span>       <span style="color:#a6e22e">err</span> <span style="color:#f92672">:=</span> <span style="color:#a6e22e">cmd</span>.<span style="color:#a6e22e">Start</span>()
+</span></span><span style="display:flex;"><span>       <span style="color:#66d9ef">if</span> <span style="color:#a6e22e">err</span> <span style="color:#f92672">!=</span> <span style="color:#66d9ef">nil</span> {
+</span></span><span style="display:flex;"><span>        <span style="color:#a6e22e">log</span>.<span style="color:#a6e22e">Fatal</span>(<span style="color:#a6e22e">err</span>)
+</span></span><span style="display:flex;"><span>       }
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>       <span style="color:#66d9ef">if</span> <span style="color:#a6e22e">cmd</span>.<span style="color:#a6e22e">Wait</span>() <span style="color:#f92672">!=</span> <span style="color:#66d9ef">nil</span> {
+</span></span><span style="display:flex;"><span>        <span style="color:#a6e22e">log</span>.<span style="color:#a6e22e">Fatal</span>(<span style="color:#a6e22e">err</span>)
+</span></span><span style="display:flex;"><span>       }
+</span></span><span style="display:flex;"><span>      }
+</span></span><span style="display:flex;"><span>     }
+</span></span><span style="display:flex;"><span>    }
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">init</span> = <span style="color:#66d9ef">true</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    <span style="color:#75715e">// replace init with compare</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">initMap</span> = <span style="color:#a6e22e">compareMap</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>   }
+</span></span><span style="display:flex;"><span>  }
+</span></span><span style="display:flex;"><span> }()
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span> <span style="color:#66d9ef">for</span> {
+</span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">select</span> {
+</span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">case</span> <span style="color:#f92672">&lt;-</span><span style="color:#a6e22e">c</span>:
+</span></span><span style="display:flex;"><span>   <span style="color:#a6e22e">fmt</span>.<span style="color:#a6e22e">Println</span>(<span style="color:#e6db74">&#34;Process Killed&#34;</span>)
+</span></span><span style="display:flex;"><span>   <span style="color:#a6e22e">ticker</span>.<span style="color:#a6e22e">Stop</span>()
+</span></span><span style="display:flex;"><span>   <span style="color:#a6e22e">done</span> <span style="color:#f92672">&lt;-</span> <span style="color:#66d9ef">true</span>
+</span></span><span style="display:flex;"><span>   <span style="color:#66d9ef">return</span>
+</span></span><span style="display:flex;"><span>  }
+</span></span><span style="display:flex;"><span> }
+</span></span><span style="display:flex;"><span>}
+</span></span></code></pre></div><p>This program is like a helicopter parent. It checks on the Forever Program every second (using a ticker) to make sure it’s still alive. If it finds that the Forever Program has been killed, it starts a new instance. It’s basically saying, “Oh, you thought you could escape? Think again.”</p>
+<hr>
+<h2 id="the-plot-twist-zombie-processes">The Plot Twist: Zombie Processes</h2>
+<p>Now, here’s where things got interesting. When I killed and respawned the Forever Program multiple times, I noticed something strange: <strong>defunct processes</strong> were being created. A defunct process, also known as a <strong>zombie process</strong>, is a process that has completed execution but still has an entry in the process table. It’s like a ghost that haunts your system, refusing to leave until you properly deal with it.</p>
+<h3 id="why-does-this-happen">Why Does This Happen?</h3>
+<p>In Linux, when a process finishes execution, it sends a signal to its parent process to let it know it’s done. The parent process is supposed to read the child’s exit status (a process called “reaping”). If the parent doesn’t do this, the child process becomes a zombie. It’s not using any resources, but it’s still taking up space in the process table.</p>
+<h3 id="the-fix-reaping-the-zombies">The Fix: Reaping the Zombies</h3>
+<p>The issue in my Monitor Program was that it wasn’t properly waiting for the child process to exit. To fix this, I modified the Monitor Program to wait for the process while initializing it in a goroutine. Here’s the relevant part of the code:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-go" data-lang="go"><span style="display:flex;"><span><span style="color:#66d9ef">go</span> <span style="color:#66d9ef">func</span>() {
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">cmd</span> <span style="color:#f92672">:=</span> <span style="color:#a6e22e">exec</span>.<span style="color:#a6e22e">Command</span>(<span style="color:#e6db74">&#34;nohup&#34;</span>, <span style="color:#a6e22e">args</span><span style="color:#f92672">...</span>)
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">err</span> <span style="color:#f92672">:=</span> <span style="color:#a6e22e">cmd</span>.<span style="color:#a6e22e">Start</span>()
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">if</span> <span style="color:#a6e22e">err</span> <span style="color:#f92672">!=</span> <span style="color:#66d9ef">nil</span> {
+</span></span><span style="display:flex;"><span>        <span style="color:#a6e22e">log</span>.<span style="color:#a6e22e">Fatal</span>(<span style="color:#a6e22e">err</span>)
+</span></span><span style="display:flex;"><span>    }
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">if</span> <span style="color:#a6e22e">cmd</span>.<span style="color:#a6e22e">Wait</span>() <span style="color:#f92672">!=</span> <span style="color:#66d9ef">nil</span> {
+</span></span><span style="display:flex;"><span>        <span style="color:#a6e22e">log</span>.<span style="color:#a6e22e">Fatal</span>(<span style="color:#a6e22e">err</span>)
+</span></span><span style="display:flex;"><span>    }
+</span></span><span style="display:flex;"><span>}()
+</span></span></code></pre></div><p>By waiting for the process to exit in a goroutine, we ensure that the child process is properly reaped, preventing it from becoming a zombie. It’s like giving the ghost a proper burial so it can finally rest in peace.</p>
+<hr>
+<h2 id="lessons-learned-the-interview-was-a-win-regardless">Lessons Learned: The Interview Was a Win, Regardless</h2>
+<p>This interview was a rollercoaster of emotions. I went from feeling confident to panicking about zombie processes to finally fixing the issue. But you know what? It was a fantastic learning experience. I got to dive deep into process management in Linux, and I learned a lot about handling defunct processes. Plus, I can now confidently say that I’ve dealt with zombie processes—how many people can say that?</p>
+<p>Whether or not I get the job, I’m walking away with some valuable knowledge. And hey, at least I have a great story to tell. Wish me luck! 🤞</p>
+<hr>
+<p><strong>TL;DR:</strong></p>
+<ul>
+<li>Used WSL2 because I was too scared to break my Linux setup.</li>
+<li>Wrote a Forever Program and a Monitor Program in Go.</li>
+<li>Accidentally created zombie processes.</li>
+<li>Fixed it by properly reaping child processes.</li>
+<li>Learned a ton and had fun.</li>
+<li>Fingers crossed for the job! 🚀</li>
+</ul>
+
+          </article>
+        </div>
+      </div>
+      <div class="col-sm-12 col-md-12 col-lg-3">
+        <div id="stickySideBar" class="sticky-sidebar">
+          
+          <aside class="toc">
+              <h5>
+                Table Of Contents
+              </h5>
+              <div class="toc-content">
+                <nav id="TableOfContents">
+  <ul>
+    <li><a href="#the-setup-windows-wsl2-and-a-dash-of-desperation">The Setup: Windows, WSL2, and a Dash of Desperation</a></li>
+    <li><a href="#the-task-forever-programs-and-the-watchful-monitor">The Task: Forever Programs and the Watchful Monitor</a></li>
+    <li><a href="#the-forever-program-a-love-story">The Forever Program: A Love Story</a></li>
+    <li><a href="#the-monitor-program-helicopter-parent-mode-activated">The Monitor Program: Helicopter Parent Mode Activated</a></li>
+    <li><a href="#the-plot-twist-zombie-processes">The Plot Twist: Zombie Processes</a>
+      <ul>
+        <li><a href="#why-does-this-happen">Why Does This Happen?</a></li>
+        <li><a href="#the-fix-reaping-the-zombies">The Fix: Reaping the Zombies</a></li>
+      </ul>
+    </li>
+    <li><a href="#lessons-learned-the-interview-was-a-win-regardless">Lessons Learned: The Interview Was a Win, Regardless</a></li>
+  </ul>
+</nav>
+              </div>
+          </aside>
+          
+
+          
+          <aside class="tags">
+            <h5>Tags</h5>
+            <ul class="tags-ul list-unstyled list-inline">
+              
+              <li class="list-inline-item"><a href="https://rahulmysore23.github.io/tags/tech"
+                target="_blank"
+              >tech</a></li>
+              
+              <li class="list-inline-item"><a href="https://rahulmysore23.github.io/tags/linux"
+                target="_blank"
+              >linux</a></li>
+              
+              <li class="list-inline-item"><a href="https://rahulmysore23.github.io/tags/go"
+                target="_blank"
+              >Go</a></li>
+              
+              <li class="list-inline-item"><a href="https://rahulmysore23.github.io/tags/cli"
+                target="_blank"
+              >CLI</a></li>
+              
+              <li class="list-inline-item"><a href="https://rahulmysore23.github.io/tags/defunct"
+                target="_blank"
+              >defunct</a></li>
+              
+              <li class="list-inline-item"><a href="https://rahulmysore23.github.io/tags/concurrency"
+                target="_blank"
+              >concurrency</a></li>
+              
+            </ul>
+          </aside>
+          
+
+          
+          <aside class="social">
+            <h5>Social</h5>
+            <div class="social-content">
+              <ul class="list-inline">
+                <li class="list-inline-item text-center">
+                  <a target="_blank" href="https://www.linkedin.com/shareArticle?mini=true&url=https%3a%2f%2frahulmysore23.github.io%2fblogs%2fstartup-interview-and-defunct-process%2f">
+                    <i class="fab fa-linkedin"></i>
+                  </a>
+                </li>
+                <li class="list-inline-item text-center">
+                  <a target="_blank" href="https://twitter.com/share?text=Startup%20Interview%20and%20Defunct%20Process&url=https%3a%2f%2frahulmysore23.github.io%2fblogs%2fstartup-interview-and-defunct-process%2f">
+                    <i class="fab fa-twitter"></i>
+                  </a>
+                </li>
+                <li class="list-inline-item text-center">
+                  <a target="_blank" href="https://api.whatsapp.com/send?text=Startup%20Interview%20and%20Defunct%20Process: https%3a%2f%2frahulmysore23.github.io%2fblogs%2fstartup-interview-and-defunct-process%2f">
+                    <i class="fab fa-whatsapp"></i>
+                  </a>
+                </li>
+                <li class="list-inline-item text-center">
+                  <a target="_blank" href='mailto:?subject=Startup%20Interview%20and%20Defunct%20Process&amp;body=Check%20out%20this%20site https%3a%2f%2frahulmysore23.github.io%2fblogs%2fstartup-interview-and-defunct-process%2f'>
+                    <i class="fa fa-envelope"></i>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </aside>
+          
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-sm-12 col-md-12 col-lg-9 p-4">
+        
+      </div>
+    </div>
+  </div>
+  <button class="p-2 px-3" onclick="topFunction()" id="topScroll">
+    <i class="fas fa-angle-up"></i>
+  </button>
+</section>
+
+
+<div class="progress">
+  <div id="scroll-progress-bar" class="progress-bar" role="progressbar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100"></div>
+</div>
+<Script src="/js/scrollProgressBar.js"></script>
+
+
+<script>
+  var topScroll = document.getElementById("topScroll");
+  window.onscroll = function() {scrollFunction()};
+
+  function scrollFunction() {
+    if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+      topScroll.style.display = "block";
+    } else {
+      topScroll.style.display = "none";
+    }
+  }
+
+  function topFunction() {
+    document.body.scrollTop = 0;
+    document.documentElement.scrollTop = 0;
+  }
+
+  
+  let stickySideBarElem = document.getElementById("stickySideBar");
+  let stickyNavBar =  true ;
+  if(stickyNavBar) {
+    let headerElem = document.getElementById("profileHeader");
+    let headerHeight = headerElem.offsetHeight + 15;
+    stickySideBarElem.style.top = headerHeight + "px";
+  } else {
+    stickySideBarElem.style.top = "50px";
+  }
+</script>
+
+
+<script src="/js/readingTime.js"></script>
+
+
+
+  </div><footer>
+    
+ 
+
+<div class="text-center pt-2">
+    
+    <span class="px-1">
+        <a href="https://github.com/rahulmysore23" aria-label="github">
+            <svg xmlns="http://www.w3.org/2000/svg" width="2.7em" height="2.7em" viewBox="0 0 1792 1792">
+                <path id="footer-socialNetworks-github-svg-path"
+                    d="M522 1352q-8 9-20-3-13-11-4-19 8-9 20 3 12 11 4 19zm-42-61q9 12 0 19-8 6-17-7t0-18q9-7 17 6zm-61-60q-5 7-13 2-10-5-7-12 3-5 13-2 10 5 7 12zm31 34q-6 7-16-3-9-11-2-16 6-6 16 3 9 11 2 16zm129 112q-4 12-19 6-17-4-13-15t19-7q16 5 13 16zm63 5q0 11-16 11-17 2-17-11 0-11 16-11 17-2 17 11zm58-10q2 10-14 14t-18-8 14-15q16-2 18 9zm964-956v960q0 119-84.5 203.5t-203.5 84.5h-224q-16 0-24.5-1t-19.5-5-16-14.5-5-27.5v-239q0-97-52-142 57-6 102.5-18t94-39 81-66.5 53-105 20.5-150.5q0-121-79-206 37-91-8-204-28-9-81 11t-92 44l-38 24q-93-26-192-26t-192 26q-16-11-42.5-27t-83.5-38.5-86-13.5q-44 113-7 204-79 85-79 206 0 85 20.5 150t52.5 105 80.5 67 94 39 102.5 18q-40 36-49 103-21 10-45 15t-57 5-65.5-21.5-55.5-62.5q-19-32-48.5-52t-49.5-24l-20-3q-21 0-29 4.5t-5 11.5 9 14 13 12l7 5q22 10 43.5 38t31.5 51l10 23q13 38 44 61.5t67 30 69.5 7 55.5-3.5l23-4q0 38 .5 103t.5 68q0 22-11 33.5t-22 13-33 1.5h-224q-119 0-203.5-84.5t-84.5-203.5v-960q0-119 84.5-203.5t203.5-84.5h960q119 0 203.5 84.5t84.5 203.5z" />
+
+                <metadata>
+                    <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+                        xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xmlns:dc="http://purl.org/dc/elements/1.1/">
+                        <rdf:Description about="https://iconscout.com/legal#licenses"
+                            dc:title="Github, Online, Project, Hosting, Square"
+                            dc:description="Github, Online, Project, Hosting, Square" dc:publisher="Iconscout"
+                            dc:date="2016-12-14" dc:format="image/svg+xml" dc:language="en">
+                            <dc:creator>
+                                <rdf:Bag>
+                                    <rdf:li>Font Awesome</rdf:li>
+                                </rdf:Bag>
+                            </dc:creator>
+                        </rdf:Description>
+                    </rdf:RDF>
+                </metadata>
+            </svg>
+        </a>
+    </span>
+    
+
+    
+    <span class="px-1">
+        <a href="https://linkedin.com/in/rahulmysore23" aria-label="linkedin">
+            <svg xmlns="http://www.w3.org/2000/svg" width='2.4em' height='2.4em' fill="#fff" aria-label="LinkedIn"
+                viewBox="0 0 512 512">
+                <rect width="512" height="512" fill="#0077b5" rx="15%" />
+                <circle cx="142" cy="138" r="37" />
+                <path stroke="#fff" stroke-width="66" d="M244 194v198M142 194v198" />
+                <path d="M276 282c0-20 13-40 36-40 24 0 33 18 33 45v105h66V279c0-61-32-89-76-89-34 0-51 19-59 32" />
+            </svg>
+        </a>
+    </span>
+    
+
+    
+
+    
+
+    
+</div><div class="container py-4">
+    <div class="row justify-content-center">
+        <div class="col-md-4 text-center">
+            
+                <div class="pb-2">
+                    <a href="https://rahulmysore23.github.io/" title="Rahul&#39;s Presence On Internet">
+                        <img alt="Footer logo" src="/fav.png"
+                            height="40px" width="40px">
+                    </a>
+                </div>
+            
+            &copy; 2025  All rights reserved
+            <div class="text-secondary">
+                Made with
+                <span class="text-danger">
+                    &#10084;
+                </span>
+                and
+                <a href="https://github.com/gurusabarish/hugo-profile" target="_blank"
+                    title="Designed and developed by gurusabarish">
+                    Hugo Profile
+                </a>
+            </div>
+        </div>
+    </div>
+</div>
+</footer><script src="/bootstrap-5/js/bootstrap.bundle.min.js"></script>
+<script>
+    if (document.body.className.includes("dark")) {
+        document.body.classList.remove('dark');
+        localStorage.setItem("pref-theme", 'light');
+    }
+</script>
+
+
+<script>
+    document.getElementById("theme-toggle").addEventListener("click", () => {
+        if (document.body.className.includes("dark")) {
+            document.body.classList.remove('dark');
+            localStorage.setItem("pref-theme", 'light');
+        } else {
+            document.body.classList.add('dark');
+            localStorage.setItem("pref-theme", 'dark');
+        }
+    })
+
+    var tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'))
+    var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
+        return new bootstrap.Tooltip(tooltipTriggerEl)
+    })
+
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+  <section id="search-content" class="py-2">
+    <div class="container" id="search-results"></div>
+  </section>
+</body>
+
+</html>
