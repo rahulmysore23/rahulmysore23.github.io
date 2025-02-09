@@ -6,7 +6,7 @@ categories: ["interview"]
 tags: ["tech", "linux", "Go", "CLI", "defunct", "concurrency"]
 ---
 
-Alright, folks, gather 'round. Let me tell you the story of my first interview with a blockchain company (which shall remain nameless, because, well, NDAs are a thing). It was Round 1, and the focus was on OS/System Programming. The interview was scheduled for 1 hour and 30 minutes, and I was told to have a Linux environment ready. Sounds simple enough, right? Wrong. This is where the adventure begins.
+Alright, folks, gather 'round. Let me tell you the story of my interview with a blockchain company (which shall remain nameless, because, well, NDAs are a thing). It was Round 1, and the focus was on OS/System Programming. The interview was scheduled for 1 hour and 30 minutes, and I was told to have a Linux environment ready. Sounds simple enough, right? Wrong. This is where the adventure begins.
 
 ---
 
@@ -27,7 +27,7 @@ I decided to use **Go** for this task. Why? Because Go is my comfort language. I
 
 ---
 
-## The Forever Program: A Love Story
+## The Forever Program
 
 Let’s start with the Forever Program. Here’s the code:
 
@@ -213,9 +213,7 @@ By waiting for the process to exit in a goroutine, we ensure that the child proc
 
 ## Lessons Learned: The Interview Was a Win, Regardless
 
-This interview was a rollercoaster of emotions. I went from feeling confident to panicking about zombie processes to finally fixing the issue. But you know what? It was a fantastic learning experience. I got to dive deep into process management in Linux, and I learned a lot about handling defunct processes. Plus, I can now confidently say that I’ve dealt with zombie processes—how many people can say that?
-
-Whether or not I get the job, I’m walking away with some valuable knowledge. And hey, at least I have a great story to tell. Wish me luck! 🤞
+This interview was a rollercoaster of emotions. I went from feeling confident to panicking about zombie processes to finally fixing the issue. But you know what? It was a fantastic learning experience.
 
 ---
 
@@ -225,5 +223,5 @@ Whether or not I get the job, I’m walking away with some valuable knowledge. A
 - Wrote a Forever Program and a Monitor Program in Go.  
 - Accidentally created zombie processes.  
 - Fixed it by properly reaping child processes.  
-- Learned a ton and had fun.  
+- Had fun.  
 - Fingers crossed for the job! 🚀

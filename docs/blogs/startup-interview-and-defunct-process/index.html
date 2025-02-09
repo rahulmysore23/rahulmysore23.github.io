@@ -31,7 +31,8 @@
 <meta property="og:url" content="https://rahulmysore23.github.io/blogs/startup-interview-and-defunct-process/">
   <meta property="og:site_name" content="Rahul&#39;s Presence On Internet">
   <meta property="og:title" content="Startup Interview and Defunct Process">
-  <meta property="og:description" content="Alright, folks, gather ‘round. Let me tell you the story of my first interview with a blockchain company (which shall remain nameless, because, well, NDAs are a thing). It was Round 1, and the focus was on OS/System Programming. The interview was scheduled for 1 hour and 30 minutes, and I was told to have a Linux environment ready. Sounds simple enough, right? Wrong. This is where the adventure begins.">
+  <meta property="og:description" content="Alright, folks, gather ‘round. Let me tell you the story of my interview with a blockchain company (which shall remain nameless, because, well, NDAs are a thing). It was Round 1, and the focus was on OS/System Programming. The interview was scheduled for 1 hour and 30 minutes, and I was told to have a Linux environment ready. Sounds simple enough, right? Wrong. This is where the adventure begins.
+The Setup: Windows, WSL2, and a Dash of Desperation So, here’s the thing: I was using Windows at the time. Gasp! I know, I know. But hear me out—I was in the process of switching to Hyprland (a fancy tiling window manager for Linux), and I didn’t want to risk breaking my system right before an interview. So, I did what any sane person would do: I fired up WSL2 (Windows Subsystem for Linux). It’s like having a Linux terminal inside Windows, which is great until you realize you’re essentially living in two operating systems at once. Schrödinger’s developer, if you will.">
   <meta property="og:locale" content="en_us">
   <meta property="og:type" content="article">
     <meta property="article:section" content="blogs">
@@ -47,7 +48,8 @@
 
   <meta name="twitter:card" content="summary">
   <meta name="twitter:title" content="Startup Interview and Defunct Process">
-  <meta name="twitter:description" content="Alright, folks, gather ‘round. Let me tell you the story of my first interview with a blockchain company (which shall remain nameless, because, well, NDAs are a thing). It was Round 1, and the focus was on OS/System Programming. The interview was scheduled for 1 hour and 30 minutes, and I was told to have a Linux environment ready. Sounds simple enough, right? Wrong. This is where the adventure begins.">
+  <meta name="twitter:description" content="Alright, folks, gather ‘round. Let me tell you the story of my interview with a blockchain company (which shall remain nameless, because, well, NDAs are a thing). It was Round 1, and the focus was on OS/System Programming. The interview was scheduled for 1 hour and 30 minutes, and I was told to have a Linux environment ready. Sounds simple enough, right? Wrong. This is where the adventure begins.
+The Setup: Windows, WSL2, and a Dash of Desperation So, here’s the thing: I was using Windows at the time. Gasp! I know, I know. But hear me out—I was in the process of switching to Hyprland (a fancy tiling window manager for Linux), and I didn’t want to risk breaking my system right before an interview. So, I did what any sane person would do: I fired up WSL2 (Windows Subsystem for Linux). It’s like having a Linux terminal inside Windows, which is great until you realize you’re essentially living in two operating systems at once. Schrödinger’s developer, if you will.">
 
 
 <link rel="stylesheet" href="/bootstrap-5/css/bootstrap.min.css" media="all"><link rel="stylesheet" href="/css/header.css" media="all">
@@ -334,7 +336,7 @@ Startup Interview and Defunct Process | Rahul&#39;s Presence On Internet
           </div>
           
           <article class="page-content  p-2">
-          <p>Alright, folks, gather &lsquo;round. Let me tell you the story of my first interview with a blockchain company (which shall remain nameless, because, well, NDAs are a thing). It was Round 1, and the focus was on OS/System Programming. The interview was scheduled for 1 hour and 30 minutes, and I was told to have a Linux environment ready. Sounds simple enough, right? Wrong. This is where the adventure begins.</p>
+          <p>Alright, folks, gather &lsquo;round. Let me tell you the story of my interview with a blockchain company (which shall remain nameless, because, well, NDAs are a thing). It was Round 1, and the focus was on OS/System Programming. The interview was scheduled for 1 hour and 30 minutes, and I was told to have a Linux environment ready. Sounds simple enough, right? Wrong. This is where the adventure begins.</p>
 <hr>
 <h2 id="the-setup-windows-wsl2-and-a-dash-of-desperation">The Setup: Windows, WSL2, and a Dash of Desperation</h2>
 <p>So, here’s the thing: I was using Windows at the time. <em>Gasp!</em> I know, I know. But hear me out—I was in the process of switching to <strong>Hyprland</strong> (a fancy tiling window manager for Linux), and I didn’t want to risk breaking my system right before an interview. So, I did what any sane person would do: I fired up <strong>WSL2</strong> (Windows Subsystem for Linux). It’s like having a Linux terminal inside Windows, which is great until you realize you’re essentially living in two operating systems at once. Schrödinger’s developer, if you will.</p>
@@ -347,7 +349,7 @@ Startup Interview and Defunct Process | Rahul&#39;s Presence On Internet
 </ol>
 <p>I decided to use <strong>Go</strong> for this task. Why? Because Go is my comfort language. It’s like that one hoodie you always reach for when you’re feeling lazy. Plus, Go has excellent concurrency support and built-in packages for OS-related stuff, which made it perfect for this task.</p>
 <hr>
-<h2 id="the-forever-program-a-love-story">The Forever Program: A Love Story</h2>
+<h2 id="the-forever-program">The Forever Program</h2>
 <p>Let’s start with the Forever Program. Here’s the code:</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-go" data-lang="go"><span style="display:flex;"><span><span style="color:#f92672">package</span> <span style="color:#a6e22e">main</span>
 </span></span><span style="display:flex;"><span>
@@ -507,8 +509,7 @@ Startup Interview and Defunct Process | Rahul&#39;s Presence On Internet
 </span></span></code></pre></div><p>By waiting for the process to exit in a goroutine, we ensure that the child process is properly reaped, preventing it from becoming a zombie. It’s like giving the ghost a proper burial so it can finally rest in peace.</p>
 <hr>
 <h2 id="lessons-learned-the-interview-was-a-win-regardless">Lessons Learned: The Interview Was a Win, Regardless</h2>
-<p>This interview was a rollercoaster of emotions. I went from feeling confident to panicking about zombie processes to finally fixing the issue. But you know what? It was a fantastic learning experience. I got to dive deep into process management in Linux, and I learned a lot about handling defunct processes. Plus, I can now confidently say that I’ve dealt with zombie processes—how many people can say that?</p>
-<p>Whether or not I get the job, I’m walking away with some valuable knowledge. And hey, at least I have a great story to tell. Wish me luck! 🤞</p>
+<p>This interview was a rollercoaster of emotions. I went from feeling confident to panicking about zombie processes to finally fixing the issue. But you know what? It was a fantastic learning experience.</p>
 <hr>
 <p><strong>TL;DR:</strong></p>
 <ul>
@@ -516,7 +517,7 @@ Startup Interview and Defunct Process | Rahul&#39;s Presence On Internet
 <li>Wrote a Forever Program and a Monitor Program in Go.</li>
 <li>Accidentally created zombie processes.</li>
 <li>Fixed it by properly reaping child processes.</li>
-<li>Learned a ton and had fun.</li>
+<li>Had fun.</li>
 <li>Fingers crossed for the job! 🚀</li>
 </ul>
 
@@ -535,7 +536,7 @@ Startup Interview and Defunct Process | Rahul&#39;s Presence On Internet
   <ul>
     <li><a href="#the-setup-windows-wsl2-and-a-dash-of-desperation">The Setup: Windows, WSL2, and a Dash of Desperation</a></li>
     <li><a href="#the-task-forever-programs-and-the-watchful-monitor">The Task: Forever Programs and the Watchful Monitor</a></li>
-    <li><a href="#the-forever-program-a-love-story">The Forever Program: A Love Story</a></li>
+    <li><a href="#the-forever-program">The Forever Program</a></li>
     <li><a href="#the-monitor-program-helicopter-parent-mode-activated">The Monitor Program: Helicopter Parent Mode Activated</a></li>
     <li><a href="#the-plot-twist-zombie-processes">The Plot Twist: Zombie Processes</a>
       <ul>
