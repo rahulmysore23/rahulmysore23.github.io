@@ -1,0 +1,701 @@
+<!DOCTYPE html>
+<html>
+
+<head><meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<meta http-equiv="Accept-CH" content="DPR, Viewport-Width, Width">
+<link rel="icon" href=/fav.png type="image/gif">
+
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="preload"
+      as="style"
+      href="https://fonts.googleapis.com/css2?family=Alata&family=Lora:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+>
+<link rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Alata&family=Lora:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      media="print" onload="this.media='all'" />
+<noscript>
+  <link
+          href="https://fonts.googleapis.com/css2?family=Alata&family=Lora:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+          rel="stylesheet">
+</noscript>
+
+
+<link rel="stylesheet" href="/css/font.css" media="all">
+
+
+
+<meta property="og:url" content="https://rahulmysore23.github.io/blogs/sonic-pi/">
+  <meta property="og:site_name" content="Rahul&#39;s Presence On Internet">
+  <meta property="og:title" content="Code Music with Sonic Pi">
+  <meta property="og:description" content="It was just another day, and I found myself surfing YouTube, as one does. That’s when I stumbled upon a video titled “The Art of Code” by Dylan Beattie. Little did I know that this video would become one of the most inspiring pieces of content I’ve ever watched about programming. The video, which is an hour long, held my attention from start to finish. It was a deep dive into the creative and artistic side of coding, something that resonated deeply with me.">
+  <meta property="og:locale" content="en_us">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="blogs">
+    <meta property="article:published_time" content="2024-01-13T00:37:34-06:00">
+    <meta property="article:modified_time" content="2024-01-13T00:37:34-06:00">
+    <meta property="article:tag" content="Tech">
+    <meta property="article:tag" content="Music">
+    <meta property="article:tag" content="Sonic-Pi">
+    <meta property="article:tag" content="Youtube">
+    <meta property="article:tag" content="Ruby">
+
+
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="Code Music with Sonic Pi">
+  <meta name="twitter:description" content="It was just another day, and I found myself surfing YouTube, as one does. That’s when I stumbled upon a video titled “The Art of Code” by Dylan Beattie. Little did I know that this video would become one of the most inspiring pieces of content I’ve ever watched about programming. The video, which is an hour long, held my attention from start to finish. It was a deep dive into the creative and artistic side of coding, something that resonated deeply with me.">
+
+
+<link rel="stylesheet" href="/bootstrap-5/css/bootstrap.min.css" media="all"><link rel="stylesheet" href="/css/header.css" media="all">
+<link rel="stylesheet" href="/css/footer.css" media="all">
+<link rel="stylesheet" href="/css/music.css" media="all">
+
+
+<link rel="stylesheet" href="/css/theme.css" media="all">
+
+<style>
+    :root {
+        --text-color: #343a40;
+        --text-secondary-color: #6c757d;
+        --text-link-color: #007bff;
+        --background-color: #eaedf0;
+        --secondary-background-color: #64ffda1a;
+        --primary-color: #007bff;
+        --secondary-color: #f8f9fa;
+
+         
+        --text-color-dark: #e4e6eb;
+        --text-secondary-color-dark: #b0b3b8;
+        --text-link-color-dark: #ffffff;
+        --background-color-dark: #18191a;
+        --secondary-background-color-dark: #212529;
+        --primary-color-dark: #ffffff;
+        --secondary-color-dark: #212529;
+    }
+    body {
+        font-size: 1rem;
+        font-weight: 400;
+        line-height: 1.5;
+        text-align: left;
+    }
+
+    html {
+        background-color: var(--background-color) !important;
+    }
+
+    body::-webkit-scrollbar {
+        height: 0px;
+        width: 8px;
+        background-color: var(--background-color);
+    }
+
+    ::-webkit-scrollbar-track {
+        border-radius: 1rem;
+    }
+
+    ::-webkit-scrollbar-thumb {
+        border-radius: 1rem;
+        background: #b0b0b0;
+        outline: 1px solid var(--background-color);
+    }
+
+    #search-content::-webkit-scrollbar {
+        width: .5em;
+        height: .1em;
+        background-color: var(--background-color);
+    }
+</style>
+
+
+
+<meta name="description" content="">
+<link rel="stylesheet" href="/css/single.css">
+
+
+<script defer src="/fontawesome-6/all-6.4.2.js"></script>
+
+
+  
+  
+
+  <title>
+Code Music with Sonic Pi | Rahul&#39;s Presence On Internet
+
+  </title>
+</head>
+
+<body class="light">
+  
+  
+<script>
+    let localStorageValue = localStorage.getItem("pref-theme");
+    let mediaQuery = window.matchMedia('(prefers-color-scheme: dark)').matches;
+
+    switch (localStorageValue) {
+        case "dark":
+            document.body.classList.add('dark');
+            break;
+        case "light":
+            document.body.classList.remove('dark');
+            break;
+        default:
+            if (mediaQuery) {
+                document.body.classList.add('dark');
+            }
+            break;
+    }
+</script>
+
+
+
+
+<script>
+    var prevScrollPos = window.pageYOffset;
+    window.addEventListener("scroll", function showHeaderOnScroll() {
+        let profileHeaderElem = document.getElementById("profileHeader");
+        let currentScrollPos = window.pageYOffset;
+        let resetHeaderStyle = false;
+        let showNavBarOnScrollUp =  true ;
+        let showNavBar = showNavBarOnScrollUp ? prevScrollPos > currentScrollPos : currentScrollPos > 0;
+        if (showNavBar) {
+            profileHeaderElem.classList.add("showHeaderOnTop");
+        } else {
+            resetHeaderStyle = true;
+        }
+        if(currentScrollPos === 0) {
+            resetHeaderStyle = true;
+        }
+        if(resetHeaderStyle) {
+            profileHeaderElem.classList.remove("showHeaderOnTop");
+        }
+        prevScrollPos = currentScrollPos;
+    });
+</script>
+
+
+
+<header id="profileHeader">
+    <nav class="pt-3 navbar navbar-expand-lg animate">
+        <div class="container-fluid mx-xs-2 mx-sm-5 mx-md-5 mx-lg-5">
+            
+            <a class="navbar-brand primary-font text-wrap" href="/">
+                
+                <img src="/fav.png" width="30" height="30"
+                    class="d-inline-block align-top">
+                Rahul&#39;s Presence
+                
+            </a>
+
+            
+
+            
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarContent"
+                aria-controls="navbarContent" aria-expanded="false" aria-label="Toggle navigation">
+                <svg aria-hidden="true" height="24" viewBox="0 0 16 16" version="1.1" width="24" data-view-component="true">
+                    <path fill-rule="evenodd" d="M1 2.75A.75.75 0 011.75 2h12.5a.75.75 0 110 1.5H1.75A.75.75 0 011 2.75zm0 5A.75.75 0 011.75 7h12.5a.75.75 0 110 1.5H1.75A.75.75 0 011 7.75zM1.75 12a.75.75 0 100 1.5h12.5a.75.75 0 100-1.5H1.75z"></path>
+                </svg>
+            </button>
+
+            
+            <div class="collapse navbar-collapse text-wrap primary-font" id="navbarContent">
+                <ul class="navbar-nav ms-auto text-center">
+                    
+
+                    
+                    <li class="nav-item navbar-text">
+                        <a class="nav-link" href="/#about" aria-label="about">
+                            About Me
+                        </a>
+                    </li>
+                    
+
+                    
+                    <li class="nav-item navbar-text">
+                        <a class="nav-link" href="/#experience"
+                            aria-label="experience">
+                            Experience
+                        </a>
+                    </li>
+                    
+
+                    
+                    <li class="nav-item navbar-text">
+                        <a class="nav-link" href="/#education"
+                            aria-label="education">
+                            Education
+                        </a>
+                    </li>
+                    
+
+                    
+                    <li class="nav-item navbar-text">
+                        <a class="nav-link" href="/#projects"
+                            aria-label="projects">
+                            Projects
+                        </a>
+                    </li>
+                    
+
+                    
+                    <li class="nav-item navbar-text">
+                        <a class="nav-link" href="/#achievements"
+                            aria-label="achievements">
+                            Achievements
+                        </a>
+                    </li>
+                    
+
+                    
+                    <li class="nav-item navbar-text">
+                        <a class="nav-link" href="/#contact"
+                            aria-label="contact">
+                            Contact
+                        </a>
+                    </li>
+                    
+
+                    
+
+                    
+                    
+                    
+                    
+                    <li class="nav-item navbar-text">
+                        <a class="nav-link" href="/blogs" title="Blog posts">
+                            
+                            Blog
+                        </a>
+                    </li>
+                    
+                    
+                    
+                    
+                    <li class="nav-item navbar-text">
+                        <a class="nav-link" href="/music" title="Music">
+                            
+                            Music
+                        </a>
+                    </li>
+                    
+                    
+
+                    
+                    <li class="nav-item navbar-text">
+                        
+                        <div class="text-center">
+                            <button id="theme-toggle">
+                                <svg id="moon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                    <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+                                </svg>
+                                <svg id="sun" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                    <circle cx="12" cy="12" r="5"></circle>
+                                    <line x1="12" y1="1" x2="12" y2="3"></line>
+                                    <line x1="12" y1="21" x2="12" y2="23"></line>
+                                    <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+                                    <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+                                    <line x1="1" y1="12" x2="3" y2="12"></line>
+                                    <line x1="21" y1="12" x2="23" y2="12"></line>
+                                    <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+                                    <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+                                </svg>
+                            </button>
+                        </div>
+                    </li>
+                    
+
+                </ul>
+
+            </div>
+        </div>
+    </nav>
+</header>
+<div id="content">
+<section id="single">
+  <div class="container">
+    <div class="row justify-content-center">
+      <div class="col-sm-12 col-md-12 col-lg-9">
+        <div class="pr-lg-4">
+          <div class="title mb-5">
+            <h1 class="text-center mb-4">Code Music with Sonic Pi</h1>
+            <div class="text-center">
+              
+              Jan 13, 2024
+
+              
+              <span id="readingTime">
+                min read
+              </span>
+              
+            </div>
+          </div>
+          
+          <article class="page-content  p-2">
+          <p>It was just another day, and I found myself surfing YouTube, as one does. That&rsquo;s when I stumbled upon a video titled &ldquo;The Art of Code&rdquo; by Dylan Beattie. Little did I know that this video would become one of the most inspiring pieces of content I&rsquo;ve ever watched about programming. The video, which is an hour long, held my attention from start to finish. It was a deep dive into the creative and artistic side of coding, something that resonated deeply with me.</p>
+<p>As a music nerd and a huge fan of rock, metal, and Indian music, I&rsquo;ve always been fascinated by the intersection of code and music. I play the guitar myself, and the idea of creating music through code felt like a natural extension of my passion. This video was a revelation, showing me how technology could be a canvas for artistic expression.</p>
+<h2 id="the-art-of-code">The Art of Code</h2>
+<p>It was about 5 years ago when I stumbled upon &ldquo;The Art of Code&rdquo; video.  The video captivated me, and here&rsquo;s a journey through it based on the timestamps:</p>
+<p><strong>Setting the Stage - Introduction <a href="https://www.youtube.com/watch?v=6avJHaC3C2U&amp;t=0s">(00:00:00)</a></strong></p>
+<p>Right from the beginning, Dylan Beattie framed coding as an art form.  I remember him opening with how this talk was about <em>art</em>. Not just utility or solving problems, but <em>art</em>.  He even mentioned his first computer, the Amstrad CPC and Logo, which immediately took me back to the early days of personal computing and the sense of wonder it evoked. It set the tone perfectly – this wasn&rsquo;t just about programming, but about creative expression.</p>
+<p><strong>Visualizing Complexity - Mandelbrot Set <a href="https://www.youtube.com/watch?v=6avJHaC3C2U&amp;t=938s">(00:15:38)</a></strong></p>
+<p>When Dylan started talking about the Mandelbrot set, I was mesmerized.  The idea that such intricate and beautiful visuals could emerge from simple mathematical rules was mind-blowing.  Seeing the infinite complexity unfold on screen, generated by code, was a powerful demonstration of the artistic potential within algorithms. It really emphasized how code could create something visually stunning and deeply complex.</p>
+<p><strong>Code as a Creative Medium - Coding as an art form <a href="https://www.youtube.com/watch?v=6avJHaC3C2U&amp;t=1494s">(00:24:54)</a></strong></p>
+<p>This section solidified the core message for me: coding <em>is</em> art.  Hearing about the International Obfuscated C Code Contest, and how it celebrates creative, even unconventional coding, was inspiring.  It broadened my perspective on what programming could be.  It wasn&rsquo;t just about solving problems, but also about playful exploration and pushing the boundaries of what code can do.</p>
+<p><strong>Discovering Sonic Pi - Sonic Pi Introduction <a href="https://www.youtube.com/watch?v=6avJHaC3C2U&amp;t=2580s">(00:43:00)</a></strong></p>
+<p>And then came Sonic Pi.  This was the moment the video truly grabbed me.  A live coding music synth?  Creating music <em>with code</em>?  As a musician, this was like discovering a completely new instrument. The description of Sonic Pi as a tool to create music using code resonated deeply with my existing passions and sparked a new avenue of exploration.</p>
+<p><strong>Sonic Pi in Action - Sonic Pi Demo <a href="https://www.youtube.com/watch?v=6avJHaC3C2U&amp;t=2608s">(00:43:28)</a></strong></p>
+<p>Seeing Sonic Pi in action in the demo was the clincher.  Watching Dylan live code music, introduce loops and melodies in real-time, was utterly captivating.  It made the concept tangible.  It wasn&rsquo;t just theoretical anymore; I could see and hear the artistic potential of code-based music creation.  This demo is what pushed me to immediately download Sonic Pi and start experimenting myself.</p>
+<p><strong>The Playful Side of Code - Rockstar Language <a href="https://www.youtube.com/watch?v=6avJHaC3C2U&amp;t=2850s">(00:47:30)</a></strong></p>
+<p>Finally, the section on the Rockstar language was just pure fun and highlighted the sheer creativity possible in programming.  A language designed to write bad 80s heavy metal lyrics that are also valid code? It was hilarious and brilliant! It underscored that coding doesn&rsquo;t always have to be serious and functional; it can be whimsical, artistic, and even a bit absurd.  It showed the incredible range of expression code can encompass.</p>
+<p>These moments from &ldquo;The Art of Code&rdquo; weren&rsquo;t just informative; they were truly inspiring. They opened my eyes to the artistic dimensions of programming and directly led me to discover Sonic Pi, changing my creative journey in unexpected and exciting ways.</p>
+<h2 id="a-dream-of-code-and-music">A Dream of Code and Music</h2>
+<p>I&rsquo;ve always been fascinated by the intersection of code and music. I had ideas for creating a music player app, and a friend of mine even made a simple program in C to play guitar chords in a particular order to mimic a song. These experiences inspired me to explore more in this domain. Over the past year, I&rsquo;ve worked on a couple of prototypes (though they shall remain unnamed for now, shhh).</p>
+<h2 id="enter-sonic-pi">Enter Sonic Pi</h2>
+<p>Sonic Pi, introduced in the video, immediately caught my eye. It was exactly the kind of tool I had been looking for. Right after the video ended, I downloaded Sonic Pi and started experimenting with it.</p>
+<h2 id="learning-sonic-pi">Learning Sonic Pi</h2>
+<p>I spent about an hour learning the basics of Sonic Pi. The application is incredibly user-friendly, with a built-in tutorial that guides you through the process of creating music with code. Sonic Pi uses a simple yet powerful syntax that allows you to generate sounds, loops, and even full compositions. The real-time feedback makes it easy to tweak and perfect your creations.</p>
+<h2 id="creating-my-first-song">Creating My First Song</h2>
+<p>After getting the hang of the basics, I decided to create a simple song. Here&rsquo;s the code I came up with:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-ruby" data-lang="ruby"><span style="display:flex;"><span>in_thread(name: <span style="color:#e6db74">&#39;plano) do
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">  loop do
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">    with_fw_reverb do
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">      use_synth :plano
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">      4.times do
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">        play_chord chord(:icg, &#39;</span>miano<span style="color:#e6db74">&#39;), amp: 1.5
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">        sleep 1
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">      end
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">      4.times do
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">        play_chord chord(:igg, &#39;</span>miano<span style="color:#960050;background-color:#1e0010">&#39;</span>), <span style="color:#e6db74">amp</span>: <span style="color:#ae81ff">1</span><span style="color:#f92672">.</span><span style="color:#ae81ff">5</span>
+</span></span><span style="display:flex;"><span>        sleep <span style="color:#ae81ff">1</span>
+</span></span><span style="display:flex;"><span>      <span style="color:#66d9ef">end</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">end</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">end</span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">end</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>define <span style="color:#e6db74">:idrums</span> <span style="color:#66d9ef">do</span>
+</span></span><span style="display:flex;"><span>  live_loop <span style="color:#e6db74">:idrums</span> <span style="color:#66d9ef">do</span>
+</span></span><span style="display:flex;"><span>    sample <span style="color:#e6db74">:drum_heavy_kick</span>
+</span></span><span style="display:flex;"><span>    sleep <span style="color:#ae81ff">0</span><span style="color:#f92672">.</span><span style="color:#ae81ff">5</span>
+</span></span><span style="display:flex;"><span>    sample <span style="color:#e6db74">:drum_snare_soft</span>
+</span></span><span style="display:flex;"><span>    sleep <span style="color:#ae81ff">0</span><span style="color:#f92672">.</span><span style="color:#ae81ff">5</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">end</span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">end</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>define <span style="color:#e6db74">:hat</span> <span style="color:#66d9ef">do</span>
+</span></span><span style="display:flex;"><span>  live_loop <span style="color:#e6db74">:hat</span> <span style="color:#66d9ef">do</span>
+</span></span><span style="display:flex;"><span>    sample <span style="color:#e6db74">:drum_tom_hi_soft</span>
+</span></span><span style="display:flex;"><span>    sleep <span style="color:#ae81ff">0</span><span style="color:#f92672">.</span><span style="color:#ae81ff">25</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">end</span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">end</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>define <span style="color:#e6db74">:music</span> <span style="color:#66d9ef">do</span>
+</span></span><span style="display:flex;"><span>  live_loop <span style="color:#e6db74">:music</span> <span style="color:#66d9ef">do</span>
+</span></span><span style="display:flex;"><span>    use_synth <span style="color:#e6db74">:prophet</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#ae81ff">36</span><span style="color:#f92672">.</span>times <span style="color:#66d9ef">do</span>
+</span></span><span style="display:flex;"><span>      play <span style="color:#e6db74">:icg</span>, <span style="color:#e6db74">amp</span>: <span style="color:#ae81ff">0</span><span style="color:#f92672">.</span><span style="color:#ae81ff">5</span>
+</span></span><span style="display:flex;"><span>      sleep <span style="color:#ae81ff">0</span><span style="color:#f92672">.</span><span style="color:#ae81ff">25</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">end</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#ae81ff">36</span><span style="color:#f92672">.</span>times <span style="color:#66d9ef">do</span>
+</span></span><span style="display:flex;"><span>      play <span style="color:#e6db74">:ig2</span>, <span style="color:#e6db74">amp</span>: <span style="color:#ae81ff">0</span><span style="color:#f92672">.</span><span style="color:#ae81ff">5</span>
+</span></span><span style="display:flex;"><span>      sleep <span style="color:#ae81ff">0</span><span style="color:#f92672">.</span><span style="color:#ae81ff">25</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">end</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">end</span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">end</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>sleep <span style="color:#ae81ff">0</span>
+</span></span><span style="display:flex;"><span>drums
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>sleep <span style="color:#ae81ff">0</span>
+</span></span><span style="display:flex;"><span>hat
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>sleep <span style="color:#ae81ff">32</span>
+</span></span><span style="display:flex;"><span>music
+</span></span></code></pre></div><h3 id="breaking-down-the-code">Breaking Down the Code</h3>
+<p><strong>Plano Loop</strong>: This section creates a loop that plays chords with a reverb effect. The <code>play_chord</code> function is used to play multiple notes simultaneously, creating a rich sound. The <code>with_fw_reverb</code> adds a lush, atmospheric effect to the chords.</p>
+<p><strong>Drum Loop</strong>: The <code>idrums</code> function defines a simple drum pattern using kick and snare samples. This gives the track a steady rhythm, essential for any musical composition.</p>
+<p><strong>Hi-Hat Loop</strong>: The <code>hat</code> function adds a hi-hat sound, played at a faster tempo to give the track some rhythm. The quick, repetitive nature of the hi-hat adds energy and drive to the music.</p>
+<p><strong>Music Loop</strong>: The <code>music</code> function uses a different synth to play a sequence of notes, adding melody to the track. The <code>use_synth :prophet</code> gives the melody a warm, analog sound, reminiscent of classic synth tones.</p>
+<h2 id="sharing-the-joy">Sharing the Joy</h2>
+<p>I was thrilled with the result and couldn&rsquo;t wait to share it. I uploaded the song to SoundCloud and sent it to my friends. They were all impressed and even tried creating their own tracks with Sonic Pi. It was amazing to see how a simple tool could bring so much joy and creativity.</p>
+<h2 id="looking-ahead">Looking Ahead</h2>
+<p>While this experience was incredibly rewarding, I still have bigger dreams. I want to create something entirely my own, perhaps a simple music player that fulfills that little boy&rsquo;s dream of blending code and music. Who knows? Maybe one day, I&rsquo;ll share those projects with the world.</p>
+<p>For now, I&rsquo;m just happy to have discovered Sonic Pi and the endless possibilities it offers. If you&rsquo;re interested in exploring the intersection of code and music, I highly recommend checking out the video that started it all for me: <a href="https://youtu.be/6avJHaC3C2U?si=cnzzyqE8VsvXY3n9&amp;t=2580">The Art of Code</a>.</p>
+<p>And if you want to hear the song I made, you can find it here:</p>
+<iframe
+    width="100%"
+    height="166"
+    scrolling="no"
+    frameborder="no"
+    allow="autoplay"
+    src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/814787929&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true">
+</iframe>
+
+<p>To learn more about Sonic Pi, visit their official website: <a href="https://sonic-pi.net/">Sonic Pi</a>.</p>
+<p>Happy coding and music-making!</p>
+
+          </article>
+        </div>
+      </div>
+      <div class="col-sm-12 col-md-12 col-lg-3">
+        <div id="stickySideBar" class="sticky-sidebar">
+          
+          <aside class="toc">
+              <h5>
+                Table Of Contents
+              </h5>
+              <div class="toc-content">
+                <nav id="TableOfContents">
+  <ul>
+    <li><a href="#the-art-of-code">The Art of Code</a></li>
+    <li><a href="#a-dream-of-code-and-music">A Dream of Code and Music</a></li>
+    <li><a href="#enter-sonic-pi">Enter Sonic Pi</a></li>
+    <li><a href="#learning-sonic-pi">Learning Sonic Pi</a></li>
+    <li><a href="#creating-my-first-song">Creating My First Song</a>
+      <ul>
+        <li><a href="#breaking-down-the-code">Breaking Down the Code</a></li>
+      </ul>
+    </li>
+    <li><a href="#sharing-the-joy">Sharing the Joy</a></li>
+    <li><a href="#looking-ahead">Looking Ahead</a></li>
+  </ul>
+</nav>
+              </div>
+          </aside>
+          
+
+          
+          <aside class="tags">
+            <h5>Tags</h5>
+            <ul class="tags-ul list-unstyled list-inline">
+              
+              <li class="list-inline-item"><a href="https://rahulmysore23.github.io/tags/tech"
+                target="_blank"
+              >tech</a></li>
+              
+              <li class="list-inline-item"><a href="https://rahulmysore23.github.io/tags/music"
+                target="_blank"
+              >music</a></li>
+              
+              <li class="list-inline-item"><a href="https://rahulmysore23.github.io/tags/sonic-pi"
+                target="_blank"
+              >sonic-pi</a></li>
+              
+              <li class="list-inline-item"><a href="https://rahulmysore23.github.io/tags/youtube"
+                target="_blank"
+              >youtube</a></li>
+              
+              <li class="list-inline-item"><a href="https://rahulmysore23.github.io/tags/ruby"
+                target="_blank"
+              >ruby</a></li>
+              
+            </ul>
+          </aside>
+          
+
+          
+          <aside class="social">
+            <h5>Social</h5>
+            <div class="social-content">
+              <ul class="list-inline">
+                <li class="list-inline-item text-center">
+                  <a target="_blank" href="https://www.linkedin.com/shareArticle?mini=true&url=https%3a%2f%2frahulmysore23.github.io%2fblogs%2fsonic-pi%2f">
+                    <i class="fab fa-linkedin"></i>
+                  </a>
+                </li>
+                <li class="list-inline-item text-center">
+                  <a target="_blank" href="https://twitter.com/share?text=Code%20Music%20with%20Sonic%20Pi&url=https%3a%2f%2frahulmysore23.github.io%2fblogs%2fsonic-pi%2f">
+                    <i class="fab fa-twitter"></i>
+                  </a>
+                </li>
+                <li class="list-inline-item text-center">
+                  <a target="_blank" href="https://api.whatsapp.com/send?text=Code%20Music%20with%20Sonic%20Pi: https%3a%2f%2frahulmysore23.github.io%2fblogs%2fsonic-pi%2f">
+                    <i class="fab fa-whatsapp"></i>
+                  </a>
+                </li>
+                <li class="list-inline-item text-center">
+                  <a target="_blank" href='mailto:?subject=Code%20Music%20with%20Sonic%20Pi&amp;body=Check%20out%20this%20site https%3a%2f%2frahulmysore23.github.io%2fblogs%2fsonic-pi%2f'>
+                    <i class="fa fa-envelope"></i>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </aside>
+          
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-sm-12 col-md-12 col-lg-9 p-4">
+        
+      </div>
+    </div>
+  </div>
+  <button class="p-2 px-3" onclick="topFunction()" id="topScroll">
+    <i class="fas fa-angle-up"></i>
+  </button>
+</section>
+
+
+<div class="progress">
+  <div id="scroll-progress-bar" class="progress-bar" role="progressbar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100"></div>
+</div>
+<Script src="/js/scrollProgressBar.js"></script>
+
+
+<script>
+  var topScroll = document.getElementById("topScroll");
+  window.onscroll = function() {scrollFunction()};
+
+  function scrollFunction() {
+    if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+      topScroll.style.display = "block";
+    } else {
+      topScroll.style.display = "none";
+    }
+  }
+
+  function topFunction() {
+    document.body.scrollTop = 0;
+    document.documentElement.scrollTop = 0;
+  }
+
+  
+  let stickySideBarElem = document.getElementById("stickySideBar");
+  let stickyNavBar =  true ;
+  if(stickyNavBar) {
+    let headerElem = document.getElementById("profileHeader");
+    let headerHeight = headerElem.offsetHeight + 15;
+    stickySideBarElem.style.top = headerHeight + "px";
+  } else {
+    stickySideBarElem.style.top = "50px";
+  }
+</script>
+
+
+<script src="/js/readingTime.js"></script>
+
+
+
+  </div><footer>
+    
+ 
+
+<div class="text-center pt-2">
+    
+    <span class="px-1">
+        <a href="https://github.com/rahulmysore23" aria-label="github">
+            <svg xmlns="http://www.w3.org/2000/svg" width="2.7em" height="2.7em" viewBox="0 0 1792 1792">
+                <path id="footer-socialNetworks-github-svg-path"
+                    d="M522 1352q-8 9-20-3-13-11-4-19 8-9 20 3 12 11 4 19zm-42-61q9 12 0 19-8 6-17-7t0-18q9-7 17 6zm-61-60q-5 7-13 2-10-5-7-12 3-5 13-2 10 5 7 12zm31 34q-6 7-16-3-9-11-2-16 6-6 16 3 9 11 2 16zm129 112q-4 12-19 6-17-4-13-15t19-7q16 5 13 16zm63 5q0 11-16 11-17 2-17-11 0-11 16-11 17-2 17 11zm58-10q2 10-14 14t-18-8 14-15q16-2 18 9zm964-956v960q0 119-84.5 203.5t-203.5 84.5h-224q-16 0-24.5-1t-19.5-5-16-14.5-5-27.5v-239q0-97-52-142 57-6 102.5-18t94-39 81-66.5 53-105 20.5-150.5q0-121-79-206 37-91-8-204-28-9-81 11t-92 44l-38 24q-93-26-192-26t-192 26q-16-11-42.5-27t-83.5-38.5-86-13.5q-44 113-7 204-79 85-79 206 0 85 20.5 150t52.5 105 80.5 67 94 39 102.5 18q-40 36-49 103-21 10-45 15t-57 5-65.5-21.5-55.5-62.5q-19-32-48.5-52t-49.5-24l-20-3q-21 0-29 4.5t-5 11.5 9 14 13 12l7 5q22 10 43.5 38t31.5 51l10 23q13 38 44 61.5t67 30 69.5 7 55.5-3.5l23-4q0 38 .5 103t.5 68q0 22-11 33.5t-22 13-33 1.5h-224q-119 0-203.5-84.5t-84.5-203.5v-960q0-119 84.5-203.5t203.5-84.5h960q119 0 203.5 84.5t84.5 203.5z" />
+
+                <metadata>
+                    <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+                        xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xmlns:dc="http://purl.org/dc/elements/1.1/">
+                        <rdf:Description about="https://iconscout.com/legal#licenses"
+                            dc:title="Github, Online, Project, Hosting, Square"
+                            dc:description="Github, Online, Project, Hosting, Square" dc:publisher="Iconscout"
+                            dc:date="2016-12-14" dc:format="image/svg+xml" dc:language="en">
+                            <dc:creator>
+                                <rdf:Bag>
+                                    <rdf:li>Font Awesome</rdf:li>
+                                </rdf:Bag>
+                            </dc:creator>
+                        </rdf:Description>
+                    </rdf:RDF>
+                </metadata>
+            </svg>
+        </a>
+    </span>
+    
+
+    
+    <span class="px-1">
+        <a href="https://linkedin.com/in/rahulmysore23" aria-label="linkedin">
+            <svg xmlns="http://www.w3.org/2000/svg" width='2.4em' height='2.4em' fill="#fff" aria-label="LinkedIn"
+                viewBox="0 0 512 512">
+                <rect width="512" height="512" fill="#0077b5" rx="15%" />
+                <circle cx="142" cy="138" r="37" />
+                <path stroke="#fff" stroke-width="66" d="M244 194v198M142 194v198" />
+                <path d="M276 282c0-20 13-40 36-40 24 0 33 18 33 45v105h66V279c0-61-32-89-76-89-34 0-51 19-59 32" />
+            </svg>
+        </a>
+    </span>
+    
+
+    
+
+    
+
+    
+</div><div class="container py-4">
+    <div class="row justify-content-center">
+        <div class="col-md-4 text-center">
+            
+                <div class="pb-2">
+                    <a href="https://rahulmysore23.github.io/" title="Rahul&#39;s Presence On Internet">
+                        <img alt="Footer logo" src="/fav.png"
+                            height="40px" width="40px">
+                    </a>
+                </div>
+            
+            &copy; 2025  All rights reserved
+            <div class="text-secondary">
+                Made with
+                <span class="text-danger">
+                    &#10084;
+                </span>
+                and
+                <a href="https://github.com/gurusabarish/hugo-profile" target="_blank"
+                    title="Designed and developed by gurusabarish">
+                    Hugo Profile
+                </a>
+            </div>
+        </div>
+    </div>
+</div>
+</footer><script src="/bootstrap-5/js/bootstrap.bundle.min.js"></script>
+<script>
+    if (document.body.className.includes("dark")) {
+        document.body.classList.remove('dark');
+        localStorage.setItem("pref-theme", 'light');
+    }
+</script>
+
+
+<script>
+    document.getElementById("theme-toggle").addEventListener("click", () => {
+        if (document.body.className.includes("dark")) {
+            document.body.classList.remove('dark');
+            localStorage.setItem("pref-theme", 'light');
+        } else {
+            document.body.classList.add('dark');
+            localStorage.setItem("pref-theme", 'dark');
+        }
+    })
+
+    var tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'))
+    var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
+        return new bootstrap.Tooltip(tooltipTriggerEl)
+    })
+
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+  <section id="search-content" class="py-2">
+    <div class="container" id="search-results"></div>
+  </section>
+</body>
+
+</html>
