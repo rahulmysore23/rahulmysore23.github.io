@@ -60,7 +60,7 @@ What really drew me to the suckless philosophy were these three hilarious and ey
 
 - [Motherfucking Website](https://motherfuckingwebsite.com/)  
 - [Better Motherfucking Website](http://bettermotherfuckingwebsite.com/)  
-- [Even Better Motherfucking Website](http://bettermotherfuckingwebsite.com/)  
+- [The Best Motherfucking Website](https://thebestmotherfucking.website/)  
 
 These websites made me laugh out loud while also making me think about how bloated and overcomplicated modern web design can be. They perfectly encapsulate the suckless philosophy: keep it simple, stupid. Reading these sites inspired me to explore DWM and embrace minimalism in my own setup.  
 
@@ -87,12 +87,17 @@ Hyprland is everything I’ve ever wanted in a window manager. It’s fast, effi
 I’ve made a few tweaks to the dotfiles to suit my preferences, but overall, it’s been a fantastic experience.  
 
 ![Hyprland terminal](/images/hyprland_terminals.jpg)
-**Hyperland terminals with htop, cmatrix**
+**Hyperland terminals with htop, cmatrix and pipes.sh**
 
 ---
 
 ![Hyprland](/images/hyprland_vim_browser.jpg)
 **Hyperland with browser, neovim**
+
+---
+
+![Hyprland cava](/images/hyprland_cava.jpg)
+**Hyperland with cava and spotify**
 
 ---
 
