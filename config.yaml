@@ -401,6 +401,25 @@ params:
         links:
           - icon: fab fa-github
             url: https://github.com/rahulmysore23/sysdmon
+      
+      - title: Distributed Server Monitoring using NATS and Go
+        content: Developed a distributed server monitoring system using NATS, InfluxDB, and Go, leveraging data collected via eBPF. This project enabled real-time monitoring and analysis of CPU, memory, network, and disk I/O across multiple servers, providing a scalable and efficient solution for distributed environments.
+        image: /images/projects/nats.jpg
+        badges:
+          - "Go"
+          - "NATS"
+          - "InfluxDB"
+          - "eBPF"
+          - "Linux"
+
+      - title: Linux Server Monitoring with eBPF
+        content: Developed an advanced system monitoring and file security solution using eBPF, focusing on real-time CPU, memory, network, and disk I/O monitoring. This project included comparisons with traditional methods (reading proc files), showcasing eBPF's superior performance and efficiency.
+        image: /images/projects/ebpf.jpg
+        badges:
+          - "eBPF"
+          - "Linux"
+          - "Go"
+          - "System Monitoring"
 
       - title: 9 men morris Game
         content: The game includes features such as Human vs Human, Human vs Computer, Record and Replay functionalities, and a 6 Men Morris variant, providing a versatile and engaging user experience.
