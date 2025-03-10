@@ -201,7 +201,7 @@ params:
         content: |
             Collaborating with professors at UMKC, I'm developing secure applications for violence prevention programs and researching innovative AI solutions. My work spans building systems for large-scale data analysis and improving LLM performance, driving meaningful academic impact.
             
-            - Tech - Python, LLM, RAG, React, PostgreSQL, DBMS, Linux, Nginx, Shell scripts, Java, JSP, Tomcat.
+            - Tech - Go, Python, LLM, RAG, React, PostgreSQL, DBMS, Linux, Nginx, Shell scripts, Java, JSP, Tomcat.
 
       - job: "Software Engineering Intern"
         company: "Solarwinds"
@@ -215,14 +215,12 @@ params:
         content: |
             As a summer intern at SolarWinds, I spearheaded the development of an LLM-based automation tool, transforming team communication. By refactoring legacy code and integrating concurrency, I pushed software performance to new heights.
             
-            - Tech - Python, LLM, RAG, AWS Bedrock, AWS S3, .Net, C#, Concurrency using Async and Await
+            - Tech - Go, Python, LLM, RAG, AWS Bedrock, AWS S3, .Net, C#, Concurrency using Async and Await
 
       - job: "Platform Engineer"
         company: "Acceldata"
         companyUrl: "https://www.acceldata.io/"
         date: "Jun 2022 - Aug 2023"
-        info:
-          enable: false
         featuredLink:
           enable: false
           url: "https://example.com"
@@ -259,10 +257,10 @@ params:
       - job: "Software Engineer"
         company: "Opentext"
         companyUrl: "https://www.opentext.com/"
-        date: "Sep 2018 - Nov 2019"
+        date: "Jun 2018 - Nov 2019"
         content: |
           I enhanced test automation coverage and developed a diagnostics tool that improved system performance. My contributions identified critical bugs and boosted overall product quality, driving the software toward greater reliability.
-          - Tech - .Net, C#, Selenium, CLI, REST API
+          - Tech - Go, Selenium, CLI, REST API
 
   # Education
   education:
@@ -363,6 +361,7 @@ params:
           name: Demo
           link: https://kcjusticeinitiative.org/
         badges:
+          - "Go"
           - "Python"
           - "PostgreSQL"
           - "React"
