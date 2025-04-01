@@ -96,8 +96,8 @@ params:
     disableSearch: true
     # searchPlaceholder: "Search"
     stickyNavBar:
-      enable : true
-      showOnScrollUp : true
+      enable: true
+      showOnScrollUp: true
     enableSeparator: false
     menus:
       disableAbout: false
@@ -128,7 +128,7 @@ params:
       fontAwesomeIcons:
         - icon: fab fa-github
           url: https://github.com/rahulmysore23
-        - icon: fab fa-linkedin 
+        - icon: fab fa-linkedin
           url: https://linkedin.com/in/rahulmysore23
 
   # About
@@ -172,9 +172,9 @@ params:
         info:
           enable: true
         content: |
-            Collaborating with professors at UMKC, I'm developing secure applications for violence prevention programs and researching innovative AI solutions. My work spans building systems for large-scale data analysis and improving LLM performance, driving meaningful academic impact.
-            
-            - Tech - Go, C#, .Net, Python, LLM, RAG, React, PostgreSQL, DBMS, Linux, Nginx, Shell scripts, Java, JSP, Tomcat, Azure Devops.
+          Collaborating with professors at UMKC, I'm developing secure applications for violence prevention programs and researching innovative AI solutions. My work spans building systems for large-scale data analysis and improving LLM performance, driving meaningful academic impact.
+
+          - Tech - Go, C#, .Net, Python, LLM, RAG, React, PostgreSQL, DBMS, Linux, Nginx, Shell scripts, Java, JSP, Tomcat, Azure Devops.
 
       - job: "Software Engineer"
         company: "Solarwinds"
@@ -186,9 +186,9 @@ params:
         info:
           enable: true
         content: |
-            As a summer intern at SolarWinds, I spearheaded the development of an LLM-based automation tool, transforming team communication. By refactoring legacy code and integrating concurrency, I pushed software performance to new heights.
-            
-            - Tech - Go, Python, LLM, RAG, AWS Bedrock, AWS S3, .Net, C#, Concurrency using Async and Await
+          As a summer intern at SolarWinds, I spearheaded the development of an LLM-based automation tool, transforming team communication. By refactoring legacy code and integrating concurrency, I pushed software performance to new heights.
+
+          - Tech - Go, Python, LLM, RAG, AWS Bedrock, AWS S3, .Net, C#, Concurrency using Async and Await
 
       - job: "Platform Engineer"
         company: "Acceldata"
@@ -223,10 +223,10 @@ params:
         companyUrl: "https://example.com"
         date: "Nov 2019 - Jun 2020"
         content: |
-          I worked with clients to create custom applications and backend solutions. My projects ranged from full-stack web apps to optimized API integrations, delivering impactful solutions that met client needs. 
+          I worked with clients to create custom applications and backend solutions. My projects ranged from full-stack web apps to optimized API integrations, delivering impactful solutions that met client needs.
           - Worked on a startup idea with friends for a couple of months (Didn't turn out well)
           - Tech - Go, Python, Django, PostgreSQL, Angular, MSSQL, .Net, C#, Web and Mobile, Azure
-      
+
       - job: "Software Engineer"
         company: "Opentext"
         companyUrl: "https://www.opentext.com/"
@@ -272,9 +272,9 @@ params:
             - Compiler Design
             - Web Development
             - Design And Analysis Of Algorithms
-          
+
           Extracurricular Activities
-            - Organised a workshop for building terminal games using C++ in a national level technical fest. 
+            - Organised a workshop for building terminal games using C++ in a national level technical fest.
             - Active member of the computer science club
             - Was part of [Mission R & D](https://svecw.edu.in/mission-rd/), select individuals from universities were trained on programming by microsoft professionals.
         featuredLink:
@@ -287,9 +287,12 @@ params:
     enable: true
     # title: "Custom Name"
     items:
-      - title: HackMidwest 2024 - USDA Challenge Winners 
+      - title: HackMidwest 2024 - USDA Challenge Winners
         content: Won USDA AI Driven challenge
         url: https://www.linkedin.com/posts/rahulmysore23_hackmidwest2024-usdachallenge-agriculturaltech-activity-7248075478459113472-f4G7?utm_source=share&utm_medium=member_desktop
+      - title: Midwest Block-a-thon 2025 - Winners
+        content: Won in the general blockchain track.
+        url: https://devpost.com/software/block-a-tick
       - title: KodeKloud - Docker - level 1
         content: Completed tasks for Docker level 1 (There's no level 2 or higher for now)
         url: https://engineer.kodekloud.com/certificate-verification/7a2423eb-45af-4784-ba2b-a31f7c065346
@@ -341,7 +344,7 @@ params:
           - "Nginx"
           - "Docker"
           - "Linux"
-      
+
       - title: D-Chat
         content: D-chat is a cutting-edge decentralized chat application that combines the power of AWS cloud services with decentralized technologies to provide a secure, scalable, and intelligent communication platform.
         image: /images/projects/d-chat.jpeg
@@ -358,7 +361,21 @@ params:
         links:
           - icon: fab fa-github
             url: https://github.com/rahulmysore23/D-Chat
- 
+
+      - title: Block-A-Tick
+        content: Secure, Decentralized Event Ticketing on the Blockchain - Where Every Ticket is a Unique NFT Experience "Your Events, Your Tickets, Your Blockchain" - Seamless and Secure
+        image: /images/projects/block-a-tick.png
+        badges:
+          - "Solidity"
+          - "Next.js"
+          - "IPFS"
+          - "Typescript"
+          - "D-App"
+          - "tailwind"
+        links:
+          - icon: fab fa-github
+            url: https://github.com/rahulmysore23/bloc-a-tic
+
       - title: Systemd Manager
         content: sysdmon is a lightweight, TUI-based tool for managing systemd services. It’s written in Go and uses the tview library for the terminal interface.
         image: /images/sysdmon.jpg
@@ -373,7 +390,7 @@ params:
         links:
           - icon: fab fa-github
             url: https://github.com/rahulmysore23/sysdmon
-      
+
       - title: Distributed Server Monitoring using NATS and Go
         content: Developed a distributed server monitoring system using NATS, InfluxDB, and Go, leveraging data collected via eBPF. This project enabled real-time monitoring and analysis of CPU, memory, network, and disk I/O across multiple servers, providing a scalable and efficient solution for distributed environments.
         image: /images/projects/nats.jpg
