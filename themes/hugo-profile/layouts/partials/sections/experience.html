@@ -1,42 +1,46 @@
 {{ if .Site.Params.experience.enable | default false }}
 <section id="experience" class="py-5">
     <div class="container">
-        <h3 class="text-center">{{ .Site.Params.experience.title | default "Experience" }}</h3>
+        <h3 class="text-center mb-5">{{ .Site.Params.experience.title | default "Experience" }}</h3>
         <div class="row justify-content-center">
-            <div class="col-sm-12 col-md-8 col-lg-8 py-5">
-                <div class="experience-container px-3 pt-2">
+            <div class="col-12 col-lg-10">
+                <div class="experience-container">
                     {{ range .Site.Params.experience.items }}
-                    <div class="experience-item mb-5">
-                        <div>
-                            <span class="h4">{{ .job }}</span>
-                            <small>-</small>
-                            <a href="{{ .companyUrl }}" target="_blank">{{ .company }}</a>
-                            <div class="pb-1">
-                                <small>{{ .date }}</small>
-                                {{ if .info.enable | default true }}
-                                <span class="p-2">
-                                    <span 
-                                        style="cursor: pointer;" 
-                                        data-bs-toggle="tooltip" 
-                                        data-bs-placement="top" 
-                                        data-bs-original-title={{ .info.content | default (print "Worked as a " .job " at " .company ) }}
-                                    > 
-                                        <i class="fas fa-info-circle fa-xs"></i>
+                    <div class="experience-item mb-4 p-4 bg-light rounded-3 shadow-sm">
+                        <div class="d-flex justify-content-between align-items-start flex-wrap">
+                            <div class="mb-3">
+                                <div class="d-flex align-items-center gap-2">
+                                    <h4 class="mb-0 text-dark">{{ .job }}</h4>
+                                    <span class="text-muted">•</span>
+                                    <a href="{{ .companyUrl }}" target="_blank" class="h5 mb-0 text-decoration-none">{{ .company }}</a>
+                                </div>
+                                <div class="text-muted mt-2 d-flex align-items-center">
+                                    <small>{{ .date }}</small>
+                                    {{ if .info.enable | default true }}
+                                    <span class="ms-3">
+                                        <span 
+                                            style="cursor: pointer;" 
+                                            data-bs-toggle="tooltip" 
+                                            data-bs-placement="top" 
+                                            data-bs-original-title={{ .info.content | default (print "Worked as a " .job " at " .company ) }}
+                                        > 
+                                            <i class="fas fa-info-circle"></i>
+                                        </span>
                                     </span>
-                                </span>
-                                {{ end }}
+                                    {{ end }}
+                                </div>
                             </div>
 
                             {{ if .featuredLink.enable | default false }}
-                            <div class="py-2 featuredLink">
-                                <a class="p-2 px-4 btn btn-outline-primary btn-sm" href={{ .featuredLink.url | default "#" }} target="_blank">
+                            <div class="featuredLink">
+                                <a class="btn btn-outline-primary btn-sm" href={{ .featuredLink.url | default "#" }} target="_blank">
                                     {{ .featuredLink.name | default "Featured Link" }} 
                                 </a>
                             </div>
                             {{ end }}
                         </div>
 
-                        <div class="pt-2">
+                        <div class="experience-content mt-3">
                             {{ .content | markdownify }}
                         </div>
                     </div>
