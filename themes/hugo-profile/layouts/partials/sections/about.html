@@ -1,12 +1,20 @@
 {{ if .Site.Params.about.enable | default false }}
 <section id="about" class="py-0 py-sm-5">
     <div class="container bg-transparent">
-        <h3 class="text-center bg-transparent">{{ .Site.Params.about.title }}</h3>
+        <h3 class="text-center bg-transparent mb-5">{{ .Site.Params.about.title }}</h3>
         <div class="bg-transparent row justify-content-center px-3 py-5">
             {{ if .Site.Params.about.image }}
-            <div class="col-sm-12 col-md-8 col-lg-4 mb-5 mb-sm-0 mb-md-5 mb-lg-0 d-none d-sm-none d-md-block">
-                <div class="image d-flex px-5">
-                    <img src="{{ .Site.Params.about.image }}" class="img-thumbnail mx-auto rounded-circle" alt="">
+            <div class="col-sm-12 col-md-12 col-lg-4 mb-4 mb-lg-0">
+                <div class="row justify-content-center">
+                    <div class="col-10 col-sm-8 col-md-7 image {{ if .Site.Params.animate }}animate{{ end }} text-center">
+                        <div style="box-shadow: 0 3px 10px rgb(0 0 0 / 0.1); border-radius: 1rem; display: inline-block; background-color: #fff;">
+                            <img src="{{ .Site.Params.about.image }}"
+                                class="mx-auto d-block img-fluid"
+                                alt=""
+                                style="width: 100%; max-width: 320px; height: auto; aspect-ratio: 1/1; object-fit: cover; border-radius: 1rem;"
+                            >
+                        </div>
+                    </div>
                 </div>
             </div>
             {{ end }}
