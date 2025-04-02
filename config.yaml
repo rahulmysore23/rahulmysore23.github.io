@@ -365,6 +365,9 @@ params:
       - title: Block-A-Tick
         content: Secure, Decentralized Event Ticketing on the Blockchain - Where Every Ticket is a Unique NFT Experience "Your Events, Your Tickets, Your Blockchain" - Seamless and Secure
         image: /images/projects/block-a-tick.png
+        featured:
+          name: Devpost
+          link: https://devpost.com/software/block-a-tick
         badges:
           - "Solidity"
           - "Next.js"
