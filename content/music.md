@@ -1,7 +1,13 @@
 ---
 title: "Music and Me"
-date: 2024-09-10T00:15:46+05:30
+showDate: false
+showReadingTime: false
+showBreadCrumbs: false
+showAuthor: true
+sharingLinks: false
+showWordCount : false
 draft: false
+layout: "page"
 description: "My journey with music"
 ---
 

@@ -1,0 +1,25 @@
+disabled = false
+languageCode = "en"
+languageName = "English"
+weight = 1
+title = "rwxrahul"
+
+[params]
+displayName = "EN"
+isoCode = "en"
+rtl = false
+dateFormat = "2 January 2006"
+
+[params.author]
+name = "Rahul Mysore"
+image = "rahul.jpg"
+headline = "Software Engineer"
+bio = "Senior Software Engineer | Startups Guy | Go, K8s, LLM | 0 -> 1"
+links = [
+  { linkedin = "https://linkedin.com/in/rahulmysore23" },
+  { github = "https://github.com/rahulmysore23" },
+  { youtube = "https://www.youtube.com/@rahulmysore23" },
+  { code = "https://www.hackerrank.com/profile/rahulmysore23" },
+  { link = "https://myanimelist.net/profile/Pre5ence" },
+  { email = "mailto:rahulmysore23@gmail.com" }
+]

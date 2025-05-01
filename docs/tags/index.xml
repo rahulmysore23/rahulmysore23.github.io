@@ -1,180 +1,253 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Tags on Rahul&#39;s Presence On Internet</title>
-    <link>https://rahulmysore23.github.io/tags/</link>
-    <description>Recent content in Tags on Rahul&#39;s Presence On Internet</description>
-    <generator>Hugo</generator>
-    <language>en-us</language>
-    <lastBuildDate>Fri, 07 Feb 2025 01:23:26 -0600</lastBuildDate>
-    <atom:link href="https://rahulmysore23.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
+    <title>Tags on rwxrahul</title>
+    <link>https://rwxrahul.tech/tags/</link>
+    <description>Recent content in Tags on rwxrahul</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <copyright>© 2025 Rahul Mysore</copyright>
+    <lastBuildDate>Fri, 07 Feb 2025 01:23:26 -0600</lastBuildDate><atom:link href="https://rwxrahul.tech/tags/index.xml" rel="self" type="application/rss+xml" />
+    
     <item>
       <title>CLI</title>
-      <link>https://rahulmysore23.github.io/tags/cli/</link>
+      <link>https://rwxrahul.tech/tags/cli/</link>
       <pubDate>Fri, 07 Feb 2025 01:23:26 -0600</pubDate>
-      <guid>https://rahulmysore23.github.io/tags/cli/</guid>
+      
+      <guid>https://rwxrahul.tech/tags/cli/</guid>
       <description></description>
+      
     </item>
+    
     <item>
       <title>Concurrency</title>
-      <link>https://rahulmysore23.github.io/tags/concurrency/</link>
+      <link>https://rwxrahul.tech/tags/concurrency/</link>
       <pubDate>Fri, 07 Feb 2025 01:23:26 -0600</pubDate>
-      <guid>https://rahulmysore23.github.io/tags/concurrency/</guid>
+      
+      <guid>https://rwxrahul.tech/tags/concurrency/</guid>
       <description></description>
+      
     </item>
+    
     <item>
       <title>Defunct</title>
-      <link>https://rahulmysore23.github.io/tags/defunct/</link>
+      <link>https://rwxrahul.tech/tags/defunct/</link>
       <pubDate>Fri, 07 Feb 2025 01:23:26 -0600</pubDate>
-      <guid>https://rahulmysore23.github.io/tags/defunct/</guid>
+      
+      <guid>https://rwxrahul.tech/tags/defunct/</guid>
       <description></description>
+      
     </item>
+    
     <item>
       <title>Go</title>
-      <link>https://rahulmysore23.github.io/tags/go/</link>
+      <link>https://rwxrahul.tech/tags/go/</link>
       <pubDate>Fri, 07 Feb 2025 01:23:26 -0600</pubDate>
-      <guid>https://rahulmysore23.github.io/tags/go/</guid>
+      
+      <guid>https://rwxrahul.tech/tags/go/</guid>
       <description></description>
+      
     </item>
+    
     <item>
       <title>Linux</title>
-      <link>https://rahulmysore23.github.io/tags/linux/</link>
+      <link>https://rwxrahul.tech/tags/linux/</link>
       <pubDate>Fri, 07 Feb 2025 01:23:26 -0600</pubDate>
-      <guid>https://rahulmysore23.github.io/tags/linux/</guid>
+      
+      <guid>https://rwxrahul.tech/tags/linux/</guid>
       <description></description>
+      
     </item>
+    
     <item>
       <title>Tech</title>
-      <link>https://rahulmysore23.github.io/tags/tech/</link>
+      <link>https://rwxrahul.tech/tags/tech/</link>
       <pubDate>Fri, 07 Feb 2025 01:23:26 -0600</pubDate>
-      <guid>https://rahulmysore23.github.io/tags/tech/</guid>
+      
+      <guid>https://rwxrahul.tech/tags/tech/</guid>
       <description></description>
+      
     </item>
+    
     <item>
       <title>Systemd</title>
-      <link>https://rahulmysore23.github.io/tags/systemd/</link>
+      <link>https://rwxrahul.tech/tags/systemd/</link>
       <pubDate>Tue, 04 Feb 2025 01:06:28 -0600</pubDate>
-      <guid>https://rahulmysore23.github.io/tags/systemd/</guid>
+      
+      <guid>https://rwxrahul.tech/tags/systemd/</guid>
       <description></description>
+      
     </item>
+    
     <item>
       <title>TUI</title>
-      <link>https://rahulmysore23.github.io/tags/tui/</link>
+      <link>https://rwxrahul.tech/tags/tui/</link>
       <pubDate>Tue, 04 Feb 2025 01:06:28 -0600</pubDate>
-      <guid>https://rahulmysore23.github.io/tags/tui/</guid>
+      
+      <guid>https://rwxrahul.tech/tags/tui/</guid>
       <description></description>
+      
     </item>
+    
     <item>
       <title>Hyprland</title>
-      <link>https://rahulmysore23.github.io/tags/hyprland/</link>
+      <link>https://rwxrahul.tech/tags/hyprland/</link>
       <pubDate>Thu, 30 Jan 2025 16:12:25 -0600</pubDate>
-      <guid>https://rahulmysore23.github.io/tags/hyprland/</guid>
+      
+      <guid>https://rwxrahul.tech/tags/hyprland/</guid>
       <description></description>
+      
     </item>
+    
     <item>
       <title>I3</title>
-      <link>https://rahulmysore23.github.io/tags/i3/</link>
+      <link>https://rwxrahul.tech/tags/i3/</link>
       <pubDate>Thu, 30 Jan 2025 16:12:25 -0600</pubDate>
-      <guid>https://rahulmysore23.github.io/tags/i3/</guid>
+      
+      <guid>https://rwxrahul.tech/tags/i3/</guid>
       <description></description>
+      
     </item>
+    
     <item>
       <title>Neovim</title>
-      <link>https://rahulmysore23.github.io/tags/neovim/</link>
+      <link>https://rwxrahul.tech/tags/neovim/</link>
       <pubDate>Thu, 30 Jan 2025 16:12:25 -0600</pubDate>
-      <guid>https://rahulmysore23.github.io/tags/neovim/</guid>
+      
+      <guid>https://rwxrahul.tech/tags/neovim/</guid>
       <description></description>
+      
     </item>
+    
     <item>
       <title>Vim</title>
-      <link>https://rahulmysore23.github.io/tags/vim/</link>
+      <link>https://rwxrahul.tech/tags/vim/</link>
       <pubDate>Thu, 30 Jan 2025 16:12:25 -0600</pubDate>
-      <guid>https://rahulmysore23.github.io/tags/vim/</guid>
+      
+      <guid>https://rwxrahul.tech/tags/vim/</guid>
       <description></description>
+      
     </item>
+    
     <item>
       <title>Window-Managers</title>
-      <link>https://rahulmysore23.github.io/tags/window-managers/</link>
+      <link>https://rwxrahul.tech/tags/window-managers/</link>
       <pubDate>Thu, 30 Jan 2025 16:12:25 -0600</pubDate>
-      <guid>https://rahulmysore23.github.io/tags/window-managers/</guid>
+      
+      <guid>https://rwxrahul.tech/tags/window-managers/</guid>
       <description></description>
+      
     </item>
+    
     <item>
       <title>AWS</title>
-      <link>https://rahulmysore23.github.io/tags/aws/</link>
+      <link>https://rwxrahul.tech/tags/aws/</link>
       <pubDate>Mon, 04 Nov 2024 13:42:32 -0600</pubDate>
-      <guid>https://rahulmysore23.github.io/tags/aws/</guid>
+      
+      <guid>https://rwxrahul.tech/tags/aws/</guid>
       <description></description>
+      
     </item>
+    
     <item>
       <title>Bedrock</title>
-      <link>https://rahulmysore23.github.io/tags/bedrock/</link>
+      <link>https://rwxrahul.tech/tags/bedrock/</link>
       <pubDate>Mon, 04 Nov 2024 13:42:32 -0600</pubDate>
-      <guid>https://rahulmysore23.github.io/tags/bedrock/</guid>
+      
+      <guid>https://rwxrahul.tech/tags/bedrock/</guid>
       <description></description>
+      
     </item>
+    
     <item>
       <title>LLM</title>
-      <link>https://rahulmysore23.github.io/tags/llm/</link>
+      <link>https://rwxrahul.tech/tags/llm/</link>
       <pubDate>Mon, 04 Nov 2024 13:42:32 -0600</pubDate>
-      <guid>https://rahulmysore23.github.io/tags/llm/</guid>
+      
+      <guid>https://rwxrahul.tech/tags/llm/</guid>
       <description></description>
+      
     </item>
+    
     <item>
       <title>Prompting</title>
-      <link>https://rahulmysore23.github.io/tags/prompting/</link>
+      <link>https://rwxrahul.tech/tags/prompting/</link>
       <pubDate>Mon, 04 Nov 2024 13:42:32 -0600</pubDate>
-      <guid>https://rahulmysore23.github.io/tags/prompting/</guid>
+      
+      <guid>https://rwxrahul.tech/tags/prompting/</guid>
       <description></description>
+      
     </item>
+    
     <item>
       <title>Python</title>
-      <link>https://rahulmysore23.github.io/tags/python/</link>
+      <link>https://rwxrahul.tech/tags/python/</link>
       <pubDate>Mon, 04 Nov 2024 13:42:32 -0600</pubDate>
-      <guid>https://rahulmysore23.github.io/tags/python/</guid>
+      
+      <guid>https://rwxrahul.tech/tags/python/</guid>
       <description></description>
+      
     </item>
+    
     <item>
       <title>RAG</title>
-      <link>https://rahulmysore23.github.io/tags/rag/</link>
+      <link>https://rwxrahul.tech/tags/rag/</link>
       <pubDate>Mon, 04 Nov 2024 13:42:32 -0600</pubDate>
-      <guid>https://rahulmysore23.github.io/tags/rag/</guid>
+      
+      <guid>https://rwxrahul.tech/tags/rag/</guid>
       <description></description>
+      
     </item>
+    
     <item>
       <title>Music</title>
-      <link>https://rahulmysore23.github.io/tags/music/</link>
+      <link>https://rwxrahul.tech/tags/music/</link>
       <pubDate>Sat, 13 Jan 2024 00:37:34 -0600</pubDate>
-      <guid>https://rahulmysore23.github.io/tags/music/</guid>
+      
+      <guid>https://rwxrahul.tech/tags/music/</guid>
       <description></description>
+      
     </item>
+    
     <item>
       <title>Ruby</title>
-      <link>https://rahulmysore23.github.io/tags/ruby/</link>
+      <link>https://rwxrahul.tech/tags/ruby/</link>
       <pubDate>Sat, 13 Jan 2024 00:37:34 -0600</pubDate>
-      <guid>https://rahulmysore23.github.io/tags/ruby/</guid>
+      
+      <guid>https://rwxrahul.tech/tags/ruby/</guid>
       <description></description>
+      
     </item>
+    
     <item>
       <title>Sonic-Pi</title>
-      <link>https://rahulmysore23.github.io/tags/sonic-pi/</link>
+      <link>https://rwxrahul.tech/tags/sonic-pi/</link>
       <pubDate>Sat, 13 Jan 2024 00:37:34 -0600</pubDate>
-      <guid>https://rahulmysore23.github.io/tags/sonic-pi/</guid>
+      
+      <guid>https://rwxrahul.tech/tags/sonic-pi/</guid>
       <description></description>
+      
     </item>
+    
     <item>
       <title>Youtube</title>
-      <link>https://rahulmysore23.github.io/tags/youtube/</link>
+      <link>https://rwxrahul.tech/tags/youtube/</link>
       <pubDate>Sat, 13 Jan 2024 00:37:34 -0600</pubDate>
-      <guid>https://rahulmysore23.github.io/tags/youtube/</guid>
+      
+      <guid>https://rwxrahul.tech/tags/youtube/</guid>
       <description></description>
+      
     </item>
+    
     <item>
       <title>Non-Tech</title>
-      <link>https://rahulmysore23.github.io/tags/non-tech/</link>
+      <link>https://rwxrahul.tech/tags/non-tech/</link>
       <pubDate>Sun, 13 Aug 2023 11:28:33 +0530</pubDate>
-      <guid>https://rahulmysore23.github.io/tags/non-tech/</guid>
+      
+      <guid>https://rwxrahul.tech/tags/non-tech/</guid>
       <description></description>
+      
     </item>
+    
   </channel>
 </rss>
