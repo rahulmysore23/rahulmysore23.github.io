@@ -1,19 +1,23 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Interview on Rahul&#39;s Presence On Internet</title>
-    <link>https://rahulmysore23.github.io/categories/interview/</link>
-    <description>Recent content in Interview on Rahul&#39;s Presence On Internet</description>
-    <generator>Hugo</generator>
-    <language>en-us</language>
-    <lastBuildDate>Fri, 07 Feb 2025 01:23:26 -0600</lastBuildDate>
-    <atom:link href="https://rahulmysore23.github.io/categories/interview/index.xml" rel="self" type="application/rss+xml" />
+    <title>Interview on rwxrahul</title>
+    <link>https://rwxrahul.tech/categories/interview/</link>
+    <description>Recent content in Interview on rwxrahul</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <copyright>© 2025 Rahul Mysore</copyright>
+    <lastBuildDate>Fri, 07 Feb 2025 01:23:26 -0600</lastBuildDate><atom:link href="https://rwxrahul.tech/categories/interview/index.xml" rel="self" type="application/rss+xml" />
+    
     <item>
       <title>Startup Interview and Defunct Process</title>
-      <link>https://rahulmysore23.github.io/blogs/startup-interview-and-defunct-process/</link>
+      <link>https://rwxrahul.tech/blogs/startup-interview-and-defunct-process/</link>
       <pubDate>Fri, 07 Feb 2025 01:23:26 -0600</pubDate>
-      <guid>https://rahulmysore23.github.io/blogs/startup-interview-and-defunct-process/</guid>
-      <description>&lt;p&gt;Alright, folks, gather &amp;lsquo;round. Let me tell you the story of my interview with a blockchain company (which shall remain nameless, because, well, NDAs are a thing). It was Round 1, and the focus was on OS/System Programming. The interview was scheduled for 1 hour and 30 minutes, and I was told to have a Linux environment ready. Sounds simple enough, right? Wrong. This is where the adventure begins.&lt;/p&gt;&#xA;&lt;hr&gt;&#xA;&lt;h2 id=&#34;the-setup-windows-wsl2-and-a-dash-of-desperation&#34;&gt;The Setup: Windows, WSL2, and a Dash of Desperation&lt;/h2&gt;&#xA;&lt;p&gt;So, here’s the thing: I was using Windows at the time. &lt;em&gt;Gasp!&lt;/em&gt; I know, I know. But hear me out—I was in the process of switching to &lt;strong&gt;Hyprland&lt;/strong&gt; (a fancy tiling window manager for Linux), and I didn’t want to risk breaking my system right before an interview. So, I did what any sane person would do: I fired up &lt;strong&gt;WSL2&lt;/strong&gt; (Windows Subsystem for Linux). It’s like having a Linux terminal inside Windows, which is great until you realize you’re essentially living in two operating systems at once. Schrödinger’s developer, if you will.&lt;/p&gt;</description>
+      
+      <guid>https://rwxrahul.tech/blogs/startup-interview-and-defunct-process/</guid>
+      <description></description>
+      
     </item>
+    
   </channel>
 </rss>

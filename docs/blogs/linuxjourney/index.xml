@@ -1,12 +1,13 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>My Linux Journey: From Ubuntu to Hyprland, Vim to Tiling Window Managers, and Everything In Between on Rahul&#39;s Presence On Internet</title>
-    <link>https://rahulmysore23.github.io/blogs/linuxjourney/</link>
-    <description>Recent content in My Linux Journey: From Ubuntu to Hyprland, Vim to Tiling Window Managers, and Everything In Between on Rahul&#39;s Presence On Internet</description>
-    <generator>Hugo</generator>
-    <language>en-us</language>
-    <lastBuildDate></lastBuildDate>
-    <atom:link href="https://rahulmysore23.github.io/blogs/linuxjourney/index.xml" rel="self" type="application/rss+xml" />
+    <title>My Linux Journey: From Ubuntu to Hyprland, Vim to Tiling Window Managers, and Everything In Between on rwxrahul</title>
+    <link>https://rwxrahul.tech/blogs/linuxjourney/</link>
+    <description>Recent content in My Linux Journey: From Ubuntu to Hyprland, Vim to Tiling Window Managers, and Everything In Between on rwxrahul</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <copyright>© 2025 Rahul Mysore</copyright>
+    <lastBuildDate>Thu, 30 Jan 2025 16:12:25 -0600</lastBuildDate><atom:link href="https://rwxrahul.tech/blogs/linuxjourney/index.xml" rel="self" type="application/rss+xml" />
+    
   </channel>
 </rss>

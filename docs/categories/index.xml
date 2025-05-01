@@ -1,54 +1,73 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Categories on Rahul&#39;s Presence On Internet</title>
-    <link>https://rahulmysore23.github.io/categories/</link>
-    <description>Recent content in Categories on Rahul&#39;s Presence On Internet</description>
-    <generator>Hugo</generator>
-    <language>en-us</language>
-    <lastBuildDate>Fri, 07 Feb 2025 01:23:26 -0600</lastBuildDate>
-    <atom:link href="https://rahulmysore23.github.io/categories/index.xml" rel="self" type="application/rss+xml" />
+    <title>Categories on rwxrahul</title>
+    <link>https://rwxrahul.tech/categories/</link>
+    <description>Recent content in Categories on rwxrahul</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <copyright>© 2025 Rahul Mysore</copyright>
+    <lastBuildDate>Fri, 07 Feb 2025 01:23:26 -0600</lastBuildDate><atom:link href="https://rwxrahul.tech/categories/index.xml" rel="self" type="application/rss+xml" />
+    
     <item>
       <title>Interview</title>
-      <link>https://rahulmysore23.github.io/categories/interview/</link>
+      <link>https://rwxrahul.tech/categories/interview/</link>
       <pubDate>Fri, 07 Feb 2025 01:23:26 -0600</pubDate>
-      <guid>https://rahulmysore23.github.io/categories/interview/</guid>
+      
+      <guid>https://rwxrahul.tech/categories/interview/</guid>
       <description></description>
+      
     </item>
+    
     <item>
       <title>Side-Project</title>
-      <link>https://rahulmysore23.github.io/categories/side-project/</link>
+      <link>https://rwxrahul.tech/categories/side-project/</link>
       <pubDate>Tue, 04 Feb 2025 01:06:28 -0600</pubDate>
-      <guid>https://rahulmysore23.github.io/categories/side-project/</guid>
+      
+      <guid>https://rwxrahul.tech/categories/side-project/</guid>
       <description></description>
+      
     </item>
+    
     <item>
       <title>Setup</title>
-      <link>https://rahulmysore23.github.io/categories/setup/</link>
+      <link>https://rwxrahul.tech/categories/setup/</link>
       <pubDate>Thu, 30 Jan 2025 16:12:25 -0600</pubDate>
-      <guid>https://rahulmysore23.github.io/categories/setup/</guid>
+      
+      <guid>https://rwxrahul.tech/categories/setup/</guid>
       <description></description>
+      
     </item>
+    
     <item>
       <title>Hackathon</title>
-      <link>https://rahulmysore23.github.io/categories/hackathon/</link>
+      <link>https://rwxrahul.tech/categories/hackathon/</link>
       <pubDate>Mon, 04 Nov 2024 13:42:32 -0600</pubDate>
-      <guid>https://rahulmysore23.github.io/categories/hackathon/</guid>
+      
+      <guid>https://rwxrahul.tech/categories/hackathon/</guid>
       <description></description>
+      
     </item>
+    
     <item>
       <title>Art-of-Code</title>
-      <link>https://rahulmysore23.github.io/categories/art-of-code/</link>
+      <link>https://rwxrahul.tech/categories/art-of-code/</link>
       <pubDate>Sat, 13 Jan 2024 00:37:34 -0600</pubDate>
-      <guid>https://rahulmysore23.github.io/categories/art-of-code/</guid>
+      
+      <guid>https://rwxrahul.tech/categories/art-of-code/</guid>
       <description></description>
+      
     </item>
+    
     <item>
       <title>AboutMe</title>
-      <link>https://rahulmysore23.github.io/categories/aboutme/</link>
+      <link>https://rwxrahul.tech/categories/aboutme/</link>
       <pubDate>Sun, 13 Aug 2023 11:28:33 +0530</pubDate>
-      <guid>https://rahulmysore23.github.io/categories/aboutme/</guid>
+      
+      <guid>https://rwxrahul.tech/categories/aboutme/</guid>
       <description></description>
+      
     </item>
+    
   </channel>
 </rss>

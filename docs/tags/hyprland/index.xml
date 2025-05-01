@@ -1,19 +1,23 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Hyprland on Rahul&#39;s Presence On Internet</title>
-    <link>https://rahulmysore23.github.io/tags/hyprland/</link>
-    <description>Recent content in Hyprland on Rahul&#39;s Presence On Internet</description>
-    <generator>Hugo</generator>
-    <language>en-us</language>
-    <lastBuildDate>Thu, 30 Jan 2025 16:12:25 -0600</lastBuildDate>
-    <atom:link href="https://rahulmysore23.github.io/tags/hyprland/index.xml" rel="self" type="application/rss+xml" />
+    <title>Hyprland on rwxrahul</title>
+    <link>https://rwxrahul.tech/tags/hyprland/</link>
+    <description>Recent content in Hyprland on rwxrahul</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <copyright>© 2025 Rahul Mysore</copyright>
+    <lastBuildDate>Thu, 30 Jan 2025 16:12:25 -0600</lastBuildDate><atom:link href="https://rwxrahul.tech/tags/hyprland/index.xml" rel="self" type="application/rss+xml" />
+    
     <item>
       <title>My Linux Journey: From Ubuntu to Hyprland, Vim to Tiling Window Managers, and Everything In Between</title>
-      <link>https://rahulmysore23.github.io/blogs/linuxjourney/</link>
+      <link>https://rwxrahul.tech/blogs/linuxjourney/</link>
       <pubDate>Thu, 30 Jan 2025 16:12:25 -0600</pubDate>
-      <guid>https://rahulmysore23.github.io/blogs/linuxjourney/</guid>
-      <description>&lt;p&gt;If you’ve ever fallen down the rabbit hole of Linux, you know how addictive it can be. For me, it all started back in 2016. I was a curious kid with a laptop that barely ran Windows, and I stumbled upon Ubuntu. Little did I know, that first installation would spark a lifelong passion for tinkering, customizing, and optimizing my workflow.&lt;/p&gt;&#xA;&lt;h2 id=&#34;the-beginning-ubuntu-and-the-linux-curiosity&#34;&gt;The Beginning: Ubuntu and the Linux Curiosity&lt;/h2&gt;&#xA;&lt;p&gt;I started with Ubuntu—like most people do. It was simple, user-friendly, and felt like a breath of fresh air compared to Windows. But soon, I wanted more. I tried Pop!_OS for its sleek design and gaming optimizations, Linux Mint for its familiarity, Fedora for its cutting-edge features, and even Garuda Linux because, let’s be honest, it looked &lt;em&gt;cool&lt;/em&gt;.&lt;/p&gt;</description>
+      
+      <guid>https://rwxrahul.tech/blogs/linuxjourney/</guid>
+      <description></description>
+      
     </item>
+    
   </channel>
 </rss>
