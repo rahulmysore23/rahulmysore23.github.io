@@ -36,18 +36,12 @@
   weight = 10
 
 [[main]]
-  name = "Fun"
-  weight = 20
-
-[[main]]
   name = "Music"
-  parent = "Fun"
   pageRef = "Music"
   weight = 20
 
 [[main]]
   name = "Now"
-  parent = "Fun"
   pageRef = "Now"
   weight = 20
 

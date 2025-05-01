@@ -20,10 +20,29 @@ showLikes: false
 layoutBackgroundHeaderSpace: false
 
 #groupByYear : false
-
 ---
 
-I always try to find time to work and learn something new. Usually, most of these _pet-projects_ don't see the light of day. They are, however, great opportunities to try something in the real world and learn from it.
+Building side projects is how I feed my curiosity and stay sharp. Most never make it to production, but every failed experiment teaches me something new - and the occasional success makes it all worthwhile.
+
+<style>
+.customEntitityAlbum {
+    max-width: 100px;
+    max-height: 100px;
+    display: block;
+    margin: 0 auto;
+}
+table {
+    width: 100%;
+    border-collapse: collapse;
+    border: none;
+}
+table td, table th {
+    padding: 12px;
+    text-align: center;
+    vertical-align: middle;
+    border: none;
+}
+</style>
 
 <table>
     <thead>
@@ -31,39 +50,87 @@ I always try to find time to work and learn something new. Usually, most of thes
             <th>Logo</th>
             <th>Title</th>
             <th>Description</th>
-            <th>References</th>
+            <th>Links</th>
         </tr>
     </thead>
     <tbody>
-         <tr>
-            <td><img class="customEntitityAlbum" style="background-color:transparent" src="blowfish_logo.png"/></td>
-            <td>
-              Blowfish
-              {{< badge >}}
-              Active
-              {{< /badge >}}
-            </td>
-            <td>A powerful, lightweight theme for Hugo built with Tailwind CSS.</td>
-            <td><a target="_blank" href="https://blowfish.page">site</a></br><a target="_blank" href="https://github.com/nunocoracao/blowfish">github</a></td>
-        </tr>
-         <tr>
-            <td><img class="customEntitityAlbum" style="background-color:transparent" src="blowfish-tools.png"/></td>
-            <td>
-              Blowfish-Tools
-              {{< badge >}}
-              Active
-              {{< /badge >}}
-            </td>
-            <td>CLI to initialize a Blowfish project</td>
-            <td><a target="_blank" href="https://blowfish.page">site</a></br><a target="_blank" href="https://github.com/nunocoracao/blowfish-tools">github</a></br><a target="_blank" href="https://www.npmjs.com/package/blowfish-tools">NPM</a></td>
+        <tr>
+            <td><img class="customEntitityAlbum" src="/images/projects/wizard_json.png"/></td>
+            <td>Wizard</td>
+            <td>Developed Wizard a minimal Ansible clone, Acceldata's automation engine that utilizes JSON as a Domain Specific Language (DSL) to automate ad-hoc tasks.</td>
+            <td><a target="_blank" href="https://github.com/acceldata-io/wizard">github</a></td>
         </tr>
         <tr>
-            <td><img class="customEntitityAlbum" style="background-color:transparent" src="wormhole-logo-square.png"/></td>
-            <td>
-              Wormhole
-            </td>
-            <td>A wormhole into the universe - web feed for deep space photography</td>
-            <td><a target="_blank" href="https://wormhole-black.vercel.app/">site</a></br><a target="_blank" href="https://github.com/wormhole-photos">github</a></td>
+            <td><img class="customEntitityAlbum" src="/images/projects/kcri_website.png"/></td>
+            <td>KC Justice Initiative</td>
+            <td>Architected and Developed - frontend, backend, DB and deployment. Done as part of my Graduate Research.</td>
+            <td><a target="_blank" href="https://kcjusticeinitiative.org/">demo</a></td>
+        </tr>
+        <tr>
+            <td><img class="customEntitityAlbum" src="/images/projects/d-chat.jpeg"/></td>
+            <td>D-Chat</td>
+            <td>D-chat is a cutting-edge decentralized chat application that combines the power of AWS cloud services with decentralized technologies.</td>
+            <td><a target="_blank" href="https://github.com/rahulmysore23/D-Chat">github</a></td>
+        </tr>
+        <tr>
+            <td><img class="customEntitityAlbum" src="/images/projects/block-a-tick.png"/></td>
+            <td>Block-A-Tick</td>
+            <td>Secure, Decentralized Event Ticketing on the Blockchain - Where Every Ticket is a Unique NFT Experience.</td>
+            <td><a target="_blank" href="https://devpost.com/software/block-a-tick">devpost</a> <a target="_blank" href="https://github.com/rahulmysore23/bloc-a-tic">github</a></td>
+        </tr>
+        <tr>
+            <td><img class="customEntitityAlbum" src="/images/sysdmon.jpg"/></td>
+            <td>Systemd Manager</td>
+            <td>sysdmon is a lightweight, TUI-based tool for managing systemd services.</td>
+            <td><a target="_blank" href="https://rahulmysore23.github.io/blogs/sysdmon">blog</a> <a target="_blank" href="https://github.com/rahulmysore23/sysdmon">github</a></td>
+        </tr>
+        <!-- <tr> -->
+        <!--     <td><img class="customEntitityAlbum" src="/images/projects/nats.jpg"/></td> -->
+        <!--     <td>Distributed Server Monitoring</td> -->
+        <!--     <td>Developed a distributed server monitoring system using NATS, InfluxDB, and Go, leveraging data collected via eBPF.</td> -->
+        <!--     <td></td> -->
+        <!-- </tr> -->
+        <!-- <tr> -->
+        <!--     <td><img class="customEntitityAlbum" src="/images/projects/ebpf.jpg"/></td> -->
+        <!--     <td>Linux Server Monitoring</td> -->
+        <!--     <td>Developed an advanced system monitoring solution using eBPF, focusing on real-time CPU, memory, network, and disk I/O monitoring.</td> -->
+        <!--     <td></td> -->
+        <!-- </tr> -->
+        <tr>
+            <td><img class="customEntitityAlbum" src="/images/projects/9men_full.png"/></td>
+            <td>9 Men Morris Game</td>
+            <td>The game includes features such as Human vs Human, Human vs Computer, Record and Replay functionalities.</td>
+            <td><a target="_blank" href="https://github.com/rahulmysore23/cs-5551/tree/main/teamProject">github</a></td>
+        </tr>
+        <!-- <tr> -->
+        <!--     <td><img class="customEntitityAlbum" src="/images/projects/ELT.png"/></td> -->
+        <!--     <td>Github Repo Analysis</td> -->
+        <!--     <td>Analyze GitHub repository data, tracking the evolution of programming language usage trends over different years.</td> -->
+        <!--     <td><a target="_blank" href="https://github.com/rahulmysore23/cs-5540/tree/main/team-project">github</a></td> -->
+        <!-- </tr> -->
+        <!-- <tr> -->
+        <!--     <td><img class="customEntitityAlbum" src="/images/projects/twitter_bot.png"/></td> -->
+        <!--     <td>Twitter Bot</td> -->
+        <!--     <td>A customisable CLI twitter bot for likes, reposts using selenium.</td> -->
+        <!--     <td><a target="_blank" href="https://github.com/rahulmysore23/Twitter-Bot">github</a></td> -->
+        <!-- </tr> -->
+        <tr>
+            <td><img class="customEntitityAlbum" src="/images/projects/flappy_bird.png"/></td>
+            <td>Flappy Bird</td>
+            <td>A simple CLI flappy bird game written in C#.</td>
+            <td><a target="_blank" href="https://github.com/rahulmysore23/Flappy-Bird">github</a></td>
+        </tr>
+        <tr>
+            <td><img class="customEntitityAlbum" src="/images/projects/no_scrape.png"/></td>
+            <td>No Game No Scrape</td>
+            <td>A flexible, general-purpose web scraper built with Python and Selenium.</td>
+            <td><a target="_blank" href="https://github.com/rahulmysore23/No-Game-No-Scrape">github</a></td>
+        </tr>
+        <tr>
+            <td><img class="customEntitityAlbum" src="/images/projects/job_quip.png"/></td>
+            <td>Job Quip (In progress)</td>
+            <td>An application to read emails, track and follow on job applications with AI.</td>
+            <td><a target="_blank" href="https://github.com/rahulmysore23/job-quip">github</a></td>
         </tr>
     </tbody>
-  </table>
+</table>

@@ -3,8 +3,9 @@ title: "Music and Me"
 showDate: false
 showReadingTime: false
 showBreadCrumbs: false
-showAuthor: false
+showAuthor: true
 sharingLinks: false
+showWordCount : false
 draft: false
 layout: "page"
 description: "My journey with music"

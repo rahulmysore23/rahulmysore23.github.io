@@ -58,9 +58,9 @@ I decided to give DWM a try, along with ST (Simple Terminal). It was a steep lea
 
 What really drew me to the suckless philosophy were these three hilarious and eye-opening websites:  
 
-- [Motherfucking Website](https://motherfuckingwebsite.com/)  
-- [Better Motherfucking Website](http://bettermotherfuckingwebsite.com/)  
-- [The Best Motherfucking Website](https://thebestmotherfucking.website/)  
+- [Website](https://motherfuckingwebsite.com/)  
+- [Better Website](http://bettermotherfuckingwebsite.com/)  
+- [The Best Website](https://thebestmotherfucking.website/)  
 
 These websites made me laugh out loud while also making me think about how bloated and overcomplicated modern web design can be. They perfectly encapsulate the suckless philosophy: keep it simple, stupid. Reading these sites inspired me to explore DWM and embrace minimalism in my own setup.  
 

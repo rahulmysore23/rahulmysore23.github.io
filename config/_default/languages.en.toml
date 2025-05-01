@@ -20,5 +20,6 @@ links = [
   { github = "https://github.com/rahulmysore23" },
   { youtube = "https://www.youtube.com/@rahulmysore23" },
   { code = "https://www.hackerrank.com/profile/rahulmysore23" },
-  { link = "https://myanimelist.net/profile/Pre5ence" }
+  { link = "https://myanimelist.net/profile/Pre5ence" },
+  { email = "mailto:rahulmysore23@gmail.com" }
 ]

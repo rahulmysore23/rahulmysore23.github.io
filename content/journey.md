@@ -16,7 +16,6 @@ showEdit: false
 showViews: false
 showLikes: false
 layoutBackgroundHeaderSpace: false
-
 ---
 
 ## Experience
@@ -25,100 +24,59 @@ layoutBackgroundHeaderSpace: false
     <thead>
         <tr>
             <th>Company</th>
-            <th>Link</th>
             <th>Role</th>
             <th>Dates</th>
-            <th>Location</th>
+            <th>Details</th>
         </tr>
     </thead>
     <tbody>
         <tr>
-            <td rowspan=3><img class="customEntitityLogo" src="docker.png"/></td>
-            <td rowspan=3><a href="https://www.docker.com/" target="_blank">Docker</a></td>
+            <td><a href="https://dsaic.umkc.edu/" target="_blank">UMKC</a></td>
+            <td>Research Assistant</td>
+            <td>Oct 2023 - Dec 2024</td>
+            <td>
+                Collaborating with professors at UMKC, developing secure applications for violence prevention programs and researching innovative AI solutions.
+            </td>
         </tr>
         <tr>
-            <td>Principal Product Manager</td>
-            <td>2024 - Present</td>
-            <td>Full Remote </br> Lisbon, PT</td>
+            <td><a href="https://www.solarwinds.com/" target="_blank">Solarwinds</a></td>
+            <td>Software Engineer (Intern)</td>
+            <td>Jun 2024 - Aug 2024</td>
+            <td>
+                Spearheaded development of LLM-based automation tool, transforming team communication. Refactored legacy code and integrated concurrency.
+            </td>
         </tr>
         <tr>
-            <td>Staff Product Manager</td>
-            <td>2022 - 2024</td>
-            <td>Full Remote </br> Lisbon, PT</td>
+            <td><a href="https://www.acceldata.io/" target="_blank">Acceldata</a></td>
+            <td>Platform Engineer</td>
+            <td>Jun 2022 - Aug 2023</td>
+            <td>
+                Engineered high-impact solutions like Wizard and Kryptr. Optimized CI/CD pipelines, saving development hours.
+            </td>
         </tr>
         <tr>
-            <td><img class="customEntitityLogo" src="aws.png"/></td>
-            <td><a href="https://aws-startup-lofts.com/emea" target="_blank">AWS Startup Loft</a></td>
-            <td>Startup Advisor</td>
-            <td>2022 - 2024</td>
-            <td>Full Remote </br> Lisbon, PT</td>
+            <td><a href="https://www.jukshio.com/" target="_blank">Jukshio</a></td>
+            <td>Software Engineer 2</td>
+            <td>Jul 2020 - May 2022</td>
+            <td>
+                Led migration from monolithic to microservices architecture. Backend architecture handles over a million API hits daily.
+            </td>
         </tr>
         <tr>
-            <td rowspan=3><img class="customEntitityLogo" src="truphone.png"/></td>
-            <td rowspan=3><a href="https://www.truphone.com/" target="_blank">Truphone</a></td>
+            <td>Freelance</td>
+            <td>Software Engineer</td>
+            <td>Nov 2019 - Jun 2020</td>
+            <td>
+                Created custom applications and backend solutions. Worked on a startup idea with friends.
+            </td>
         </tr>
         <tr>
-            <td>Group Product Manager</td>
-            <td>2021 - 2022</td>
-            <td rowspan=2>Hybrid </br> Lisbon, PT</td>
-        </tr>
-        <tr>
-            <td>Senior Product Manager</td>
-            <td>2020 - 2021</td>
-        </tr>
-        <tr>
-            <td rowspan=3><img class="customEntitityLogo" src="vodafone.png"/></td>
-            <td rowspan=3><a href="https://www.vodafone.com/" target="_blank">Vodafone Group</a></td>
-        </tr>
-        <tr>
-            <td>Analytics Squad Lead </td>
-            <td>2019 - 2020</td>
-            <td rowspan=2>Lisbon, PT </br> London, UK</td>
-        </tr>
-        <tr>
-            <td>Senior Product Manager</td>
-            <td>2018 - 2019</td>
-        </tr>
-        <tr>
-            <td><img class="customEntitityLogo" src="sky.png"/></td>
-            <td><a href="https://www.sky.de/" target="_blank">Sky Deutschland</a></td>
-            <td>Senior Product Architect</td>
-            <td>2016 - 2018</td>
-            <td>Munich, DE</td>
-        </tr>
-        <tr>
-            <td><img class="customEntitityLogo" src="skimic.png"/></td>
-            <td><a href="https://skimic.com" target="_blank">Skimic</a> </td>
-            <td>Founder</td>
-            <td>2016 - 2017</td>
-            <td>Munich, DE</td>
-        </tr>
-        <tr>
-            <td><img class="customEntitityLogo" src="vodafone.png"/></td>
-            <td><a href="https://www.vodafone.com/" target="_blank">Vodafone Group</a></td>
-            <td>Product Manager</td>
-            <td>2015 - 2016</td>
-            <td>Lisbon, PT</br>London, UK</td>
-        </tr>
-         <tr>
-            <td rowspan=3><img class="customEntitityLogo" src="nos.png"/></td>
-            <td rowspan=3><a href="https://www.nos.pt" target="_blank">NOS</a></td>
-        </tr>
-         <tr>
-            <td>Product Manager</td>
-            <td>2014 - 2015</td>
-            <td rowspan=2>Lisbon, PT</td>
-        </tr>
-         <tr>
-            <td>Solutions Architect</td>
-            <td>2012 - 2014</td>
-        </tr>
-         <tr>
-            <td><img class="customEntitityLogo" src="inesc.png"/></td>
-            <td><a href="https://www.inesc-id.pt/" target="_blank">Inesc-ID</a></td>
-            <td>Junior Researcher</td>
-            <td>2011 - 2012</td>
-            <td>Lisbon, PT</td>
+            <td><a href="https://www.opentext.com/" target="_blank">Opentext</a></td>
+            <td>Software Engineer</td>
+            <td>Jun 2018 - Nov 2019</td>
+            <td>
+                Enhanced test automation coverage and developed diagnostics tools. Identified critical bugs and boosted product quality.
+            </td>
         </tr>
     </tbody>
 </table>
@@ -133,37 +91,90 @@ layoutBackgroundHeaderSpace: false
             <th>School</th>
             <th>Link</th>
             <th>Degree</th>
-            <th>Date</th>
+            <th>Dates</th>
+            <th>Details</th>
         </tr>
     </thead>
     <tbody>
         <tr>
-            <td rowspan=4><img class="customEntitityLogo" src="hbs.svg"/></td>
-            <td rowspan=4><a href="https://online.hbs.edu/" target="_blank">Harvard Business School Online</a></td>
+            <td><a href="https://www.umkc.edu/" target="_blank">University of Missouri, Kansas City</a></td>
+            <td>Masters in Computer Science</td>
+            <td>2023 - 2024</td>
+            <td>
+                <strong>GPA:</strong> 3.95/4.0
+                <br><br>
+                <strong>Coursework:</strong> Advanced Software Engineering, Distributed Computing Systems, Big Data Management, Cloud Computing, Advanced Operating Systems, Blockchain, Information Security Assurance
+                <br><br>
+                <strong>Extracurricular:</strong> Graduate Advisor for the Computer Science Club
+            </td>
         </tr>
         <tr>
-            <td>Launching Tech Ventures</td>
-            <td>2023</td>
+            <td><a href="https://bvrit.ac.in/" target="_blank">BVRIT</a></td>
+            <td>Bachelor of Technology in Computer Science</td>
+            <td>2015 - 2019</td>
+            <td>
+                <strong>GPA:</strong> 8.95/10
+                <br><br>
+                <strong>Coursework:</strong> Theory Of Computing, Compiler Design, Web Development, Design And Analysis Of Algorithms
+                <br><br>
+                <strong>Extracurricular:</strong> Organized workshop for building terminal games using C++, Active member of computer science club, Part of Mission R&D program trained by Microsoft professionals
+            </td>
         </tr>
-         <tr>
-            <td>Entrepreneurship Essentials</td>
-            <td>2022</td>
+    </tbody>
+</table>
+
+---
+
+## Achievements
+
+<table>
+    <thead>
+        <tr>
+            <th>Achievement</th>
+            <th>Details</th>
+            <th>Link</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>HackMidwest 2024</td>
+            <td>Won USDA AI Driven challenge</td>
+            <td><a href="https://www.linkedin.com/posts/rahulmysore23_hackmidwest2024-usdachallenge-agriculturaltech-activity-7248075478459113472-f4G7" target="_blank">View</a></td>
         </tr>
         <tr>
-            <td>Disruptive Strategy</td>
-            <td>2021</td>
+            <td>Midwest Block-a-thon 2025</td>
+            <td>1st Place in the general blockchain track</td>
+            <td><a href="https://devpost.com/software/block-a-tick" target="_blank">View</a></td>
         </tr>
         <tr>
-            <td rowspan=3><img class="customEntitityLogo" src="ist.png"/></td>
-            <td rowspan=3><a href="https://tecnico.ulisboa.pt/en/" target="_blank">Tecnico Lisboa</a></td>
+            <td>KodeKloud - Docker - level 1</td>
+            <td>Completed tasks for Docker level 1</td>
+            <td><a href="https://engineer.kodekloud.com/certificate-verification/7a2423eb-45af-4784-ba2b-a31f7c065346" target="_blank">View</a></td>
         </tr>
         <tr>
-            <td>MSc in Computer Science - Distributed Systems</td>
-            <td>2012</td>
+            <td>KodeKloud - Git - level 1</td>
+            <td>Completed tasks for Git level 1</td>
+            <td><a href="https://engineer.kodekloud.com/certificate-verification/a5e613d0-3350-4940-b71f-049bc008b575" target="_blank">View</a></td>
         </tr>
         <tr>
-            <td>BSc, Computer Science</td>
-            <td>2010</td>
+            <td>Hackerrank - Go</td>
+            <td>Hackerrank certificate for Go (basic)</td>
+            <td><a href="https://www.hackerrank.com/certificates/9994fb1d7349" target="_blank">View</a></td>
+        </tr>
+        <tr>
+            <td>Hackerrank - Problem solving</td>
+            <td>Hackerrank certificate for problem solving (intermediate)</td>
+            <td><a href="https://www.hackerrank.com/certificates/5875b5a7d120" target="_blank">View</a></td>
+        </tr>
+        <tr>
+            <td>Hackerrank - SQL</td>
+            <td>Hackerrank certificate for SQL (intermediate)</td>
+            <td><a href="https://www.hackerrank.com/certificates/496226a04d46" target="_blank">View</a></td>
+        </tr>
+        <tr>
+            <td>Hackerrank - Java</td>
+            <td>Hackerrank certificate for Java (intermediate)</td>
+            <td><a href="https://www.hackerrank.com/certificates/444f9863ad27" target="_blank">View</a></td>
         </tr>
     </tbody>
 </table>

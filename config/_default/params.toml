@@ -54,6 +54,10 @@ showTaxonomies = true
 showAuthorsBadges = false
 showWordCount = true
 showZenMode = false
+showRelatedContent = true
+relatedContentLimit = 6
+showSummary = true
+
 
 [list]
 showHero = false
