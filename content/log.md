@@ -7,4 +7,12 @@ showAuthor: false
 sharingLinks: false
 draft: false
 layout: "page"
+showWordCount : false
 ---
+
+
+### 2025-05-01
+
+- Migrated this website from hugo profile to blowfish theme
+- Added log page
+- Added now page
