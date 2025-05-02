@@ -39,6 +39,12 @@
     <priority>0.5</priority>
   </url>
   <url>
+    <loc>https://rwxrahul.tech/blogs/my-startup-journey/</loc>
+    <lastmod>2024-05-01T19:43:46-04:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
     <loc>https://rwxrahul.tech/blogs/sonic-pi/</loc>
     <lastmod>2024-01-13T00:37:34-06:00</lastmod>
     <changefreq>daily</changefreq>
