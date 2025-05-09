@@ -54,7 +54,7 @@ This was an AI/ML startup, and my role was a mix of **backend engineering, ops, 
 
 ### **The Breakthrough: A Call Out of Nowhere**  
 
-Then, out of the blue, I got a call.  
+Then, After 2 years, out of the blue, I got a call.  
 
 A startup in another city had found my resume on a job portal (one I didn’t even remember updating). The team lead and I **clicked instantly**—bonding over our love for Go, our disdain for Java, and strong opinions on static vs. dynamic typing.  
 
@@ -102,4 +102,4 @@ If you’re hesitating between **safe and uncertain**, ask yourself:
 
 *"Will I regret not trying?"*  
 
-For me, the answer was clear.  
+For me, the answer was?  

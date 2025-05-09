@@ -10,7 +10,6 @@ draft: false
 layout: "page"
 ---
 
-I've always thought Now pages were cool—they're like a snapshot of someone's current life, priorities, and obsessions.
 Here’s what I’m up to right now.
 
 ### Life Update

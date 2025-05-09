@@ -6,11 +6,11 @@ draft: true
 
 ## The Idea confusion
 
-Same idea by other team before the hackathon. Pivot to a new idea.
+Same idea by other team before the hackathon. Initial idea was to make a decentralized upwork. Pivot to a new idea.
 
 ## Block a tick
 
-About the project.
+We were brainstorming for ideas. It took us 1 and a half hour to decide what to do. About the project.
 
 ## Timeline
 
@@ -20,14 +20,16 @@ Next js and Cursor IDE.
 
 ## Sleep and Pinata Integration
 
-Vector store issue
+Vector store issue with Pinata
 
 ## Gemini Integration
 
 Chat bot and Image gen issue.
 
+## Submission and Presentation
 
-## Submissoin and Presentation
-
+Devpost
 
 ## Result
+
+We Won, Placed 1st in the General track.
