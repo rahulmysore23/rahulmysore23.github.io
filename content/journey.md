@@ -146,35 +146,5 @@ layoutBackgroundHeaderSpace: false
             <td>1st Place in the general blockchain track</td>
             <td><a href="https://devpost.com/software/block-a-tick" target="_blank">View</a></td>
         </tr>
-        <tr>
-            <td>KodeKloud - Docker - level 1</td>
-            <td>Completed tasks for Docker level 1</td>
-            <td><a href="https://engineer.kodekloud.com/certificate-verification/7a2423eb-45af-4784-ba2b-a31f7c065346" target="_blank">View</a></td>
-        </tr>
-        <tr>
-            <td>KodeKloud - Git - level 1</td>
-            <td>Completed tasks for Git level 1</td>
-            <td><a href="https://engineer.kodekloud.com/certificate-verification/a5e613d0-3350-4940-b71f-049bc008b575" target="_blank">View</a></td>
-        </tr>
-        <tr>
-            <td>Hackerrank - Go</td>
-            <td>Hackerrank certificate for Go (basic)</td>
-            <td><a href="https://www.hackerrank.com/certificates/9994fb1d7349" target="_blank">View</a></td>
-        </tr>
-        <tr>
-            <td>Hackerrank - Problem solving</td>
-            <td>Hackerrank certificate for problem solving (intermediate)</td>
-            <td><a href="https://www.hackerrank.com/certificates/5875b5a7d120" target="_blank">View</a></td>
-        </tr>
-        <tr>
-            <td>Hackerrank - SQL</td>
-            <td>Hackerrank certificate for SQL (intermediate)</td>
-            <td><a href="https://www.hackerrank.com/certificates/496226a04d46" target="_blank">View</a></td>
-        </tr>
-        <tr>
-            <td>Hackerrank - Java</td>
-            <td>Hackerrank certificate for Java (intermediate)</td>
-            <td><a href="https://www.hackerrank.com/certificates/444f9863ad27" target="_blank">View</a></td>
-        </tr>
     </tbody>
 </table>
