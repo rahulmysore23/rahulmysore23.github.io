@@ -8,7 +8,7 @@ showHeadingAnchors : false
 showPagination : false
 showReadingTime : false
 showTableOfContents : true
-showTaxonomies : false 
+showTaxonomies : false
 showWordCount : false
 showSummary : false
 sharingLinks : false
@@ -31,11 +31,19 @@ layoutBackgroundHeaderSpace: false
     </thead>
     <tbody>
         <tr>
+            <td><a href="_" target="_blank">Stealth AI Startup</a></td>
+            <td>Lead Software Engineer</td>
+            <td>May 2025 - Present</td>
+            <td>
+                Building in Stealth. Devops, Full Stack, SRE, Architecture and more
+            </td>
+        </tr>
+        <tr>
             <td><a href="https://dsaic.umkc.edu/" target="_blank">UMKC</a></td>
-            <td>Software Engineer</td>
+            <td>Senior Software Engineer</td>
             <td>Oct 2023 - Dec 2024</td>
             <td>
-                Collaborating with professors at UMKC, developing secure applications for violence prevention programs and researching innovative AI solutions.
+                Collaborated with professors at UMKC, developed secure applications for violence prevention programs and researching innovative AI solutions.
             </td>
         </tr>
         <tr>
@@ -43,7 +51,7 @@ layoutBackgroundHeaderSpace: false
             <td>Software Engineer (Intern)</td>
             <td>Jun 2024 - Aug 2024</td>
             <td>
-                Spearheaded development of LLM-based automation tool, transforming team communication. Refactored legacy code and integrated concurrency.
+                Developed LLM-based automation tool, transforming team communication. Refactored legacy code and integrated concurrency.
             </td>
         </tr>
         <tr>
@@ -51,7 +59,7 @@ layoutBackgroundHeaderSpace: false
             <td>Platform Engineer</td>
             <td>Jun 2022 - Aug 2023</td>
             <td>
-                Engineered high-impact solutions like Wizard and Kryptr. Optimized CI/CD pipelines, saving development hours.
+                Engineered high-impact solutions like Wizard and Kryptr. Optimized CI/CD pipelines, saving development hours. Systems programming in Go.
             </td>
         </tr>
         <tr>
@@ -59,7 +67,7 @@ layoutBackgroundHeaderSpace: false
             <td>Software Engineer 2</td>
             <td>Jul 2020 - May 2022</td>
             <td>
-                Led migration from monolithic to microservices architecture. Backend architecture handles over a million API hits daily.
+                Led migration from monolithic to microservices architecture in Go and gRPC. Backend architecture handles over a million API hits daily.
             </td>
         </tr>
         <tr>
