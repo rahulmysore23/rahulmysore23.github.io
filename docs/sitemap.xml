@@ -68,11 +68,6 @@
     <priority>0.5</priority>
   </url>
   <url>
-    <loc>https://rwxrahul.tech/recommendations/</loc>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url>
-  <url>
     <loc>https://rwxrahul.tech/log/</loc>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
