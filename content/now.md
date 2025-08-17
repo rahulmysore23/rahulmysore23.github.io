@@ -14,21 +14,21 @@ Here’s what I’m up to right now.
 
 ### Life Update
 
-I'm in the process of moving to a new city! Between packing boxes and saying goodbyes, I'm excited to explore new neighborhoods, find my favorite coffee spots, and discover what this next chapter holds.
+I moved to a new city about four months ago. It’s been a fun adjustment — new routines, new coffee spots, and slowly settling into the rhythm of the place.
+
+### Work
+
+I’m currently working as a **Lead Software Engineer** at a startup. The pace is fast, the challenges are real, and I’m learning a lot by building and shipping quickly with a small team.
 
 ### Currently Learning
 
-My learning focus is split across a few areas:
-
-- **System Design**: Working through Alex Xu's book to deepen my architecture skills
-- **Startup Fundamentals**: Following Y Combinator's YouTube playlist on building startups
-- **Cloud Native**: Studying for my CKA certification and Terraform through Kodekloud's courses
+Right now, I’m focused less on formal certifications or structured courses, and more on **practical, hands-on learning** through work and collaboration. I’ve been diving into **System Design Fight Club** and other community-driven discussions to sharpen my architecture thinking in real-world contexts.
 
 ### Projects
 
-I'm tinkering with some personal projects at the intersection of AI and music. They're still in early stages, but I'm enjoying the creative process of combining technology with my musical interests.
+I’m still tinkering with personal projects at the intersection of AI and music. They’re evolving slowly, but I love the process of blending creativity with technology.
 
 ### Anime & Books
 
-- **Currently Watching**: [My Anime List profile](https://myanimelist.net/profile/Pre5ence) - always happy to get recommendations!
-- **Reading Slump**: I'll admit I haven't picked up any books lately - need to get back into the habit. If you have any can't-put-down recommendations, send them my way!
+- **Currently Watching**: [My Anime List profile](https://myanimelist.net/profile/Pre5ence) — always open to recommendations!
+- **Reading**: Been in a bit of a slump here, but hoping to pick up something that pulls me back in. If you’ve got a page-turner suggestion, I’m all ears.
