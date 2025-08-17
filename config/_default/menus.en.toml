@@ -1,7 +1,7 @@
 # -- Main Menu --
 # The main menu is displayed in the header at the top of the page.
 # Acceptable parameters are name, pageRef, page, url, title, weight.
-# 
+#
 # The simplest menu configuration is to provide:
 #   name = The name to be displayed for this menu link
 #   pageRef = The identifier of the page or section to link to
@@ -11,39 +11,39 @@
 # ordered by weight from lowest to highest.
 
 [[main]]
-  name = "Blog"
-  pageRef = "blogs"
-  weight = 10
+name = "Blog"
+pageRef = "blogs"
+weight = 10
 
 [[main]]
-  name = "About"
-  pageRef = "About"
-  weight = 10
+name = "About"
+pageRef = "About"
+weight = 10
 
 [[main]]
-  name = "Journey"
-  pageRef = "Journey"
-  weight = 10
-
-# [[main]]
-#   name = "Achievements"
-#   pageRef = "Achievements"
-#   weight = 10
+name = "Journey"
+pageRef = "Journey"
+weight = 10
 
 [[main]]
-  name = "Projects"
-  pageRef = "Projects"
-  weight = 10
+name = "Projects"
+pageRef = "Projects"
+weight = 10
 
 [[main]]
-  name = "Music"
-  pageRef = "Music"
-  weight = 20
+name = "Gists"
+pageRef = "Gists"
+weight = 10
 
 [[main]]
-  name = "Now"
-  pageRef = "Now"
-  weight = 20
+name = "Music"
+pageRef = "Music"
+weight = 20
+
+[[main]]
+name = "Now"
+pageRef = "Now"
+weight = 20
 
 #[[subnavigation]]
 #  name = "An interesting topic"
@@ -56,33 +56,22 @@
 #  pageRef = "categories/awesome"
 #  weight = 20
 
-# [[main]]
-#   name = "Categories"
-#   pageRef = "categories"
-#   weight = 20
-#
-# [[main]]
-#   name = "Tags"
-#   pageRef = "tags"
-#   weight = 30
-
-
 # -- Footer Menu --
 # The footer menu is displayed at the bottom of the page, just before
 # the copyright notice. Configure as per the main menu above.
 
 
 [[footer]]
-  name = "Tags"
-  pageRef = "tags"
-  weight = 10
+name = "Tags"
+pageRef = "tags"
+weight = 10
 
 [[footer]]
-  name = "Categories"
-  pageRef = "categories"
-  weight = 20
+name = "Categories"
+pageRef = "categories"
+weight = 20
 
 [[footer]]
-  name = "Log"
-  pageRef = "log"
-  weight = 20
+name = "Log"
+pageRef = "log"
+weight = 20

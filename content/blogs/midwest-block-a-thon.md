@@ -14,7 +14,7 @@ We were brainstorming for ideas. It took us 1 and a half hour to decide what to 
 
 ## Timeline
 
-Me UI. Adi Solidity contracts.
+I worked on the website.
 
 Next js and Cursor IDE.
 
@@ -24,7 +24,7 @@ Vector store issue with Pinata
 
 ## Gemini Integration
 
-Chat bot and Image gen issue.
+Chat bot and Image gen issue with Gemini API.
 
 ## Submission and Presentation
 
