@@ -12,7 +12,9 @@ outputs:
     - "HTML"
     - "RSS"
 
-Paginate: 10
+pagination:
+  pagerSize: 10
+
 enableRobotsTXT: true
 # disqusShort483497214name: your-disqus-shortname
 googleAnalytics: "G-483497214"
