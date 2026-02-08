@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>AI on rwxrahul</title>
+    <link>https://rwxrahul.tech/tags/ai/</link>
+    <description>Recent content in AI on rwxrahul</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <copyright>© 2026 Rahul Mysore</copyright>
+    <lastBuildDate>Tue, 03 Feb 2026 22:31:23 -0500</lastBuildDate><atom:link href="https://rwxrahul.tech/tags/ai/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>Neovim AI Tools</title>
+      <link>https://rwxrahul.tech/blogs/nvim-ai-tools-setup/</link>
+      <pubDate>Tue, 03 Feb 2026 22:31:23 -0500</pubDate>
+      
+      <guid>https://rwxrahul.tech/blogs/nvim-ai-tools-setup/</guid>
+      <description></description>
+      
+    </item>
+    
+  </channel>
+</rss>

@@ -7,7 +7,17 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
     <copyright>© 2026 Rahul Mysore</copyright>
-    <lastBuildDate>Thu, 30 Jan 2025 16:12:25 -0600</lastBuildDate><atom:link href="https://rwxrahul.tech/tags/neovim/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 03 Feb 2026 22:31:23 -0500</lastBuildDate><atom:link href="https://rwxrahul.tech/tags/neovim/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>Neovim AI Tools</title>
+      <link>https://rwxrahul.tech/blogs/nvim-ai-tools-setup/</link>
+      <pubDate>Tue, 03 Feb 2026 22:31:23 -0500</pubDate>
+      
+      <guid>https://rwxrahul.tech/blogs/nvim-ai-tools-setup/</guid>
+      <description></description>
+      
+    </item>
     
     <item>
       <title>My Linux Journey: From Ubuntu to Hyprland, Vim to Tiling Window Managers, and Everything In Between</title>

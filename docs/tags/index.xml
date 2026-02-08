@@ -7,7 +7,87 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
     <copyright>© 2026 Rahul Mysore</copyright>
-    <lastBuildDate>Wed, 02 Apr 2025 16:24:29 -0500</lastBuildDate><atom:link href="https://rwxrahul.tech/tags/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 03 Feb 2026 22:31:23 -0500</lastBuildDate><atom:link href="https://rwxrahul.tech/tags/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>AI</title>
+      <link>https://rwxrahul.tech/tags/ai/</link>
+      <pubDate>Tue, 03 Feb 2026 22:31:23 -0500</pubDate>
+      
+      <guid>https://rwxrahul.tech/tags/ai/</guid>
+      <description></description>
+      
+    </item>
+    
+    <item>
+      <title>Linux</title>
+      <link>https://rwxrahul.tech/tags/linux/</link>
+      <pubDate>Tue, 03 Feb 2026 22:31:23 -0500</pubDate>
+      
+      <guid>https://rwxrahul.tech/tags/linux/</guid>
+      <description></description>
+      
+    </item>
+    
+    <item>
+      <title>Neovim</title>
+      <link>https://rwxrahul.tech/tags/neovim/</link>
+      <pubDate>Tue, 03 Feb 2026 22:31:23 -0500</pubDate>
+      
+      <guid>https://rwxrahul.tech/tags/neovim/</guid>
+      <description></description>
+      
+    </item>
+    
+    <item>
+      <title>Nvim</title>
+      <link>https://rwxrahul.tech/tags/nvim/</link>
+      <pubDate>Tue, 03 Feb 2026 22:31:23 -0500</pubDate>
+      
+      <guid>https://rwxrahul.tech/tags/nvim/</guid>
+      <description></description>
+      
+    </item>
+    
+    <item>
+      <title>Opencode</title>
+      <link>https://rwxrahul.tech/tags/opencode/</link>
+      <pubDate>Tue, 03 Feb 2026 22:31:23 -0500</pubDate>
+      
+      <guid>https://rwxrahul.tech/tags/opencode/</guid>
+      <description></description>
+      
+    </item>
+    
+    <item>
+      <title>Tech</title>
+      <link>https://rwxrahul.tech/tags/tech/</link>
+      <pubDate>Tue, 03 Feb 2026 22:31:23 -0500</pubDate>
+      
+      <guid>https://rwxrahul.tech/tags/tech/</guid>
+      <description></description>
+      
+    </item>
+    
+    <item>
+      <title>Vim</title>
+      <link>https://rwxrahul.tech/tags/vim/</link>
+      <pubDate>Tue, 03 Feb 2026 22:31:23 -0500</pubDate>
+      
+      <guid>https://rwxrahul.tech/tags/vim/</guid>
+      <description></description>
+      
+    </item>
+    
+    <item>
+      <title>Windsurf</title>
+      <link>https://rwxrahul.tech/tags/windsurf/</link>
+      <pubDate>Tue, 03 Feb 2026 22:31:23 -0500</pubDate>
+      
+      <guid>https://rwxrahul.tech/tags/windsurf/</guid>
+      <description></description>
+      
+    </item>
     
     <item>
       <title>Blockchain</title>
@@ -45,16 +125,6 @@
       <pubDate>Wed, 02 Apr 2025 16:24:29 -0500</pubDate>
       
       <guid>https://rwxrahul.tech/tags/pinata/</guid>
-      <description></description>
-      
-    </item>
-    
-    <item>
-      <title>Tech</title>
-      <link>https://rwxrahul.tech/tags/tech/</link>
-      <pubDate>Wed, 02 Apr 2025 16:24:29 -0500</pubDate>
-      
-      <guid>https://rwxrahul.tech/tags/tech/</guid>
       <description></description>
       
     </item>
@@ -100,16 +170,6 @@
     </item>
     
     <item>
-      <title>Linux</title>
-      <link>https://rwxrahul.tech/tags/linux/</link>
-      <pubDate>Fri, 07 Feb 2025 01:23:26 -0600</pubDate>
-      
-      <guid>https://rwxrahul.tech/tags/linux/</guid>
-      <description></description>
-      
-    </item>
-    
-    <item>
       <title>Systemd</title>
       <link>https://rwxrahul.tech/tags/systemd/</link>
       <pubDate>Tue, 04 Feb 2025 01:06:28 -0600</pubDate>
@@ -145,26 +205,6 @@
       <pubDate>Thu, 30 Jan 2025 16:12:25 -0600</pubDate>
       
       <guid>https://rwxrahul.tech/tags/i3/</guid>
-      <description></description>
-      
-    </item>
-    
-    <item>
-      <title>Neovim</title>
-      <link>https://rwxrahul.tech/tags/neovim/</link>
-      <pubDate>Thu, 30 Jan 2025 16:12:25 -0600</pubDate>
-      
-      <guid>https://rwxrahul.tech/tags/neovim/</guid>
-      <description></description>
-      
-    </item>
-    
-    <item>
-      <title>Vim</title>
-      <link>https://rwxrahul.tech/tags/vim/</link>
-      <pubDate>Thu, 30 Jan 2025 16:12:25 -0600</pubDate>
-      
-      <guid>https://rwxrahul.tech/tags/vim/</guid>
       <description></description>
       
     </item>

@@ -10,6 +10,16 @@
     <lastBuildDate>Tue, 03 Feb 2026 22:31:23 -0500</lastBuildDate><atom:link href="https://rwxrahul.tech/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
+      <title>Neovim AI Tools</title>
+      <link>https://rwxrahul.tech/blogs/nvim-ai-tools-setup/</link>
+      <pubDate>Tue, 03 Feb 2026 22:31:23 -0500</pubDate>
+      
+      <guid>https://rwxrahul.tech/blogs/nvim-ai-tools-setup/</guid>
+      <description></description>
+      
+    </item>
+    
+    <item>
       <title>Midwest Block-a-Thon</title>
       <link>https://rwxrahul.tech/blogs/midwest-block-a-thon/</link>
       <pubDate>Wed, 02 Apr 2025 16:24:29 -0500</pubDate>
