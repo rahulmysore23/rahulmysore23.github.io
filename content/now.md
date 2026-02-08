@@ -18,7 +18,7 @@ I moved to a new city about four months ago. It’s been a fun adjustment — ne
 
 ### Work
 
-I’m currently working as a **Lead Software Engineer** at a startup. The pace is fast, the challenges are real, and I’m learning a lot by building and shipping quickly with a small team.
+I’m currently working as a **Lead Software & Devops Engineer** at a startup. The pace is fast, the challenges are real, and I’m learning a lot by building and shipping quickly with a small team.
 
 ### Currently Learning
 
@@ -28,7 +28,8 @@ Right now, I’m focused less on formal certifications or structured courses, an
 
 I’m still tinkering with personal projects at the intersection of AI and music. They’re evolving slowly, but I love the process of blending creativity with technology.
 
-### Anime & Books
+### Anime, Music & Books
 
 - **Currently Watching**: [My Anime List profile](https://myanimelist.net/profile/Pre5ence) — always open to recommendations!
+- **Music**: Trying to find time to play guitar, It's been over a year since I last made a cover.
 - **Reading**: Been in a bit of a slump here, but hoping to pick up something that pulls me back in. If you’ve got a page-turner suggestion, I’m all ears.

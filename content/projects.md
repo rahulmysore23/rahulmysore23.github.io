@@ -10,7 +10,7 @@ showHeadingAnchors : false
 showPagination : false
 showReadingTime : false
 showTableOfContents : true
-showTaxonomies : false 
+showTaxonomies : false
 showWordCount : false
 showSummary : false
 sharingLinks : false
@@ -57,7 +57,7 @@ table td, table th {
         <tr>
             <td><img class="customEntitityAlbum" src="/images/projects/wizard_json.png"/></td>
             <td>Wizard</td>
-            <td>Developed Wizard a minimal Ansible clone, Acceldata's automation engine that utilizes JSON as a Domain Specific Language (DSL) to automate ad-hoc tasks.</td>
+            <td>Wizard a minimal Ansible clone, Acceldata's automation engine that utilizes JSON as a Domain Specific Language (DSL) to automate ad-hoc tasks.</td>
             <td><a target="_blank" href="https://github.com/acceldata-io/wizard">github</a></td>
         </tr>
         <tr>

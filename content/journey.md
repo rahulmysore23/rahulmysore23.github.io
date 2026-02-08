@@ -1,5 +1,5 @@
 ---
-title: "Resume"
+title: "Tech Journey"
 draft: false
 showDate : false
 showDateOnlyInArticle : false
