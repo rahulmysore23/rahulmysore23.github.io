@@ -32,4 +32,4 @@ I’m still tinkering with personal projects at the intersection of AI and music
 
 - **Currently Watching**: [My Anime List profile](https://myanimelist.net/profile/Pre5ence) — always open to recommendations!
 - **Music**: Trying to find time to play guitar, It's been over a year since I last made a cover.
-- **Reading**: Been in a bit of a slump here, but hoping to pick up something that pulls me back in. If you’ve got a page-turner suggestion, I’m all ears.
+- **Reading**: Zero to One - Peter Thiel, Inspired - Marty Cagan, The difficulty of being good - Gurcharan Das. If you’ve got a page-turner suggestion, I’m all ears.
