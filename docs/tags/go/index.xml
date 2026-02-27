@@ -7,7 +7,17 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
     <copyright>© 2026 Rahul Mysore</copyright>
-    <lastBuildDate>Fri, 07 Feb 2025 01:23:26 -0600</lastBuildDate><atom:link href="https://rwxrahul.tech/tags/go/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 26 Feb 2026 19:58:16 -0500</lastBuildDate><atom:link href="https://rwxrahul.tech/tags/go/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>Dank Material Shell, Niri and Custom Plugin</title>
+      <link>https://rwxrahul.tech/blogs/dank-material-shell/</link>
+      <pubDate>Thu, 26 Feb 2026 19:58:16 -0500</pubDate>
+      
+      <guid>https://rwxrahul.tech/blogs/dank-material-shell/</guid>
+      <description></description>
+      
+    </item>
     
     <item>
       <title>Startup Interview and Defunct Process</title>
