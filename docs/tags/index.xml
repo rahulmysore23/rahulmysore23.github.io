@@ -7,7 +7,67 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
     <copyright>© 2026 Rahul Mysore</copyright>
-    <lastBuildDate>Thu, 26 Feb 2026 19:58:16 -0500</lastBuildDate><atom:link href="https://rwxrahul.tech/tags/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 08 Apr 2026 00:00:00 -0500</lastBuildDate><atom:link href="https://rwxrahul.tech/tags/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>Debian</title>
+      <link>https://rwxrahul.tech/tags/debian/</link>
+      <pubDate>Wed, 08 Apr 2026 00:00:00 -0500</pubDate>
+      
+      <guid>https://rwxrahul.tech/tags/debian/</guid>
+      <description></description>
+      
+    </item>
+    
+    <item>
+      <title>Docker</title>
+      <link>https://rwxrahul.tech/tags/docker/</link>
+      <pubDate>Wed, 08 Apr 2026 00:00:00 -0500</pubDate>
+      
+      <guid>https://rwxrahul.tech/tags/docker/</guid>
+      <description></description>
+      
+    </item>
+    
+    <item>
+      <title>Homelab</title>
+      <link>https://rwxrahul.tech/tags/homelab/</link>
+      <pubDate>Wed, 08 Apr 2026 00:00:00 -0500</pubDate>
+      
+      <guid>https://rwxrahul.tech/tags/homelab/</guid>
+      <description></description>
+      
+    </item>
+    
+    <item>
+      <title>K8s</title>
+      <link>https://rwxrahul.tech/tags/k8s/</link>
+      <pubDate>Wed, 08 Apr 2026 00:00:00 -0500</pubDate>
+      
+      <guid>https://rwxrahul.tech/tags/k8s/</guid>
+      <description></description>
+      
+    </item>
+    
+    <item>
+      <title>Linux</title>
+      <link>https://rwxrahul.tech/tags/linux/</link>
+      <pubDate>Wed, 08 Apr 2026 00:00:00 -0500</pubDate>
+      
+      <guid>https://rwxrahul.tech/tags/linux/</guid>
+      <description></description>
+      
+    </item>
+    
+    <item>
+      <title>Tech</title>
+      <link>https://rwxrahul.tech/tags/tech/</link>
+      <pubDate>Wed, 08 Apr 2026 00:00:00 -0500</pubDate>
+      
+      <guid>https://rwxrahul.tech/tags/tech/</guid>
+      <description></description>
+      
+    </item>
     
     <item>
       <title>Dms</title>
@@ -30,16 +90,6 @@
     </item>
     
     <item>
-      <title>Linux</title>
-      <link>https://rwxrahul.tech/tags/linux/</link>
-      <pubDate>Thu, 26 Feb 2026 19:58:16 -0500</pubDate>
-      
-      <guid>https://rwxrahul.tech/tags/linux/</guid>
-      <description></description>
-      
-    </item>
-    
-    <item>
       <title>Niri</title>
       <link>https://rwxrahul.tech/tags/niri/</link>
       <pubDate>Thu, 26 Feb 2026 19:58:16 -0500</pubDate>
@@ -55,16 +105,6 @@
       <pubDate>Thu, 26 Feb 2026 19:58:16 -0500</pubDate>
       
       <guid>https://rwxrahul.tech/tags/quick-shell/</guid>
-      <description></description>
-      
-    </item>
-    
-    <item>
-      <title>Tech</title>
-      <link>https://rwxrahul.tech/tags/tech/</link>
-      <pubDate>Thu, 26 Feb 2026 19:58:16 -0500</pubDate>
-      
-      <guid>https://rwxrahul.tech/tags/tech/</guid>
       <description></description>
       
     </item>
