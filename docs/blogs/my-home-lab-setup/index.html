@@ -115,7 +115,7 @@
     "keywords": ["tech","linux","homelab","k8s","docker","debian"],
     
     "mainEntityOfPage": "true",
-    "wordCount": "639"
+    "wordCount": "784"
   }]
   </script>
 
@@ -560,7 +560,7 @@
 <div class="flex flex-row flex-wrap items-center">
   
   
-  <time datetime="2026-04-08T00:00:00-05:00">8 April 2026</time><span class="px-2 text-primary-500">&middot;</span><span>639 words</span><span class="px-2 text-primary-500">&middot;</span><span title="Reading time">3 mins</span>
+  <time datetime="2026-04-08T00:00:00-05:00">8 April 2026</time><span class="px-2 text-primary-500">&middot;</span><span>784 words</span><span class="px-2 text-primary-500">&middot;</span><span title="Reading time">4 mins</span>
   
 
   
@@ -845,6 +845,7 @@
         <li><a href="#deploy-via-portainer">Deploy via Portainer</a></li>
         <li><a href="#configure-tailscale-dns">Configure Tailscale DNS</a></li>
         <li><a href="#fix-password-issue-if-needed">Fix Password Issue (If Needed)</a></li>
+        <li><a href="#troubleshooting-dns--no-internet">Troubleshooting DNS / No Internet</a></li>
       </ul>
     </li>
     <li><a href="#whats-next">What&rsquo;s Next?</a></li>
@@ -870,6 +871,7 @@
         <li><a href="#deploy-via-portainer">Deploy via Portainer</a></li>
         <li><a href="#configure-tailscale-dns">Configure Tailscale DNS</a></li>
         <li><a href="#fix-password-issue-if-needed">Fix Password Issue (If Needed)</a></li>
+        <li><a href="#troubleshooting-dns--no-internet">Troubleshooting DNS / No Internet</a></li>
       </ul>
     </li>
     <li><a href="#whats-next">What&rsquo;s Next?</a></li>
@@ -1159,6 +1161,39 @@
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">docker <span class="nb">exec</span> -it pihole pihole setpassword yourpassword
 </span></span></code></pre></div><p>Access Pi-hole admin at <code>http://your-server/admin</code>. Check the <strong>Query Log</strong>
 to see traffic flowing.</p>
+
+
+<h3 class="relative group">Troubleshooting DNS / No Internet 
+    <div id="troubleshooting-dns--no-internet" class="anchor"></div>
+    
+    <span
+        class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
+        <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700"
+            style="text-decoration-line: none !important;" href="#troubleshooting-dns--no-internet" aria-label="Anchor">#</a>
+    </span>        
+    
+</h3>
+<p>If you suddenly can&rsquo;t ping external domains (<code>ping: google.com: Temporary failure in name resolution</code>), the culprit is likely Pi-hole + Tailscale DNS:</p>
+<p><strong>Problem:</strong> You configured Tailscale to use Pi-hole for DNS, but Pi-hole isn&rsquo;t
+forwarding queries to upstream DNS properly.</p>
+<p><strong>Fix:</strong> In Pi-hole admin:</p>
+<ol>
+<li>Go to <strong>Settings → DNS</strong></li>
+<li>Under <strong>Upstream DNS Servers</strong>, make sure you have at least one public DNS
+enabled (e.g., 1.1.1.1, 8.8.8.8)</li>
+<li>Under <strong>Interface Listening Behavior</strong>, select <strong>Permit all origins</strong>
+(allows queries from Tailscale IPs)</li>
+<li>Or add this env var in Portainer stack: <code>DNSMASQ_LISTENING=all</code></li>
+<li>Save and restart Pi-hole</li>
+</ol>
+<p>If that doesn&rsquo;t work, disable Tailscale DNS override temporarily:</p>
+<ol>
+<li>Go to <strong>tailscale.com → Admin Console → DNS</strong></li>
+<li>Uncheck <strong>Override local DNS</strong></li>
+<li>Save</li>
+</ol>
+<p>Test with <code>ping google.com</code>—should work now. Once you confirm it&rsquo;s a Pi-hole issue,
+check your upstream DNS settings and firewall rules on the Pi-hole container.</p>
 <hr>
 
 

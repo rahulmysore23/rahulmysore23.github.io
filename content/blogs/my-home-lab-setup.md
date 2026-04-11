@@ -178,6 +178,31 @@ docker exec -it pihole pihole setpassword yourpassword
 Access Pi-hole admin at `http://your-server/admin`. Check the **Query Log**
 to see traffic flowing.
 
+### Troubleshooting DNS / No Internet
+
+If you suddenly can't ping external domains (`ping: google.com: Temporary failure in name
+resolution`), the culprit is likely Pi-hole + Tailscale DNS:
+
+**Problem:** You configured Tailscale to use Pi-hole for DNS, but Pi-hole isn't
+forwarding queries to upstream DNS properly.
+
+**Fix:** In Pi-hole admin:
+1. Go to **Settings → DNS**
+2. Under **Upstream DNS Servers**, make sure you have at least one public DNS
+   enabled (e.g., 1.1.1.1, 8.8.8.8)
+3. Under **Interface Listening Behavior**, select **Permit all origins** 
+   (allows queries from Tailscale IPs)
+4. Or add this env var in Portainer stack: `DNSMASQ_LISTENING=all`
+5. Save and restart Pi-hole
+
+If that doesn't work, disable Tailscale DNS override temporarily:
+1. Go to **tailscale.com → Admin Console → DNS**
+2. Uncheck **Override local DNS**
+3. Save
+
+Test with `ping google.com`—should work now. Once you confirm it's a Pi-hole issue,
+check your upstream DNS settings and firewall rules on the Pi-hole container.
+
 ---
 
 ## What's Next?
