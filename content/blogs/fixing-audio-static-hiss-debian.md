@@ -1,6 +1,6 @@
 ---
 title: "Fixing Audio Static and Hiss on Headless Debian"
-date: 2026-04-12T14:30:00-05:00
+date: 2026-04-12T00:00:00-05:00
 draft: false
 categories: ["linux"]
 tags: ["tech", "linux", "debian", "audio", "alsa", "pulseaudio"]
@@ -83,3 +83,4 @@ systemctl --user status pipewire
 ---
 
 That's it. One setting, and the hiss is gone. Happy listening!
+
