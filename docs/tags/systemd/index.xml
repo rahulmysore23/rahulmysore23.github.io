@@ -2,19 +2,19 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Systemd on rwxrahul</title>
-    <link>https://rwxrahul.tech/tags/systemd/</link>
+    <link>https://rahulmysore23.github.io/tags/systemd/</link>
     <description>Recent content in Systemd on rwxrahul</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
     <copyright>© 2026 Rahul Mysore</copyright>
-    <lastBuildDate>Tue, 04 Feb 2025 01:06:28 -0600</lastBuildDate><atom:link href="https://rwxrahul.tech/tags/systemd/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 04 Feb 2025 01:06:28 -0600</lastBuildDate><atom:link href="https://rahulmysore23.github.io/tags/systemd/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
       <title>Building a TUI for Managing Systemd Services: A Fun Side Project</title>
-      <link>https://rwxrahul.tech/blogs/sysdmon/</link>
+      <link>https://rahulmysore23.github.io/blogs/sysdmon/</link>
       <pubDate>Tue, 04 Feb 2025 01:06:28 -0600</pubDate>
       
-      <guid>https://rwxrahul.tech/blogs/sysdmon/</guid>
+      <guid>https://rahulmysore23.github.io/blogs/sysdmon/</guid>
       <description></description>
       
     </item>

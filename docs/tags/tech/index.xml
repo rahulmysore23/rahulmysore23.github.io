@@ -2,99 +2,99 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Tech on rwxrahul</title>
-    <link>https://rwxrahul.tech/tags/tech/</link>
+    <link>https://rahulmysore23.github.io/tags/tech/</link>
     <description>Recent content in Tech on rwxrahul</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
     <copyright>© 2026 Rahul Mysore</copyright>
-    <lastBuildDate>Wed, 08 Apr 2026 00:00:00 -0500</lastBuildDate><atom:link href="https://rwxrahul.tech/tags/tech/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 08 Apr 2026 00:00:00 -0500</lastBuildDate><atom:link href="https://rahulmysore23.github.io/tags/tech/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
       <title>My Home Lab Setup</title>
-      <link>https://rwxrahul.tech/blogs/my-home-lab-setup/</link>
+      <link>https://rahulmysore23.github.io/blogs/my-home-lab-setup/</link>
       <pubDate>Wed, 08 Apr 2026 00:00:00 -0500</pubDate>
       
-      <guid>https://rwxrahul.tech/blogs/my-home-lab-setup/</guid>
+      <guid>https://rahulmysore23.github.io/blogs/my-home-lab-setup/</guid>
       <description></description>
       
     </item>
     
     <item>
       <title>Dank Material Shell, Niri and Custom Plugin</title>
-      <link>https://rwxrahul.tech/blogs/dank-material-shell/</link>
+      <link>https://rahulmysore23.github.io/blogs/dank-material-shell/</link>
       <pubDate>Thu, 26 Feb 2026 19:58:16 -0500</pubDate>
       
-      <guid>https://rwxrahul.tech/blogs/dank-material-shell/</guid>
+      <guid>https://rahulmysore23.github.io/blogs/dank-material-shell/</guid>
       <description></description>
       
     </item>
     
     <item>
       <title>Neovim AI Tools</title>
-      <link>https://rwxrahul.tech/blogs/nvim-ai-tools-setup/</link>
+      <link>https://rahulmysore23.github.io/blogs/nvim-ai-tools-setup/</link>
       <pubDate>Tue, 03 Feb 2026 22:31:23 -0500</pubDate>
       
-      <guid>https://rwxrahul.tech/blogs/nvim-ai-tools-setup/</guid>
+      <guid>https://rahulmysore23.github.io/blogs/nvim-ai-tools-setup/</guid>
       <description></description>
       
     </item>
     
     <item>
       <title>Midwest Block-a-Thon</title>
-      <link>https://rwxrahul.tech/blogs/midwest-block-a-thon/</link>
+      <link>https://rahulmysore23.github.io/blogs/midwest-block-a-thon/</link>
       <pubDate>Wed, 02 Apr 2025 16:24:29 -0500</pubDate>
       
-      <guid>https://rwxrahul.tech/blogs/midwest-block-a-thon/</guid>
+      <guid>https://rahulmysore23.github.io/blogs/midwest-block-a-thon/</guid>
       <description></description>
       
     </item>
     
     <item>
       <title>Startup Interview and Defunct Process</title>
-      <link>https://rwxrahul.tech/blogs/startup-interview-and-defunct-process/</link>
+      <link>https://rahulmysore23.github.io/blogs/startup-interview-and-defunct-process/</link>
       <pubDate>Fri, 07 Feb 2025 01:23:26 -0600</pubDate>
       
-      <guid>https://rwxrahul.tech/blogs/startup-interview-and-defunct-process/</guid>
+      <guid>https://rahulmysore23.github.io/blogs/startup-interview-and-defunct-process/</guid>
       <description></description>
       
     </item>
     
     <item>
       <title>Building a TUI for Managing Systemd Services: A Fun Side Project</title>
-      <link>https://rwxrahul.tech/blogs/sysdmon/</link>
+      <link>https://rahulmysore23.github.io/blogs/sysdmon/</link>
       <pubDate>Tue, 04 Feb 2025 01:06:28 -0600</pubDate>
       
-      <guid>https://rwxrahul.tech/blogs/sysdmon/</guid>
+      <guid>https://rahulmysore23.github.io/blogs/sysdmon/</guid>
       <description></description>
       
     </item>
     
     <item>
       <title>My Linux Journey: From Ubuntu to Hyprland, Vim to Tiling Window Managers, and Everything In Between</title>
-      <link>https://rwxrahul.tech/blogs/linuxjourney/</link>
+      <link>https://rahulmysore23.github.io/blogs/linuxjourney/</link>
       <pubDate>Thu, 30 Jan 2025 16:12:25 -0600</pubDate>
       
-      <guid>https://rwxrahul.tech/blogs/linuxjourney/</guid>
+      <guid>https://rahulmysore23.github.io/blogs/linuxjourney/</guid>
       <description></description>
       
     </item>
     
     <item>
       <title>HackMidwest 2024: How We Built a USDA Chatbot in 24 Hours (and Won!)</title>
-      <link>https://rwxrahul.tech/blogs/hackmidwest/</link>
+      <link>https://rahulmysore23.github.io/blogs/hackmidwest/</link>
       <pubDate>Mon, 04 Nov 2024 13:42:32 -0600</pubDate>
       
-      <guid>https://rwxrahul.tech/blogs/hackmidwest/</guid>
+      <guid>https://rahulmysore23.github.io/blogs/hackmidwest/</guid>
       <description></description>
       
     </item>
     
     <item>
       <title>Code Music with Sonic Pi</title>
-      <link>https://rwxrahul.tech/blogs/sonic-pi/</link>
+      <link>https://rahulmysore23.github.io/blogs/sonic-pi/</link>
       <pubDate>Sat, 13 Jan 2024 00:37:34 -0600</pubDate>
       
-      <guid>https://rwxrahul.tech/blogs/sonic-pi/</guid>
+      <guid>https://rahulmysore23.github.io/blogs/sonic-pi/</guid>
       <description></description>
       
     </item>

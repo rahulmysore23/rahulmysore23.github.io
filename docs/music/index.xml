@@ -2,12 +2,12 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Music and Me on rwxrahul</title>
-    <link>https://rwxrahul.tech/music/</link>
+    <link>https://rahulmysore23.github.io/music/</link>
     <description>Recent content in Music and Me on rwxrahul</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
     <copyright>© 2026 Rahul Mysore</copyright>
-    <atom:link href="https://rwxrahul.tech/music/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://rahulmysore23.github.io/music/index.xml" rel="self" type="application/rss+xml" />
     
   </channel>
 </rss>
